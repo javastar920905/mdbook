@@ -19,10 +19,18 @@
 
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">加载中...</div>
   <script>
     window.$docsify = {
+      search: 'auto', // 默认值
+      name: 'markdown 文档系统',
+      notFoundPage: true,
+      logo: '/_media/icon.svg',
+      el: '#app',
       loadSidebar: true,
+      repo: 'https://github.com/javastar920905/mdbook',
+      // coverpage: true,
+      coverpage: {'/':'_coverpage.md'},
       name: '',
       repo: '',
       themeable: {
@@ -32,6 +40,7 @@
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <!-- docsify-themeable (latest v0.x.x) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
 

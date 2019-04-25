@@ -3,6 +3,10 @@
 * [冷熊简历模板](cv.ftqq.com)
 * [如何规划和经营你的职业](https://juejin.im/book/59e17a7ff265da430629cc4e/section/59e17a7f6fb9a0451329b82d)
 * [程序员简历模板](https://github.com/geekcompany/ResumeSample)
+* [简历参考](https://yihui.name/cn/vitae/)
+* [书写简洁优雅的前端程序员 markdown 简历](https://github.com/wannaxiao/vuepress-theme-resume)
+如何导出为 pdf?
+> chrome 页面中右键 -> 打印 -> 另存为 pdf
 
 # 联系方式
 
