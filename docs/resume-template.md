@@ -16,7 +16,7 @@
  - zyan/男/1994 
  - 专科/家里蹲大学计算机系 
  - 工作年限：4年
- - 技术博客：javabus.cn ( 使用GitHub Host的Big较高  )
+ - 技术博客：https://javastar920905.github.io/mdbook/. ( 使用GitHub Host的Big较高  )
  - Github：https://github.com/javastar920905 ( 有原创repo的Github帐号会极大的提升你的个人品牌  )
 
  - 期望职位：PHP高级程序员，应用架构师
