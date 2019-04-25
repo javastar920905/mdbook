@@ -20,6 +20,12 @@ git remote -v
 git remote remove origin
 ```
 
+## 解决git push每次需要输入密码问题
+```
+git config --global credential.helper store
+```
+这条命令之后执行一次push操作，这个时候还要输入账号密码，以后就不用了
+
 ## git 教程 (github&amp;github&amp;svn)
 <DL><p>
     <DT><A HREF="http://rogerdudler.github.io/git-guide/index.zh.html" ADD_DATE="1511486152">git - 简易指南</A>
