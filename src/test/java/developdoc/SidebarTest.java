@@ -4,6 +4,7 @@ import cn.javabus.util.FileUtil;
 import org.junit.Test;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 
@@ -31,6 +32,7 @@ public class SidebarTest {
 
         File dir = new File(fileDir);
         File[] files = dir.listFiles();
+        Arrays.sort(files,Comparator.comparing(f->f.getName()) );
         StringBuilder output = new StringBuilder();
         String sidebarContent = String.format(sidebar_format, genSidebarContent(files, output));
 
@@ -51,6 +53,7 @@ public class SidebarTest {
 
     //多级目录,递归创建侧边栏
     public String genSidebarContent(File[] files, StringBuilder output) {
+        Arrays.sort(files,Comparator.comparing(f->f.getName()) );
         for (File file : files) {
             if (file.isDirectory()) {
                 File[] listFiles = file.listFiles();
