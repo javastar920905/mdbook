@@ -1,4 +1,4 @@
-package developdoc;
+package cn.javabus.util;
 
 import java.io.*;
 
@@ -37,15 +37,14 @@ public class FileUtil {
     /**
      * 写入TXT文件
      */
-    public static void writeFile() {
+    public static void writeFile(String fileName,String content) {
         try {
-            File writeName = new File("output.txt"); // 相对路径，如果没有则要建立一个新的output.txt文件
+            File writeName = new File(fileName); // 相对路径，如果没有则要建立一个新的output.txt文件
             writeName.createNewFile(); // 创建新文件,有同名的文件的话直接覆盖
             try (FileWriter writer = new FileWriter(writeName);
                  BufferedWriter out = new BufferedWriter(writer)
             ) {
-                out.write("我会写入文件啦1\r\n"); // \r\n即为换行
-                out.write("我会写入文件啦2\r\n"); // \r\n即为换行
+                out.write(content); // \r\n即为换行
                 out.flush(); // 把缓存区内容压入文件
             }
         } catch (IOException e) {
@@ -59,7 +58,7 @@ public class FileUtil {
      * @param fileName
      * @return
      */
-    public String readToString(String fileName) {
+    public static String readToString(String fileName) {
         File file = new File(fileName);
         return readToString(file);
     }
@@ -70,7 +69,7 @@ public class FileUtil {
      * @param file)
      * @return
      */
-    public String readToString(File file) {
+    public static String readToString(File file) {
         String encoding = "UTF-8";
         Long filelength = file.length();
         byte[] filecontent = new byte[filelength.intValue()];
