@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.io.*;
 import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * 生成_sidebar.md文件，直接运行即可
@@ -15,7 +16,7 @@ public class SidebarTest {
 
     //支持二级目录,多级目录自动变成二级目录显示
     static String format = "   * [%s](%s/%s)\r\n";
-    static String parent_format = "# %s\r\n";
+    static String parent_format = "* %s \r\n";
     static String sidebar_format = "# 文档目录\r\n\r\n# [java 开发手册](README.md)\r\n%s";
 
 
@@ -54,12 +55,14 @@ public class SidebarTest {
             if (file.isDirectory()) {
                 File[] listFiles = file.listFiles();
                 if (listFiles.length > 0) {
-                    output.append(String.format(parent_format, file.getName()));
+                    String fileName = file.getName();
+                    String leftNavName = fileName.contains("_")?fileName.substring(fileName.lastIndexOf("_") + 1):fileName;
+                    output.append(String.format(parent_format, leftNavName));
                     genSidebarContent(listFiles, output);
                 }
             } else {
                 String filename = file.getName();
-                String title = FileUtil.readFileFirstLine(file);//filename.substring(filename.indexOf("_") + 1, filename.length() - 3);
+                String title = FileUtil.readFileFirstLine(file).replaceAll("#", "").replaceAll("<H3>", "").replaceAll("</H3>", "");//filename.substring(filename.indexOf("_") + 1, filename.length() - 3);
                 String line = String.format(format, title, getAllParentDir(file), filename);
                 output.append(line);
             }

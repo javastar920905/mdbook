@@ -26,7 +26,7 @@ public class FileUtil {
             while ((line = br.readLine()) != null) {
                 // 一次读入一行数据
                 System.out.println(line);
-                return line.replaceAll("#","" );
+                return line;
             }
         } catch (IOException e) {
             e.printStackTrace();
