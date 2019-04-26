@@ -16,4 +16,4 @@
 <li> <A HREF="https://drive.google.com/drive/my-drive">我的云端硬盘 - Google 云端硬盘在线excel 操作工具</A></li>
 <li> <A HREF="http://naotu.baidu.com/home">百度脑图－便捷的思维工具</A></li>
 <li> <A HREF="https://www.weiyun.com/disk/index.html#m=disk">微云网页版</A></li>
-<li> <A HREF="https://www.west263.hk/domains/app.asp">.app域名_.app域名注册_.app域名查询_.app域名申请_.app域名购买-首选西部数码</A></li>
+<li> <A HREF="https://www.west.cn/services/paimai/show.asp?pid=51982531">52013.app 售卖中-西部数码</A></li>
