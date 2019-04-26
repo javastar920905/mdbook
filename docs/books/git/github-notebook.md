@@ -1,5 +1,4 @@
-# notebook
-github 资源汇总手册,大纲  欢迎参与编辑,fork
+# github 资源汇总手册,大纲
 
 ## 常用开发工具
 - [javabus.cn](http://javabus.cn/) 个人准备用的博客和工具网站,写博客太麻烦很难坚持

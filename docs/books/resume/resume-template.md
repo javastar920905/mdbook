@@ -5,8 +5,8 @@
 * [程序员简历模板](https://github.com/geekcompany/ResumeSample)
 * [简历参考](https://yihui.name/cn/vitae/)
 * [书写简洁优雅的前端程序员 markdown 简历](https://github.com/wannaxiao/vuepress-theme-resume)
-如何导出为 pdf?
-> chrome 页面中右键 -> 打印 -> 另存为 pdf
+
+> 如何导出为 pdf?   chrome 页面中右键 -> 打印 -> 另存为 pdf
 
 # 联系方式
 
