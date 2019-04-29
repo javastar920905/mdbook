@@ -32,6 +32,7 @@
 <li> <A HREF="http://www.bootcdn.cn/">Bootstrap中文网开源项目免费 CDN 加速服务</A></li>
 
 <H3>面向对象</H3>
+<li> <A HREF="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html">js 模块化开发 (阮一峰的网络日志) </A></li>
 <li> <A HREF="http://www.runoob.com/js/js-objects.html">JavaScript 对象 | 菜鸟教程</A></li>
 <li> <A HREF="http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html">Javascript 面向对象编程（一）：封装 - 阮一峰的网络日志</A></li>
 <li> <A HREF="https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001434499763408e24c210985d34edcabbca944b4239e20000">面向对象编程 - 廖雪峰的官方网站</A></li>

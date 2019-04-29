@@ -30,6 +30,7 @@
 <li> <A HREF="http://edu.51cto.com/roadmap/view/id-32.html">国际化项目经理职业学习路线图（PMP经典）（共10课程）_在线培训教程_51CTO学院</A></li>
 
 <H3>社区-大牛</H3>
+<li> <A HREF="http://www.ruanyifeng.com/blog/archives.html">阮一峰的网络日志</A></li>
 <li> <A HREF="https://github.com/SpringForAll">SpringForAll</A></li>
 <li> <A HREF="https://time.geekbang.org/">极客时间</A></li>
 <li> <A HREF="http://wiki.jikexueyuan.com/">权威-极客学院Wiki - IT 技术图文教程库</A></li>
