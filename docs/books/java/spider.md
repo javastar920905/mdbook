@@ -43,14 +43,18 @@
     * [Download and install jsoup](https://jsoup.org/download)
     * [jsoup Cookbook(中文版)](https://www.open-open.com/jsoup/) 
     * [Jsoup解析Html中文文档](https://www.cnblogs.com/jycboy/p/jsoupdoc.html)
+* selenium
+    * [selenium _安装入门实践](http://note.youdao.com/noteshare?id=44227005beaebfc34aa33d1bb08325d6&sub=E2CF139608024C6E97697F3A5635449B)
+    * [常用 webDriver API](http://note.youdao.com/noteshare?id=2a3e36644c1678f9714ee4177ee8bcca&sub=12EB0068C89A49BAA5E0B7B7CF04C455)
+    * [Selenium WebDriver实战宝典](https://share.weiyun.com/58vvzMx)
 * html 转pdf image
-* [wkhtmltopdf](https://wkhtmltopdf.org/) 
-   * 下载已经编译好的工具 https://wkhtmltopdf.org/downloads.html
-   * 运行命令 wkhtmltopdf 或 wkhtmltoimage
-   * 参考命令手册  https://wkhtmltopdf.org/usage/wkhtmltopdf.txt
-   * 使用java 命令行调用 wkhtmltopdf toc test.html test.pdf 
-* [iText](https://www.oschina.net/code/snippet_128625_58201)
-* [html 转pdf库](https://pdfcrowd.com/doc/api/client-library/java/) (需要申请api key...收费)
+    * [wkhtmltopdf](https://wkhtmltopdf.org/) 
+       * 下载已经编译好的工具 https://wkhtmltopdf.org/downloads.html
+       * 运行命令 wkhtmltopdf 或 wkhtmltoimage
+       * 参考命令手册  https://wkhtmltopdf.org/usage/wkhtmltopdf.txt
+       * 使用java 命令行调用 wkhtmltopdf toc test.html test.pdf 
+    * [iText](https://www.oschina.net/code/snippet_128625_58201)
+    * [html 转pdf库](https://pdfcrowd.com/doc/api/client-library/java/) (需要申请api key...收费)
 
 <H3>网络爬虫</H3>
 <li> <A HREF="http://note.youdao.com/noteshare?id=169f3e5b6d512bec03e556d39e8df1c1&sub=67BE055240F64C1BAA1A635F30EB2A59">js 混淆加密</A></li>

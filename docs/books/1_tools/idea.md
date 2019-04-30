@@ -1,4 +1,4 @@
-# idea 教程
+# idea 等开发工具教程
 ## IDEA 简体中文专题教程
 * [IntelliJ IDEA 简体中文专题教程](https://github.com/javastar920905/IntelliJ-IDEA-Tutorial)
 
@@ -14,3 +14,7 @@
 <li> <A HREF="https://blog.csdn.net/u014028063/article/details/82455215">解决 git 中文路径显示 unicode 代码的问题 - u014028063的博客 - CSDN博客</A></li>
 <li> <A HREF="https://blog.csdn.net/wsyw126/article/details/74853680">Java项目开启远程调试（tomcat、springboot） - WSYW126的博客 - CSDN博客</A></li>
 <li> <A HREF="https://www.imooc.com/learn/924">IntelliJ IDEA神器使用技巧-慕课网</A></li>
+
+
+## postman 
+* [postman-有道云笔记](http://note.youdao.com/noteshare?id=c11c54ed5b2ff7cecd94cddb584d8b4d)
