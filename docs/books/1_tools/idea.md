@@ -1,3 +1,9 @@
+# idea 教程
+## IDEA 简体中文专题教程
+* [IntelliJ IDEA 简体中文专题教程](https://github.com/javastar920905/IntelliJ-IDEA-Tutorial)
+
+![教程目录预览](../../_media/idea.png)
+
 <H3>idea 教程</H3>
 <li> <A HREF="https://blog.csdn.net/jilky123/article/details/80522125">idea 2018注册码（激活码）永久性的 - CSDN博客</A></li>
 <li> <A HREF="https://blog.csdn.net/qq3892997/article/details/80323737">idea 2018.1破解激活方法,有效期至2099年 - CSDN博客</A></li>

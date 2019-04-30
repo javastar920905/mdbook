@@ -31,7 +31,10 @@
 * 分页类处理
 
 # 实现过的demo
-
+* [java-demo ](https://github.com/javastar920905/java-demo)(docTohtml,html2pdf,spider,code-identification 模块)
+* [jsoup-demo](https://github.com/javastar920905/jsoup-demo)(私有)
+* [webmagic做的爬虫示例程序](https://github.com/javastar920905/spider-webmagic)
+* [selenium实现自动化登录测试](https://github.com/javastar920905/selenium-demo)
 持续更新中...
 
 
