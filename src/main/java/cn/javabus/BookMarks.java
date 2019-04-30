@@ -20,7 +20,7 @@ public class BookMarks {
 
     public static void main(String[] args) {
         //输出文件地址
-        String outputFileName = root + "\\mdbook\\docs\\books\\_1_tools\\generate.md";
+        String outputFileName = root + "\\mdbook\\docs\\generate.md";
         System.out.println(outputFileName);
 
         //输入文件地址
