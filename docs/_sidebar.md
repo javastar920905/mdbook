@@ -7,7 +7,7 @@
    * [ 常用开发工具备份](books/1_tools/1tools.md)
    * [api-手册](books/1_tools/api_reference.md)
    * [在线开发_运行工具](books/1_tools/dev_online.md)
-   * [ idea 教程](books/1_tools/idea.md)
+   * [ idea 等开发工具教程](books/1_tools/idea.md)
    * [正则表达式验证工具](books/1_tools/regx.md)
    * [常用搜索工具](books/1_tools/search_tools.md)
 * git 
