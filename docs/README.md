@@ -1,4 +1,4 @@
-## [java 开发手册](/)
+## [java 开发手册](https://javastar920905.github.io/mdbook)
 
 * 开发备忘,一次性东西减少重复劳动 (idea setting,工具,破解,docker和维护...)
 * 常用技能总结 (java git 爬虫 ...)
