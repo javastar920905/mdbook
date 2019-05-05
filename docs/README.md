@@ -1,7 +1,7 @@
 ## [java 开发手册](https://javastar920905.github.io/mdbook)
 
 ### 项目说明
-* java 开发者即时参考手册
+* [javabus.cn-粤ICP备17145208号](https://javabus.cn) java 开发参考手册
 * 开发备忘,一次性东西减少重复劳动 (idea setting,工具,破解,docker和维护...)
 * 常用技能总结 (java git 爬虫 ...)
 * 趣味技术分享 (docsify easyopen ...)
@@ -9,11 +9,10 @@
 > [使用幕布写todo列表](https://mubu.com/doc/1gncEoM4Xo) [该列表实时更新完成进度]
 
 ### 本项目基于docsify 搭建
-
 * [docsify 教程-有道云笔记](http://note.youdao.com/noteshare?id=b0ca41d567d3fb5eed648125119b3ad1&sub=DFBFB1BBA9A342FEB3F37F5D3FCCF185)  [docsify中文文档](https://docsify.js.org/#/zh-cn/quickstart)
 * [docsify-themeable 一个用于docsify的，简单到令人愉悦的主题系统](https://jhildenbiddle.github.io/docsify-themeable).
 * [github pages 部署项目](https://docsify.js.org/#/zh-cn/deploy?id=%E9%83%A8%E7%BD%B2)
-* [使用百度统计 统计访问量]()
+* [使用百度统计 统计访问量](https://tongji.baidu.com/web/24646268/overview/index?siteId=11315684)
 
 ### 使用markdown 写文档
 * markdown 语法 中文教程
