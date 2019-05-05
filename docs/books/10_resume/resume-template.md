@@ -6,6 +6,8 @@
 * [程序员简历模板](https://github.com/geekcompany/ResumeSample)
 * [简历参考](https://yihui.name/cn/vitae/)
 * [书写简洁优雅的前端程序员 markdown 简历](https://github.com/wannaxiao/vuepress-theme-resume)
+* [面试复习大纲](https://mubu.com/doc/1iY1GrFkto) 简历写的再好,也需要自己有料,好好复习!
+* <A HREF="http://blog.csdn.net/imbrl71u7pt5x29rleu7/article/details/78434379">没做过几个项目，简历怎么写啊 - CSDN博客</A>
 
 > 如何导出为 pdf?   chrome 页面中右键 -> 打印 -> 另存为 pdf
 

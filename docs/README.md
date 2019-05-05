@@ -1,8 +1,11 @@
 ## [java 开发手册](https://javastar920905.github.io/mdbook)
 
+### 项目说明
+* java 开发者即时参考手册
 * 开发备忘,一次性东西减少重复劳动 (idea setting,工具,破解,docker和维护...)
 * 常用技能总结 (java git 爬虫 ...)
 * 趣味技术分享 (docsify easyopen ...)
+* 项目持续更新整理中 ...
 > [使用幕布写todo列表](https://mubu.com/doc/1gncEoM4Xo) [该列表实时更新完成进度]
 
 ### 本项目基于docsify 搭建
