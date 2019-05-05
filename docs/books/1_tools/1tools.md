@@ -3,11 +3,20 @@
 > 15M 以内的软件包备份 (git|pdf|xsheel|maven helper)
 
 
-<H3>文件-文档工具</H3>
-<li> <A HREF="https://www.weiyun.com/disk/index.html">我的qq微云网页版——2111428948</A></li>
-<li> <A HREF="https://drive.wps.cn/latest">wps-在线文档</A></li>
-<li> <A HREF="https://www.processon.com/mindmap/596083b6e4b0a77c5aeb998d">个人专业总结计划 ProcessOn Mind</A></li>
-<li> <A HREF="http://naotu.baidu.com/home/fe71bee1396a586323acd02ce1b1c406">百度脑图－我的项目手脚架</A></li>
+## 文件-文档工具
+* <A HREF="http://dict.youdao.com/search?q=mechanism&keyfrom=fanyi.smartResult">【mechanism】什么意思_英语mechanism的翻译_音标_读音_用法_例句_在线翻译_有道词典</A>
+* <A HREF="https://mubu.com/list#1SSO-Q_Gap">幕布</A
+* <A HREF="https://note.youdao.com/web/#/file/recent/note/8DB549869EB24D769C31F7F66F8AFB17/">有道云笔记-在线</A
+* <A HREF="https://www.weiyun.com/disk/index.html">我的qq微云网页版——2111428948</A></li>
+* <A HREF="https://drive.wps.cn/latest">wps-在线文档</A></li>
+* <A HREF="https://www.processon.com/mindmap/596083b6e4b0a77c5aeb998d">个人专业总结计划 ProcessOn Mind</A></li>
+* <A HREF="http://naotu.baidu.com/home/fe71bee1396a586323acd02ce1b1c406">百度脑图－我的项目手脚架</A></li>
+* <A HREF="https://wx2.qq.com/">微信网页版</A
+* <A HREF="http://weibo.com/u/5414365820/home?wvr=5">微博-新鲜事</A>
+* <A HREF="http://www.djkk.com/dance/play/303571.html">一个人的夜太孤单dj</A>
+* <A HREF="https://mail.163.com/js6/main.jsp?sid=qBEvVfwmAlMHYDfPObmmPQrBrNXoRrHV&df=email163#module=welcome.WelcomeModule%7C%7B%7D">网易邮箱6.0版</A>
+* <A HREF="http://www.iqiyi.com/dianshiju/">电视剧频道-最新好看的电视剧大全-热门电视剧排行榜-爱奇艺</A>
+* <A HREF="http://vip.stock.finance.sina.com.cn/mkt/#sge_gold">行情中心_新浪财经_新浪网</A>
 
 <H3>我的云-存储-文档</H3>
 <li> <A HREF="https://docs.qq.com/desktop/index.html?_from=1">腾讯文档</A></li>

@@ -1,4 +1,5 @@
 <H3>api-手册</H3>
+<li> <A HREF="https://www.ibm.com/developerworks/cn/java/j-javaresources.html" ADD_DATE="1508757717">必备的 Java 参考资源列表</A>
 <li> <A HREF="https://www.oschina.net/uploads/doc/javase-6-doc-api-zh_CN/overview-summary.html">java api 6 汉化版 (Java 2 Platform SE 6)</A></li>
 <li> <A HREF="http://javadoc.allimant.org/">java 离线版本下载_Java Documentation in Windows Help format (WinHelp and HTMLHelp)</A></li>
 <li> <A HREF="http://tool.oschina.net/apidocs/">在线API文档</A></li>

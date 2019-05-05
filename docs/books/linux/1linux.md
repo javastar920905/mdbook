@@ -1,0 +1,67 @@
+# linux 学习资源
+## 入门教程
+* [linux 百度百科](https://baike.baidu.com/item/linux?fr=aladdin)
+* [linux入门教程-runoob.com](https://www.runoob.com/linux/linux-intro.html)
+* [常用 linux 命令总结](https://blog.csdn.net/u010664947/article/details/46632381)
+* [linux 使用国内源](https://note.youdao.com/ynoteshare1/index.html?id=aa8f98619355e0addb3820d532bc5d39&type=note#/)
+
+## 服务器安装-ip-ssh配置
+* <A HREF="http://www.linuxidc.com/Linux/2012-05/60147.htm">Ubuntu 12.04 LTS服务器版安装过程及使用图解_Linux新闻_Linux公社-Linux系统门户网站</A>
+* <A HREF="http://os.51cto.com/art/201003/191161.htm">完整CentOS系统安装图文教程 - 51CTO.COM</A>
+* <A HREF="http://www.lupaworld.com/article-219400-1.html">Linux防火墙设置 - Linux技巧 - LUPA开源社区</A>
+* <A HREF="http://www.myhack58.com/Article/48/66/2012/34999.htm">Linux配置防火墙，开启80端口、3306端口-Linux-黑吧安全网</A>
+* <A HREF="http://www.veryhuo.com/a/view/16976.html">ubuntu 默认防火墙安装、启用、查看状态_最火下载站</A>
+* <A HREF="http://www.2cto.com/os/201203/124089.html">ubuntu设置固定IP - Linux操作系统：Ubuntu_Centos_Debian - 红黑联盟</A>
+* <A HREF="http://www.cnblogs.com/empire/archive/2011/01/10/1931877.html">Ubuntu Linux下设置IP的配置命令 - Haidi - 博客园</A>
+* <A HREF="http://www.cnblogs.com/wrmfw/archive/2011/09/08/2170465.html">linux下搭建SVN服务器完全手册-很强大！！！！！ - 之乎者也2011 - 博客园</A>
+* <A HREF="http://jingyan.baidu.com/article/1e5468f97f3275484961b7df.html">ubuntu上安装nginx_百度经验</A>
+* <A HREF="https://blog.csdn.net/ktigerhero3/article/details/56484586">linux下编译安装软件的一般步骤 - CSDN博客</A>
+* <A HREF="http://note.youdao.com/share/?id=49d2b1eecbd8cd97fe24679f87e2bf56&type=notebook#/">linux 安装软件</A>
+* ssh客户端连接linux
+    * [ubuntu下安装、启动和卸载SSH](https://blog.csdn.net/swuteresa/article/details/9377169)
+    * [安装OpenSSH Server](http://www.cnblogs.com/eastson/archive/2012/06/29/2570163.html)
+    * [putty](http://www.cnblogs.com/btchenguang/archive/2012/09/28/2707782.html)
+    * [Linux下实现SSH免密码登录和实现秘钥的管理、分发](https://www.jb51.net/article/54959.htm)
+
+
+## 常用命令
+* [shell 教程](http://c.biancheng.net/cpp/view/6994.html)
+* [linux 命令大全](http://man.linuxde.net/)
+* [Linux命令大全搜索工具](https://github.com/jaywcjlove/linux-command)
+* [https://git.io/linux](https://wangchujiang.com/linux-command/)
+   * [scp x主机之间的文件复制](https://wangchujiang.com/linux-command/c/scp.html)
+* [Ubuntu使用crontab定时任务](https://www.linuxidc.com/Linux/2013-05/84770.htm)
+* [Vim 从入门到精通](https://github.com/wsdjeg/vim-galore-zh_cn)
+* [Vim教程_Vim开发中文手册PDF下载-极客学院Wiki](http://wiki.jikexueyuan.com/project/vim/)
+* awk 命令教程
+   * [awk 用法（使用入门）](http://www.cnblogs.com/emanlee/p/3327576.html)
+   * [awk 文本和数据进行处理](https://wangchujiang.com/linux-command/c/awk.html)
+   * [linux awk命令详解](http://www.cnblogs.com/ggjucheng/archive/2013/01/13/2858470.html)
+   * [三十分钟学会AWK](http://blog.jobbole.com/109089/)
+   * [Linux awk 命令-菜鸟教程](https://www.runoob.com/linux/linux-comm-awk.html)
+
+## 常用工具
+* [Arthas](https://github.com/javastar920905/arthas/blob/master/README_CN.md)
+* omyzsh
+   * <A HREF="https://blog.csdn.net/u010138906/article/details/78778627">Zsh 入门(安装及使用) - CSDN博客</A>
+   * <A HREF="https://www.cnblogs.com/EasonJim/p/7863099.html">Ubuntu 16.04下安装zsh和oh-my-zsh - EasonJim - 博客园</A>
+   * <A HREF="https://blog.csdn.net/qq756684177/article/details/81518643">【坑】zsh和oh-my-zsh卸载后导致无法登陆 - Tinywan - CSDN博客</A>
+   * <A HREF="https://wiki.archlinux.org/index.php/Zsh_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Zsh (简体中文) - ArchWiki</A>
+   * <A HREF="https://www.zhihu.com/question/29977255">mac 装了 oh my zsh 后比用 bash 具体好在哪儿？ - 知乎</A>
+
+## [docker 学习](books/linux/docker.md)
+
+## dos命令
+* [windows下Bat命令学习](https://blog.csdn.net/steven6977/article/details/10823165)
+* [常用DOS命令大全](https://product.pconline.com.cn/itbk/software/os/1404/4604099.html)
+* [设置开机启动](https://note.youdao.com/ynoteshare1/index.html?id=c694e08c411faeed472e950bb233e71e&type=note#/)
+
+
+## linux社区
+   * <A HREF="http://c.biancheng.net/cpp/linux/">Linux入门教程（更新完毕）_Linux教程</A>
+   * <A HREF="https://linux.cn/tech/">技术 ◆ 学习|Linux.中国-开源社区</A>
+   * <A HREF="http://www.runoob.com/linux/linux-tutorial.html">Linux 教程 | 菜鸟教程</A>
+   * <A HREF="http://lib.csdn.net/base/linux/structure">Linux - 知识库 - 你身边的技术百科全书 - CSDN</A>
+   * <A HREF="https://github.com/judasn/Linux-Tutorial">judasn/Linux-Tutorial: 《Java 程序员眼中的 Linux》</A>
+   * <A HREF="http://www.imooc.com/course/programdetail/pid/45">Linux运维工程师_学习规划_慕课网学习路径</A>
+   * <A HREF="http://www.linuxidc.com/">Linux公社 - Linux系统门户网站</A>

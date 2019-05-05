@@ -1,0 +1,23 @@
+# linux运维
+* [运维介绍 有道云笔记](https://note.youdao.com/ynoteshare1/index.html?id=3a1bc48b8bc3873b6ae6cccfa41b1946&type=notebook#/)
+* [运维实践指南](https://github.com/meetbill/op_practice_book)
+* [运维实践指南-目录大纲](https://github.com/meetbill/op_practice_book/blob/master/SUMMARY.md)
+* [Linux 系统健康巡检脚本](http://blog.itpub.net/25369863/viewspace-688785/)
+* [搭建简易堡垒机](https://blog.51cto.com/zero01/2062618)
+
+
+
+
+## linux 日常维护
+* [Systemctl](https://linux.cn/article-5926-1.html)
+* [Systemd，启动守护进程](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
+* [Linux如何实现开机启动程序详解](http://www.cnblogs.com/gzggyy/archive/2012/08/07/2626574.html)
+* [Linux中设置服务自启动的三种方式](http://www.cnblogs.com/nerxious/archive/2013/01/18/2866548.html)
+* [linux下杀死进程（kill）的N种方法](https://blog.csdn.net/andy572633/article/details/7211546)
+* [如何在Ubuntu16.04中用Apache部署Jenkins自动化服务器](http://os.51cto.com/art/201705/538986.htm)
+* [linux下搭建SVN服务器完全手册](http://www.cnblogs.com/wrmfw/archive/2011/09/08/2170465.html)
+* 查看linux日志信息
+   * <A HREF="https://www.cnblogs.com/lcword/p/5917398.html">linux查看系统的日志的一些实用操作 - lclc - 博客园</A>
+   * <A HREF="https://blog.csdn.net/m0_38023255/article/details/78710824">linux系统中如何查看日志 - m0_38023255的博客 - CSDN博客</A>
+   * <A HREF="https://www.linuxidc.com/Linux/2016-12/138368.htm">从命令行如何查看Linux日志_Linux教程_Linux公社-Linux系统门户网站</A>
+   * <A HREF="https://blog.csdn.net/chinoukin/article/details/79481875">Linux 系统中如何查看日志 (常用命令) - chinoukin的博客 - CSDN博客</A>

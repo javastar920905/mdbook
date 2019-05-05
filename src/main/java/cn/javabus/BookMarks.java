@@ -44,6 +44,7 @@ public class BookMarks {
                     line = matcher.replaceAll("");
                 }
                 if (line.contains("<H3>")) {
+                    line=line.replaceAll("<H3>", "* ").replaceAll("</H3>", "");
                     if (isFirstH3Over == false) {
                         isFirstH3Over = true;
                     } else {
@@ -52,7 +53,7 @@ public class BookMarks {
                 }
 
                 if (line.contains("<A")) {
-                    line = "<li> " + line + "</li>";
+                    line = "   * " + line + "";
                 }
 
                 if (line != null && !line.equals("")) {
