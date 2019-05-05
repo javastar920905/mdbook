@@ -1,0 +1,29 @@
+# java学习路线图
+
+## 学习路线图 大纲
+* [java 复习计划](http://note.youdao.com/noteshare?id=bd5f95a1a22de561c3fcaef99b501d5c&sub=CE8642CC711F46C694BC250ED474096E)
+* [java学习复习路线图 有道总结](http://note.youdao.com/noteshare?id=23f772567f35e59e2f0500f21594ddd3&sub=BF5D23B5B09A4248B3670B577A09A5C6)
+* [java巩固指南 读一位资深程序员大牛给予Java初学者的学习建议](http://note.youdao.com/noteshare?id=bea218d9390c34bed965ae7e881d77c4&sub=D2C9F53298A74436AB7A5AA6B73D3E00)
+* [程序工作原理](http://note.youdao.com/noteshare?id=76d00b7f780a7c40e03be5f90e5e24ec&sub=71F5966247664D908EA9D91C8A6CFB77)
+* [入学指导_学习心态-GP10555](http://note.youdao.com/noteshare?id=0dcaa2c9940facd0bc6e3cd750ddfb4f&sub=33F29526294147488869D5ED9A4A354C)
+* [深入理解java虚拟机目录-HotSpot](http://note.youdao.com/noteshare?id=6ac88a6d95f7f5571da39c99b6ddc892&sub=675A7F9CF9974B82A03BF29482CF66F1)
+
+
+## 学习途径:
+* [开发者头条  ](https://toutiao.io/favorites)
+* [菜鸟教程  ](https://c.runoob.com/)
+* [牛人博客 github排行榜](http://outofmemory.cn/github/*/*/?sort=followers)
+* [linux 社区  ](http://www.linuxidc.com/Linuxit/)
+* [51cto java 资讯 ](http://developer.51cto.com/col/1729/)
+* [csdn ](http://blog.csdn.net/nav/lang)
+* [程序员杂志 ](http://special.csdncms.csdn.net/programmer-covers/)
+* [阿里云博客 ](https://yq.aliyun.com/articles?spm=5176.100244.headermainnav.3.32754657t452Ly)
+* [sdk.cn  ](https://sdk.cn/)  
+* [sdk/api热门排行](https://sdk.cn/datas/trending?tab=hot)
+* [oschina 热门排行  ](https://www.oschina.net/project/zh)
+* [hello github ](https://hellogithub.com/)
+* [github 排行榜 ](https://github.com/search?l=Java&p=1&q=stars%3A%3E1&s=stars&type=Repositories)
+* [简书 ](https://www.jianshu.com/c/NEt52a)
+* [各个项目软件官方文档](spring/docker/shiro)
+
+## [学习资源](/books/learn/learn)
