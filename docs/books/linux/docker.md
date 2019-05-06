@@ -5,7 +5,7 @@
     
 ## 日常使用总结   
 * [Docker 维护和容器日常清理](https://note.youdao.com/ynoteshare1/index.html?id=f2cb5e6b5e133e772f3e864812ca0ffe&type=note#/) 
-* [maven 打包docker 镜像 SpringBoot + maven 测试通过](https://note.youdao.com/ynoteshare1/index.html?id=fe2e5127a04da131a69f10f06baa1cdd&type=note#/)
+* [使用maven插件将服务打包成docker镜像](http://note.youdao.com/noteshare?id=fe2e5127a04da131a69f10f06baa1cdd&sub=54E033AD8BB94B7BAC9A69D0840D0164)
 * [Docker 问答录（100 问）](https://blog.lab99.org/post/docker-2016-07-14-faq.html#ming-ming-docker-network-ls-zhong-kan-dao-liao-jian-li-de-overlay-wang-luo-zen-me-docker-run-huan-shuo-wang-luo-bu-cun-zai-a)
 * [docker 参考手册](https://mongoding.github.io/2017/11/16/docker/)
 * [配置https 证书](https://note.youdao.com/ynoteshare1/index.html?id=3c19040eabad596cbb8741a9fe722c5a&type=note#/)

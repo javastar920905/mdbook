@@ -13,6 +13,8 @@
 * git 
    * [ git 教程](books/5_git/git_init.md)
    * [ github 资源汇总手册,大纲](books/5_git/github_notebook.md)
+* enjoy 
+   * [ 使用easyopen 搭建开放平台](books/enjoy/easyopen.md)
 * font 
    * [前端学习资源](books/font/font_learn.md)
    * [vue 系列](books/font/vue_learn.md)
