@@ -12,7 +12,9 @@
 * [docsify 教程-有道云笔记](http://note.youdao.com/noteshare?id=b0ca41d567d3fb5eed648125119b3ad1&sub=DFBFB1BBA9A342FEB3F37F5D3FCCF185)  [docsify中文文档](https://docsify.js.org/#/zh-cn/quickstart)
 * [docsify-themeable 一个用于docsify的，简单到令人愉悦的主题系统](https://jhildenbiddle.github.io/docsify-themeable).
 * [github pages 部署项目](https://docsify.js.org/#/zh-cn/deploy?id=%E9%83%A8%E7%BD%B2)
+* [Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)[.](http://note.youdao.com/noteshare?id=8905cf85f75f8c54e596d8f491687e67&sub=3585C53EB515431F95AB45BA92B5D5E5)
 * [使用百度统计 统计访问量](https://tongji.baidu.com/web/24646268/overview/index?siteId=11315684)
+* [Docsify 深入源码](https://www.imooc.com/article/20256)
 
 ### 使用markdown 写文档
 * markdown 语法 中文教程

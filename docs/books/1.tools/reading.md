@@ -1,5 +1,5 @@
-# 课外阅读
-   
+# 闲来无事读读书
+   * <A HREF="http://www.guofei.site/reading/#/docs/D_%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86%E5%92%8C%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/%E3%80%8A%E6%88%90%E5%A4%A7%E4%BA%8B%E8%80%85%E4%B8%8D%E7%BA%A0%E7%BB%93%E3%80%8B">基于docsify 搭建的读书页- 人类必将化身为神</A>
    * <A HREF="http://www.kejixun.com/">科技讯-中国第一科技门户，报道最新科技新闻</A>
    * <A HREF="http://news.iciba.com/views/dailysentence/daily.html#!/detail/title/2017-10-24">每日一句</A>
    * <A HREF="http://bbs.moonseo.cn/">SEO研究中心</A>

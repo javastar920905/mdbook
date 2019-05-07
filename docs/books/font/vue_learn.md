@@ -11,6 +11,8 @@
 <li> <A HREF="http://www.maiziedu.com/course/916/">Vue.js框架教程-Vue.js视频教程-麦子学院</A></li>
 <li> <A HREF="https://www.csdn.net/article/1970-01-01/2825439">Vue.js：轻量高效的前端组件化方案-CSDN.NET</A></li>
 <li> <A HREF="https://forum.vuejs.org/c/chinese">中文的最新主题 - Vue Forum</A></li>
+<li> <A HREF="https://elemefe.github.io/vue-amap/#/">vue-amap | 基于 Vue 2.x 与高德的地图组件</A></li>
+
 
 
 <H3>vue入门</H3>

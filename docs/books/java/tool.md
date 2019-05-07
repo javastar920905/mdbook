@@ -4,6 +4,7 @@
 * [strman- java 字符串处理 ](https://github.com/javastar920905/strman-java)
 * [wkhtmltoimage html转pdf和图片](http://note.youdao.com/noteshare?id=759c47d1c7c293388dc88191815e24a5&sub=BB2A7B21E85C45EAAF746A28262B3A56)
 * [highcharts 报表](http://note.youdao.com/noteshare?id=6a4ed91c4184d81187b2f9625e71e129)
+* [使用node js 生成docx文档](https://docx.js.org/#/)
 
 # 开源框架
 * [分布式任务调度平台XXL-JOB](https://github.com/javastar920905/xxl-job)
