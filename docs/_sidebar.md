@@ -6,7 +6,7 @@
    * [ git 教程](books/1.tools/git_init.md)
    * [ gradle 学习资源](books/1.tools/gradle.md)
    * [ idea 等开发工具教程](books/1.tools/idea.md)
-   * [ 课外阅读](books/1.tools/reading.md)
+   * [ 闲来无事读读书](books/1.tools/reading.md)
    * [正则表达式验证工具](books/1.tools/regx.md)
    * [常用搜索工具](books/1.tools/search_tools.md)
 * 10.resume 
