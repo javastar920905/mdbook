@@ -1,4 +1,6 @@
 # idea 等开发工具教程
+<li> <A HREF="http://wiki.jikexueyuan.com/list/tool/">开发工具入门基础教程_开发工具开发学习书籍-极客学院Wiki</A></li>
+
 ## IDEA 简体中文专题教程
 * [IntelliJ IDEA 简体中文专题教程](https://github.com/javastar920905/IntelliJ-IDEA-Tutorial)
 

@@ -5,6 +5,7 @@
 * [wkhtmltoimage html转pdf和图片](http://note.youdao.com/noteshare?id=759c47d1c7c293388dc88191815e24a5&sub=BB2A7B21E85C45EAAF746A28262B3A56)
 * [highcharts 报表](http://note.youdao.com/noteshare?id=6a4ed91c4184d81187b2f9625e71e129)
 * [使用node js 生成docx文档](https://docx.js.org/#/)
+* <A HREF="http://commons.apache.org/">Apache Commons – Apache Commons</A>
 
 # 开源框架
 * [分布式任务调度平台XXL-JOB](https://github.com/javastar920905/xxl-job)
@@ -77,3 +78,53 @@
 示例: android http stars:>1000  搜索star 数大于 1000的 安卓网络http库
 - [github 秘籍](https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md)
 
+<H3>慕课免费课程</H3>
+<li> <A HREF="https://www.imooc.com/learn/869">探秘Spring AOP-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/video/15388">sqlmap数据库检测-dbs，浅析SQLmap教程-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/1079">SpringBoot构建电商基础秒杀项目</A></li>
+<li> <A HREF="https://www.imooc.com/learn/202">深入浅出Java多线程-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/161">Java Socket应用--通信是这样练成的-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/199">反射—Java高级开发必须懂的-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/456">全面解析Java注解</A></li>
+<li> <A HREF="https://www.imooc.com/learn/443">项目管理利器—maven-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/368">初识Java微信公众号开发-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/917">CDN与智能DNS原理和应用-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/354">解密JAVA实现Excel导入导出-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/289">Java实现数字签名-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/287">JAVA实现对称加密-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/286">Java实现消息摘要算法加密-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/285">Java实现Base64加密-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/265">Java中的文件上传下载-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/846">Java定时任务调度工具详解之Quartz篇-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/833">新一代构建工具gradle-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/821">轻松愉快之玩转SpringData-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/810">SpringBoot进阶之Web进阶-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/633">Java实现SSO单点登录[视频教程]-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/531">JAVA生成二维码视频教程-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/587">Java高并发秒杀API之业务分析与DAO层</A></li>
+<li> <A HREF="https://www.imooc.com/learn/567">Java实现图片等比例缩略图-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/585">Java图片验证码实现视频教程-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/547">使用wordpress极速建站_wordpress建站视频教程-慕课网</A></li>
+<li> <A HREF="https://www.imooc.com/learn/1043">Kafka流处理平台</A></li>
+<li> <A HREF="https://www.imooc.com/learn/915">Spring Boot热部署-慕课网</A></li>
+
+
+<H3>感觉不错的视频</H3>
+<li> <A HREF="http://edu.51cto.com/course/course_id-3815.html">EasyUI+S2SH+MySQL 在线商城系统 (上部) [项目视频]（共62课时）_在线培训教程_51CTO学院</A></li>
+<li> <A HREF="http://edu.51cto.com/course/course_id-3131.html">跟老谭玩转Eclipse视频教程（共24课时）_在线培训教程_51CTO学院</A></li>
+<li> <A HREF="http://edu.51cto.com/course/course_id-984.html">全国计算机等级考试二级C语言视频课程（完整版）（共236课时）_在线培训教程_51CTO学院</A></li>
+<li> <A HREF="http://edu.51cto.com/course/course_id-1513.html">Java源码详解视频教程基础篇（共12课时）_在线培训教程_51CTO学院</A></li>
+<li> <A HREF="http://edu.51cto.com/course/course_id-1535.html">汇编语言全套视频教程（共30课时）_在线培训教程_51CTO学院</A></li>
+<li> <A HREF="http://edu.51cto.com/course/course_id-2344.html">听强哥说Java之Java算法大全【直播课】（共10课时）_在线培训教程_51CTO学院</A></li>
+<li> <A HREF="http://edu.51cto.com/roadmap/view/id-65.html">Java Web工程师之路【听强哥说Java系列】</A></li>
+<li> <A HREF="http://www.atguigu.com/download.shtml">尚硅谷_全套Java视频教程|免费Java视频教程|最适合自学Java视频教程</A></li>
+<li> <A HREF="http://www.java1234.com/javaxuexiluxiantu.html">Java学习路线图_Java知识分享网-免费Java资源下载</A></li>
+<li> <A HREF="http://edu.51cto.com/course/course_id-230.html">杨帆老师Core.Java系列基础视频教程（共195课时）_在线培训教程_51CTO学院</A></li>
+<li> <A HREF="http://edu.51cto.com/course/course_id-33.html">方立勋老师Servlet开发视频课程（共28课时）_在线培训教程_51CTO学院</A></li>
+<li> <A HREF="http://mailapp.study.163.com/course/courseMain.htm?courseId=212009">Java网上在线支付实战 - 云课堂</A></li>
+<li> <A HREF="http://edu.51cto.com/course/course_id-669.html#6720061-sqq-1-28997-f27d2477a8e0aa0994bfe3c6ef3070fb">Linux基础教程视频在线观看（共10个课时）_51CTO学院</A></li>
+<li> <A HREF="http://www.youku.com/playlist_show/id_4755018.html">java初级项目视频 - 专辑 - 优酷视频</A></li>
+<li> <A HREF="http://www.soku.com/search_playlist/type_tag_q_JAVA%E6%95%99%E7%A8%8B">搜库-专找视频</A></li>
+<li> <A HREF="http://www.soku.com/search_playlist/type_tag_q_Java">Java 搜库-专找视频</A></li>
+<li> <A HREF="http://www.jikexueyuan.com/course/java/">Java开发基础入门到精通与实战视频教程_极客学院</A></li>
+<li> <A HREF="http://v.youku.com/v_show/id_XMjEwMzE2OTQ4.html?from=y1.2-3-87.3.7-1.1-4-1-6">java视频2—在线播放—优酷网，视频高清在线观看</A></li>

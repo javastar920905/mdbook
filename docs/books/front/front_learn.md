@@ -1,7 +1,23 @@
 <H3>前端学习资源</H3>
 
-## 总结
-* [bootstrap ](http://note.youdao.com/noteshare?id=27d9b6ed3ef4b21cb1d4673cbe830e2d)
+* [bootstrap 有道总结](http://note.youdao.com/noteshare?id=27d9b6ed3ef4b21cb1d4673cbe830e2d)
+
+<H3>全栈</H3>
+<li> <A HREF="http://growth.ren/">Growth - 带你变成优秀开发者，陪你成为顶尖开发者</A></li>
+<li> <A HREF="https://github.com/phodal/growth-ebook">全栈增长工程师指南</A></li>
+<li> <A HREF="https://github.com/ruanyf/jstraining">ruanyf/jstraining: 全栈工程师培训材料</A></li>
+<li> <A HREF="http://www.21edu8.com/pcnet/programming/3574/">尚学堂-小学-初中-高中-星火视频教程 21edu8.com</A></li>
+
+
+## 前端学习资源
+- [JavaScript 资源大全中文版](https://github.com/jobbole/awesome-javascript-cn)包括：包管理器、加载器、测试框架、QA、MVC框架等
+- [JQuerySource](https://github.com/songjinzhong/JQuerySource) jQuery 源码解读，v3.1.1
+- [推荐前端技术书](https://github.com/jobbole/awesome-web-dev-books) 如果有人让你推荐前端技术书，请让他看这个列表
+- [CSS 资源大全中文版](https://github.com/jobbole/awesome-css-cn) 内容包括：CSS预处理器、框架、CSS结构、代码风格指南、命名习惯等等
+- [《我的职业是前端工程师》](https://github.com/phodal/fe)以个人视角来看前端领域的各种技术。整个系列的文章大概有 15 篇左右，从我是如何成为一个前端工程师，到各种前端框架的知识。
+- [前端拓展文档](https://github.com/JQChan/Coding-Guide) 工具,笔记和资源
+- [设计师资源大全](https://github.com/jobbole/awesome-design-cn) 包含：ICON图标、Logo设计、PhotoShop插件、交互设计工具、流程图、线框图/原型图、设计博客等
+- [Mars](https://github.com/java-frame/Mars) 腾讯移动Web前端知识库,规范,mobile,手脚架
 
 <H3>在线手册</H3>
 <li> <A HREF="http://www.w3school.com.cn/jsref/">JavaScript 参考手册</A></li>

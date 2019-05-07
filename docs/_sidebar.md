@@ -14,10 +14,10 @@
    * [ 使用冷熊简历模板写简历](books/10.resume/resume-template.md)
 * enjoy 
    * [ 使用easyopen 搭建开放平台](books/enjoy/easyopen.md)
-* font 
-   * [前端学习资源](books/font/font_learn.md)
-   * [vue 系列](books/font/vue_learn.md)
-   * [公众平台-小程序等](books/font/weixin.md)
+* front 
+   * [前端学习资源](books/front/front_learn.md)
+   * [vue 系列](books/front/vue_learn.md)
+   * [公众平台-小程序等](books/front/weixin.md)
 * java 
    * [ java学习路线图](books/java/1.route.md)
    * [api-手册](books/java/api_reference.md)
@@ -27,7 +27,7 @@
    * [ java 常用工具类](books/java/tool.md)
 * learn 
    * [awesome系列](books/learn/awesome.md)
-   * [学习资源](books/learn/learn.md)
+   * [系列教程 社区 大牛](books/learn/learn.md)
    * [源码阅读与学习](books/learn/sourcecode.md)
 * linux 
    * [ linux 学习资源](books/linux/1.linux.md)
