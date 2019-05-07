@@ -1,5 +1,8 @@
 <H3>前端学习资源</H3>
 
+## 总结
+* [bootstrap ](http://note.youdao.com/noteshare?id=27d9b6ed3ef4b21cb1d4673cbe830e2d)
+
 <H3>在线手册</H3>
 <li> <A HREF="http://www.w3school.com.cn/jsref/">JavaScript 参考手册</A></li>
 <li> <A HREF="http://javascript.ruanyifeng.com/#introduction">JavaScript 标准参考教程（alpha）</A></li>

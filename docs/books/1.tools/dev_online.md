@@ -4,6 +4,11 @@
 <li> <A HREF="http://tool.lu/coderunner/">代码在线运行 - 在线工具</A></li>
 <li> <A HREF="http://www.imooc.com/article/1103">10个最好用的在线编译工具_慕课手记</A></li>
 
+## 开发试验室
+   * <A HREF="https://www.qcloud.com/developer/labs?fromSource=gwzcw.235801.235801.235801">开发者实验室 - 腾讯云</A>
+   * <A HREF="http://www.runoob.com/w3cnote/runoob-docker.html">菜鸟教程+Docker全线支持在线编译运行 | 菜鸟教程</A>
+
+
 <H3>在线开发工具</H3>
 <li> <A HREF="http://tool.chinaz.com/Tools/time">时间转换 - 站长工具</A></li>
 <li> <A HREF="http://tool.lu/">在线工具 - 程序员的工具箱</A></li>

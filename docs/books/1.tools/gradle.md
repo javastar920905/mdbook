@@ -1,4 +1,5 @@
 # gradle 学习资源
+   - [Gradle In Action(Gradle实战) 的中文版](https://github.com/EZLippi/GradleInActionZh)
    * <A HREF="http://naotu.baidu.com/file/fbb2c156af52ab1b91b648fb6a168dc1">gradle - 百度脑图</A>
    * <A HREF="https://waylau.gitbooks.io/gradle-2-user-guide/Chapter%2007.%20Java%20Quickstart%20%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B%20Java.html">Chapter 07. Java Quickstart 快速开始 Java · Gradle 2 User Guide 《Gradle 2 用户指南》中文翻译</A>
    * <A HREF="http://note.youdao.com/share/?id=73943d1c6f1304d18e28c323cbbaacc1&type=note#/">理解gradle project 和自定义task</A>

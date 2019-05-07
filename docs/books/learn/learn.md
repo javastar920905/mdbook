@@ -1,5 +1,17 @@
 <H3>学习资源</H3>
 
+#### 前端全栈学习资源
+- [jstraining](https://github.com/java-frame/jstraining)全栈工程师培训材料  前端开发的历史和趋势 / React 技术栈 / Node 应用开发 / 前端工程简介 
+- [Mars](https://github.com/java-frame/Mars) 腾讯移动Web前端知识库,规范,mobile,手脚架
+- [前端拓展文档](https://github.com/JQChan/Coding-Guide) 工具,笔记和资源
+- [JQuerySource](https://github.com/songjinzhong/JQuerySource) jQuery 源码解读，v3.1.1
+- [JavaScript 资源大全中文版](https://github.com/jobbole/awesome-javascript-cn) 内容包括：包管理器、加载器、测试框架、运行器、QA、MVC框架和库、模板引擎等
+- [推荐前端技术书](https://github.com/jobbole/awesome-web-dev-books) 如果有人让你推荐前端技术书，请让他看这个列表
+- [CSS 资源大全中文版](https://github.com/jobbole/awesome-css-cn) 内容包括：CSS预处理器、框架、CSS结构、代码风格指南、命名习惯等等
+- [设计师资源大全](https://github.com/jobbole/awesome-design-cn) 包含：ICON图标、Logo设计、PhotoShop插件、交互设计工具、流程图、线框图/原型图、设计博客等
+- [《我的职业是前端工程师》](https://github.com/phodal/fe)以个人视角来看前端领域的各种技术。整个系列的文章大概有 15 篇左右，从我是如何成为一个前端工程师，到各种前端框架的知识。
+
+
 <H3>编程学习平台</H3>
 <li> <A HREF="http://www.devstore.cn/essay/essayInfo/8289.html">自学编程的 6 个技巧总结_文章_DevStore</A></li>
 <li> <A HREF="http://www.hubwiz.com/course/">课程中心 - 汇智网</A></li>
@@ -44,10 +56,7 @@
 <li> <A HREF="http://www.open-open.com/">Java开源大全</A></li>
 <li> <A HREF="http://www.open-open.com/lib/tag/Java">Java - OPEN开发经验库</A></li>
 
-<H3>源码分析系列</H3>
-<li> <A HREF="https://github.com/develop-template/Spring">Spring: Spring源码阅读</A></li>
-<li> <A HREF="https://github.com/seaswalker">大牛源码阅读笔记</A></li>
-<li> <A HREF="https://github.com/develop-template/Spring">Spring: Spring源码阅读</A></li>
+
 
 <H3>全栈</H3>
 <li> <A HREF="https://github.com/ruanyf/jstraining">ruanyf/jstraining: 全栈工程师培训材料</A></li>

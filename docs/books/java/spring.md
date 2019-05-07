@@ -5,9 +5,21 @@
 * [spring学习案例](https://github.com/javastar920905/spring-learning)(需要重新更新了)
 * [java-frame 组织](https://github.com/java-frame)
 
-## spring常用文档-ssm参考手册
+## 手脚架项目
+- [基于Spring Boot & MyBatis的种子项目](https://github.com/java-frame/spring-boot-api-project-seed) spring boot +mybatis 手脚架项目,简单易用
+- [基于mybatis plus](https://github.com/java-frame/mybatisplus-boot-starter) spring boot +mybatis plus 手脚架项目
+- [我的 springmybatis](https://github.com/javastar920905/springmybatis) spring mvc+mabatis based on gradle! 单体应用,同时也是ssm-repository的基础版
+- [ssm-repository](https://github.com/javastar920905/ssm-repository) 这是spring mvc+mybatis的手脚架项目 使用motan 作为rpc框架
 
+
+## spring常用文档-ssm参考手册
+- [spring-mybatis 学习笔记](https://github.com/brianway/springmvc-mybatis-learning) 基本环境搭建,使用性强,适合入门学习
+- [MyBatis 相关工具](http://www.mybatis.tk/)分页插件 PageHelper,通用 Mapper, MyBatis 从入门到精通
+- [SpringForAll](https://github.com/SpringForAll) spring 系列的中文翻译文
+- [follow 大牛学源码](https://github.com/seaswalker) spring/jdk/tomcat 源码学习笔记
+- [redis实现排行榜](https://github.com/zhonglinlin1305/spring-projects)spring 集成redis，spring mvc实现session共享以及 redis排行榜
 * spring
+   - [https://start.spring.io/](https://start.spring.io/) 方便在线生成springboot项目
    * <A HREF="http://projects.spring.io/spring-framework/">Spring Framework</A>
    * <A HREF="http://baike.haosou.com/doc/6841943-7059231.html">spring框架_好搜百科</A>
    * <A HREF="http://developer.51cto.com/art/201006/205212.htm">多图详解Spring框架的设计理念与设计模式(1) - 51CTO.COM</A>

@@ -20,3 +20,5 @@
 <li> <A HREF="http://www.chongbuluo.com/">虫部落 — 让搜索更简单</A></li>
 <li> <A HREF="http://vdisk.weibo.com/share/hot">找资源 - 微盘</A></li>
 <li> <A HREF="http://so.csdn.net/so/search/s.do?q=%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9A%94%E7%A6%BB%E6%B5%8B%E8%AF%95&t=null&o=null&s=null&l=null">数据库隔离测试 - CSDN搜索</A></li>
+
+- [集思会|kindle图书推送](http://www.kindlepush.com/main) 每天可以免费下载一本,推送2本书

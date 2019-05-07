@@ -15,3 +15,6 @@
 <li> <A HREF="http://www.bejson.com/knownjson/webInterface/">JSON API免费接口-BeJSON.com</A></li>
 <li> <A HREF="http://www.bejson.com/soft/">常用软件下载-BeJSON.com</A></li>
 <li> <A HREF="https://cloud.tencent.com/document/product/436/12263">接口文档 - 对象存储 - 文档首页 - 腾讯云文档平台 - 腾讯云</A></li>
+
+## 
+* [第三方登录 demo](http://note.youdao.com/noteshare?id=16f158d49e1b31996f725583f952f718)
