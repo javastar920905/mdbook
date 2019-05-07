@@ -9,11 +9,11 @@
 /*}*/
 
 .night {
-    top:-30%;
-    left: 70%;
+    top:-25%;
+    right: 0px;
     /*background: black;*/
   position: absolute;
-  width: 50%;
+  width: 90%;
   height: 100%;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);

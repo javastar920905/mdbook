@@ -16,7 +16,9 @@
   <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/dolphin.css"> -->
   <!-- Theme: Simple (latest v0.x.x) -->
   <!-- docsify-themeable 一个用于docsify的，简单到令人愉悦的主题系统. -->
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+    <!--流星雨样式-->
 <link rel="stylesheet" href="css/style.css">
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
 
@@ -51,6 +53,9 @@
   </script>
 </head>
 <body>
+<style type="text/css">
+    body{overflow: hidden}
+</style>
 <div class="night">
   <div class="shooting_star"></div>
   <div class="shooting_star"></div>
@@ -75,10 +80,14 @@
 </div>
 
 
-  <div id="app">加载中...</div>
+<div id="app">加载中...</div>
 
 
-<div id="gitalk-container"></div>
+<div id="gittalk" style="width: 65%;float: right; text-align: center">
+  <div id="gitalk-container" style="padding:0px;margin: 0px;" ></div>
+</div>
+
+
 
 <!--允许在github上面编辑-->
 <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
@@ -123,7 +132,6 @@
   <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
 
   <!--Gitalk 评论插件 https://github.com/gitalk/gitalk/blob/master/readme-cn.md-->
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
@@ -136,7 +144,16 @@
         distractionFreeMode: false  // Facebook-like distraction free mode
     })
 
-    gitalk.render('gitalk-container')
+    gitalk.render('gitalk-container');
+
+    // //留言区跟随滚动条
+    // window.onscroll = function () {
+    //     var gittalk = document.getElementById("gittalk");
+    //     gittalk.style.top =20;
+    //     console.log(gittalk.style.top)
+    //
+    // }
 </script>
+
 </body>
 </html>
