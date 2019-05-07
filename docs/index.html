@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
 <link rel="stylesheet" href="css/style.css">
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
+
   <script>
     if (window.location.href.indexOf("localhost")>=0) {
         console.log("本地访问量  不计入到百度统计");
@@ -72,12 +73,15 @@
   <div class="shooting_star"></div>
   <div class="shooting_star"></div>
 </div>
-  <div id="gitalk-container"></div>
+
 
   <div id="app">加载中...</div>
 
 
+<div id="gitalk-container"></div>
 
+<!--允许在github上面编辑-->
+<script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
   <script>
       <!--docsify参考文档 https://docsify.js.org/#/zh-cn/configuration-->
 
@@ -100,23 +104,11 @@
           readyTransition : true, // default
           responsiveTables: true,  // default
       },
-      // plugins: [
-      //     EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","")
-      // ]
+      plugins: [
+          EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","")
+      ]
     }
 
-
-      var gitalk = new Gitalk({
-          clientID: '8f7de33db9ae15e2b269',
-          clientSecret: '1397a623e8c724515e23a123cee207eb8d259766',
-          repo: 'https://github.com/javastar920905/mdbook',
-          owner: 'javastar920905',
-          admin: ['javastar920905'],
-          id: location.pathname,      // Ensure uniqueness and length less than 50
-          distractionFreeMode: false  // Facebook-like distraction free mode
-      })
-
-      gitalk.render('gitalk-container')
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <!--提供本地搜索插件  基于localstorage-->
@@ -129,10 +121,22 @@
   <script src="//unpkg.com/docsify-copy-code"></script>
   <!--如果文档里的 script 是内联脚本，可以直接执行；而如果是外链脚本（即 js 文件内容由 src 属性引入），则需要使用此插件。-->
   <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
-  <!--允许在github上面编辑-->
-  <!--<script src="//unpkg.com/docsify-edit-on-github/index.js"></script>-->
+
   <!--Gitalk 评论插件 https://github.com/gitalk/gitalk/blob/master/readme-cn.md-->
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '8f7de33db9ae15e2b269',
+        clientSecret: '1397a623e8c724515e23a123cee207eb8d259766',
+        repo: 'https://github.com/javastar920905/mdbook',
+        owner: 'javastar920905',
+        admin: ['javastar920905'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
 </body>
 </html>
