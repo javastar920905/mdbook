@@ -55,6 +55,7 @@
 <body>
 <style type="text/css">
     body{overflow: hidden}
+    .app-nav h1{display: none}
 </style>
 <div class="night">
   <div class="shooting_star"></div>
@@ -99,33 +100,54 @@
 
     window.$docsify = {
       //autoHeader: true,
+        onlyCover: false,
+        externalLinkTarget: '_blank', // default: '_blank'
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
       search: 'auto', // 默认值
       name: 'markdown 文档系统',
       notFoundPage: true,
       el: '#app',
-      //loadNavbar: '_sidebar.md',
+      coverpage: {'/':'_coverpage.md'},
+      loadNavbar: '_sidebar.md',
       loadSidebar: '_sidebar.md',
+       // subMaxLevel: 1,
+      alias: {
+          '/.*/_sidebar.md': '/_sidebar.md'
+      },
       auto2top: true,
       logo: '/_media/logo.png',
       repo: 'https://github.com/javastar920905/mdbook',
-      coverpage: {'/':'_coverpage.md'},
       themeable: {
           readyTransition : true, // default
           responsiveTables: true,  // default
       },
       plugins: [
-          EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","")
-      ]
+          EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","在线编辑")
+      ],
+      copyCode: {
+          buttonText : '点击复制',
+          errorText  : '错误',
+          successText: '复制成功'
+      },
+      tabs: {
+          persist    : true,      // default
+          sync       : true,      // default
+          theme      : 'classic', // default
+          tabComments: true,      // default
+          tabHeadings: true       // default
+      }
     }
 
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<!--导航表情插件-->
+<script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
   <!--提供本地搜索插件  基于localstorage-->
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <!-- docsify-themeable (latest v0.x.x) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
-  <!--鼠标跟随样式  需要js 和images目录-->
-  <script type="text/javascript" src="js/mymouse.js" id="mymouse"></script>
+  <!--&lt;!&ndash;鼠标跟随样式  需要js 和images目录&ndash;&gt; 会导致头部导航栏 点击不了-->
+  <!--<script type="text/javascript" src="js/mymouse.js" id="mymouse"></script>-->
   <!--代码块添加复制按钮-->
   <script src="//unpkg.com/docsify-copy-code"></script>
   <!--如果文档里的 script 是内联脚本，可以直接执行；而如果是外链脚本（即 js 文件内容由 src 属性引入），则需要使用此插件。-->
@@ -133,6 +155,10 @@
 
   <!--Gitalk 评论插件 https://github.com/gitalk/gitalk/blob/master/readme-cn.md-->
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<!--tabs 插件 https://jhildenbiddle.github.io/docsify-tabs/#/-->
+<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
+
 <script>
     var gitalk = new Gitalk({
         clientID: '8f7de33db9ae15e2b269',
