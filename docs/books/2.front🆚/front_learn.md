@@ -193,7 +193,10 @@
 <li> <A HREF="http://www.jq22.com/jquery-info2534">turn.js实现翻书效果</A></li>
 <li> <A HREF="http://www.turnjs.com/">Turn.js: The page flip effect in HTML5</A></li>
 
-
+## 时光轴特效 
+* [css3实现的一款漂亮时间轴时光轴历史记录发展历程展示插件](http://www.xwcms.net/js/css3sl/57709.html)
+* [CSS- 横向和纵向时间轴](https://blog.csdn.net/inuyasha1121/article/details/78889333)
+* [纯CSS时间轴实现带注释](https://blog.csdn.net/zhang_red/article/details/44562547)
 <H3>兼容性测试</H3>
 <li> <A HREF="http://dada-fangfang.iteye.com/blog/811749">JS浏览器兼容性问题 - - ITeye技术网站</A></li>
 <li> <A HREF="http://www.jb51.net/article/21483.htm">Javascript 多浏览器兼容性问题及解决方案_javascript技巧_脚本之家</A></li>
@@ -210,7 +213,6 @@
 <li> <A HREF="http://www.xuexi111.com/">学习资料库，免费共享各类学习资料，学习资料免费下载</A></li>
 <li> <A HREF="http://down.alixixi.com/">源码下载,网站源码_网站源码下载,包含asp源码,php源码,.net源码以及开发软件等后台开发资源下载</A></li>
 <li> <A HREF="http://js.mobanwang.com/special/plugins/">JS插件网页特效下载_模板王</A></li>
-<li> <A HREF="http://www.w3cplus.com/lessons.html">前端课程 | css3学习-css3教程-css3动画-css3实例 | W3CPlus</A></li>
 
 
 #### ** ui 框架_ **

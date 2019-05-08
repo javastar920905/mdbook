@@ -33,8 +33,10 @@
    * [常用搜索工具](books/5.tools🔧/search_tools.md)
 * enjoy😘 
    * [ 闲来无事读读书](books/enjoy😘/1.reading.md)
-   * [ 佛祖保佑banner.txt](books/enjoy😘/banner.md)
+   * [ 佛祖保佑 banner.txt](books/enjoy😘/banner.md)
    * [ 使用easyopen 搭建开放平台](books/enjoy😘/easyopen.md)
    * [ 开源建站 博客/cms/oa/](books/enjoy😘/site.md)
 * resume 
    * [ 使用冷熊简历模板写简历](books/resume/resume-template.md)
+
+* <a href="timeline.html" target="_self">timeline</a>

@@ -18,7 +18,7 @@ public class SidebarTest {
     //支持二级目录,多级目录自动变成二级目录显示
     static String format = "   * [%s](%s/%s)\r\n";
     static String parent_format = "* %s \r\n";
-    static String sidebar_format = "# [java 开发手册](README.md)\r\n%s";
+    static String sidebar_format = "# [java 开发手册](README.md)\r\n%s\r\n* <a href=\"timeline.html\" target=\"_self\">timeline</a>";
 
 
     @Test

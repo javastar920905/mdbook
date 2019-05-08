@@ -56,6 +56,8 @@
 <style type="text/css">
     body{overflow: hidden}
     .app-nav h1{display: none}
+    .app-name {margin: 0px;padding: 0px}
+    .app-name img{height: 150px;}
 </style>
 <div class="night">
   <div class="shooting_star"></div>
@@ -98,6 +100,14 @@
     //禁用底部滚动条 document.documentElement.style.overflowY = 'hidden';
     document.documentElement.style.overflowX = 'hidden';
 
+    var pluginVar= [
+        EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","在线编辑")
+    ]
+      //时光轴页面不显示 在线编辑按钮
+    if (window.location.href.indexOf("timeline.html")>=0) {
+        pluginVar=[];
+    }
+
     window.$docsify = {
       //autoHeader: true,
         onlyCover: false,
@@ -121,9 +131,7 @@
           readyTransition : true, // default
           responsiveTables: true,  // default
       },
-      plugins: [
-          EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","在线编辑")
-      ],
+      plugins: pluginVar,
       copyCode: {
           buttonText : '点击复制',
           errorText  : '错误',
@@ -146,8 +154,6 @@
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <!-- docsify-themeable (latest v0.x.x) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
-  <!--&lt;!&ndash;鼠标跟随样式  需要js 和images目录&ndash;&gt; 会导致头部导航栏 点击不了-->
-  <!--<script type="text/javascript" src="js/mymouse.js" id="mymouse"></script>-->
   <!--代码块添加复制按钮-->
   <script src="//unpkg.com/docsify-copy-code"></script>
   <!--如果文档里的 script 是内联脚本，可以直接执行；而如果是外链脚本（即 js 文件内容由 src 属性引入），则需要使用此插件。-->
@@ -160,17 +166,22 @@
 
 
 <script>
-    var gitalk = new Gitalk({
-        clientID: '8f7de33db9ae15e2b269',
-        clientSecret: '1397a623e8c724515e23a123cee207eb8d259766',
-        repo: 'mdbook',
-        owner: 'javastar920905',
-        admin: ['javastar920905'],
-        id: location.pathname,      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    })
+    if (window.location.href.indexOf("timeline.html")>=0) {
+       console.log("时光轴页面不显示 评论区")
+    }else {
+        var gitalk = new Gitalk({
+            clientID: '8f7de33db9ae15e2b269',
+            clientSecret: '1397a623e8c724515e23a123cee207eb8d259766',
+            repo: 'mdbook',
+            owner: 'javastar920905',
+            admin: ['javastar920905'],
+            id: location.pathname,      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
 
-    gitalk.render('gitalk-container');
+        gitalk.render('gitalk-container');
+    }
+
 
     // //留言区跟随滚动条
     // window.onscroll = function () {
