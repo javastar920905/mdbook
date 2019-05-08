@@ -1,25 +1,37 @@
-# java 常用工具类
-* [java 常用代码块总结 有道云笔记](http://note.youdao.com/noteshare?id=a51664c9ee15fb78cd8bac1232affc09)
+## java 常用工具类
 * [hutool-java开发工具包 ](https://hutool.cn/docs/#/)
 * [strman- java 字符串处理 ](https://github.com/javastar920905/strman-java)
+* [fastjson](http://note.youdao.com/noteshare?id=b27742b2c7d8e95808b2027b30c62ba6) 需要注意空字段,序列化器问题
 * [wkhtmltoimage html转pdf和图片](http://note.youdao.com/noteshare?id=759c47d1c7c293388dc88191815e24a5&sub=BB2A7B21E85C45EAAF746A28262B3A56)
 * [highcharts 报表](http://note.youdao.com/noteshare?id=6a4ed91c4184d81187b2f9625e71e129)
 * [使用node js 生成docx文档](https://docx.js.org/#/)
 * <A HREF="http://commons.apache.org/">Apache Commons – Apache Commons</A>
 
-# 开源框架
+
+## 开源框架
 * [分布式任务调度平台XXL-JOB](https://github.com/javastar920905/xxl-job)
 * [优客服--接入](http://note.youdao.com/noteshare?id=ef8d913b00c106c63ce18fe009e16651&sub=0875E347023347A7A685A45166B0219C) 多渠道融合的客户支持服务平台，包含WebIM，微信，电话，邮件，短信等接入渠道、智能机器人
 
-# 文档
+## 常见功能实现总结
+* [java 常用代码块总结 有道云笔记](http://note.youdao.com/noteshare?id=a51664c9ee15fb78cd8bac1232affc09)
+* redis
+    * [spring cache使用总结 有道云笔记](http://note.youdao.com/noteshare?id=f72966340d8586a91fc10b665de28e17)
+    * [redis 发布订阅实现简单消息通知](http://note.youdao.com/noteshare?id=6d10705832dfd2238afbc6d297037418&sub=24BD2687A27041259886ECE09876EA71)
+    * [redis 实现分布式锁 ](http://note.youdao.com/noteshare?id=faad041d579e127ad8b2d6dc62c32d9b&sub=35080C6DA92A4198ACCB581A5A6D142B)
+* [httpclient 入门使用](http://note.youdao.com/noteshare?id=80519956924294a53c49dbff5e96a148)
+* [验证码生成和破解](http://note.youdao.com/noteshare?id=33f50ca85871c64076f2e77c508e1041)
+* [java 注解学习](http://note.youdao.com/noteshare?id=4db0517d7ad6ba800d1a486bbd1b21fa)
+* [xml 格式数据操作](http://note.youdao.com/noteshare?id=ffe640691c076b412464b3eff522734f)
+
+## 文档
 * [Java学习+面试指南 涵盖大部分Java程序员所需要掌握的核心知识](https://github.com/javastar920905/JavaGuide)
 
 
-# 开源博客/cms/oa/
+## 开源博客/cms/oa/
 * [如何创建一个开源项目?](http://note.youdao.com/noteshare?id=da767f9d87d0609a0ae54711ce12a017&sub=71BF063AB1ED4BB084876E6AF2141B62)
 * [版本号命名规则](http://note.youdao.com/noteshare?id=80200fc14f0655e680eac3b338e18d7e&sub=6179F2B20E334BA59BE31A86C66D1193)
 
-# 开源建站
+## 开源建站
 * [个人建站需要哪些准备](http://note.youdao.com/noteshare?id=bd97285d480a32c2f13487109bc36101&sub=3753245B841A47E8B1C6C56BDA739FCF)
     * 网站域名和空间 (个人可以使用github pages)
     * 域名备案,https 证书配置 (个人可省略)
@@ -32,11 +44,11 @@
 * [使用 wordpress 建站 ](http://note.youdao.com/noteshare?id=9006452e0e69a4046488153996086a29)
 * [GitHub加hexo搭建博客教程]()
 
-# 云服务和cdn
+## 云服务和cdn
 * [七牛云存储 ](http://note.youdao.com/noteshare?id=f1e0cc7b61c40af86783fa2f8382b431&sub=AB56704307A84F21A9E0379A276E0515)
 
 
-## sdk查找
+### sdk查找
 * [GVP 码云最有价值开源项目](https://gitee.com/gvp)
 - [hellogithub](https://hellogithub.com/)  分享 GitHub 上有趣、入门级的开源项目
 - [open_source_team](https://github.com/niezhiyang/open_source_team) 国内顶尖团队的开源地址
@@ -47,7 +59,7 @@
 - [processon 脑图资源](https://www.processon.com/mindmap/596083b6e4b0a77c5aeb998d)
 - [我的有道云笔记汇总大全](https://note.youdao.com/share/?id=bd5f95a1a22de561c3fcaef99b501d5c&type=note#/)
 
-#### 推荐sdk/api
+### 推荐sdk/api
 - [常用java库一览](http://www.importnew.com/7530.html) java sdk,Apache Commons Lang,Google Guava
 - [Hutool](http://www.hutool.cn/) Hutool是一个Java工具包，也只是一个工具包
 - [怒学Java8系列一:Lambda表达式](http://www.cnblogs.com/WJ5888/p/4618465.html)
@@ -57,7 +69,7 @@
 - [flyway](https://flywaydb.org/getstarted/)
                      
 
-## 工具语言排行榜
+### 工具语言排行榜
 - [github java项目排行](https://github.com/search?l=Java&p=1&q=stars%3A%3E1&s=stars&type=Repositories)
 - [程序语言热门程度排行榜TIOBE Index](http://www.tiobe.com/tiobe-index/)
 - [Google 趋势](https://trends.google.com/trends/) 需要vpn
@@ -65,11 +77,11 @@
 - [Android百大框架排行榜](https://github.com/ShaunSheep/Android_100_TOP-Projects)okhttp,zxing,fastjson
 
                                          
-## 需登录-个人查看备用
+### 需登录-个人查看备用
 - [开发工具汇总](https://note.youdao.com/web/#/file/F89600FF807141A29FF87898C70ED4D7/note/1A6714B94077480694F461399147B4F5/)
 
 
-## [github上如何查找优秀项目](https://blog.csdn.net/swj524152416/article/details/52984752) 
+### [github上如何查找优秀项目](https://blog.csdn.net/swj524152416/article/details/52984752) 
     以前都不知道,如何在github上找项目,发现一个算一个,直到看了上面文章才发现-awesome 系列,让我跳过了找资源的步骤,直接进入学习的步骤(也许是收集癖)
 - [主页时间线功能](https://github.com/) GitHub 主页有一个类似微博的时间线功能，所有你关注的人的动作，比如 star、fork 了某个项目都会出现在你的时间线上
 - [Trending](https://github.com/trending) 适合主动找项目
@@ -128,3 +140,16 @@
 <li> <A HREF="http://www.soku.com/search_playlist/type_tag_q_Java">Java 搜库-专找视频</A></li>
 <li> <A HREF="http://www.jikexueyuan.com/course/java/">Java开发基础入门到精通与实战视频教程_极客学院</A></li>
 <li> <A HREF="http://v.youku.com/v_show/id_XMjEwMzE2OTQ4.html?from=y1.2-3-87.3.7-1.1-4-1-6">java视频2—在线播放—优酷网，视频高清在线观看</A></li>
+
+
+<H3>web推送</H3>
+<li> <A HREF="http://www.workerman.net/web-sender">WEB推送 | 一个WEB消息推送框架，基于WebSocket</A></li>
+<li> <A HREF="http://www.open-open.com/lib/view/open1369879831690.html">JavaWEB应用的消息推送功能：comet4j - OPEN 开发经验库</A></li>
+<li> <A HREF="http://bbs.wex5.com/thread-55664-1-1.html">X5集成ActiveMQ+WebSocket实现消息推送 - 业务模型 - 起步软件技术论坛 - Powered by Discuz!</A></li>
+<li> <A HREF="https://my.oschina.net/yongqingfan/blog/535749">java中如何把后台数据推送到页面上 - Mainchin - 开源中国社区</A></li>
+<li> <A HREF="https://segmentfault.com/a/1190000000665676">Worktile中的实时消息推送服务实现 - Worktile - SegmentFault</A></li>
+<li> <A HREF="http://blog.itpub.net/28624388/viewspace-1815701/">Spring 4 + Websocket + Stomp + ActimeMQ 实现消息推送-百联达-ITPUB博客</A></li>
+<li> <A HREF="http://blog.csdn.net/shadowsick/article/details/9014139">comet4j java服务端推送消息到web页面实例 - shadowsick的专栏 - 博客频道 - CSDN.NET</A></li>
+<li> <A HREF="http://niuzk0411.blogchina.com/1258422.html">java 消息推送的比较-niuky的专栏 - 博客中国</A></li>
+<li> <A HREF="http://blog.csdn.net/shimiso/article/details/8151362">Web端服务器推送技术原理分析及dwr框架简单的使用 - 观千剑而后识器，操千曲而后晓声。 - 博客频道 - CSDN.NET</A></li>
+<li> <A HREF="http://www.oschina.net/question/2467836_2147525">请问java有什么框架可以实现服务端向客户端推送消息 - 开源中国社区</A></li>
