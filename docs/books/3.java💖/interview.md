@@ -5,9 +5,6 @@
    * <A HREF="http://i.51job.com/resume/standard_resume.php?lang=c&resumeid=357477413&ckry57t2u2#Career">人才招聘求职网-前程无忧 | 51job 简历分析</A>
 
 ## 面试题集
-* 前端
-   * <A HREF="https://github.com/InterviewMap/CS-Interview-Knowledge-Map">前端、计算机网络、算法、数据结构面试图谱</A>
-
 * java基础_集合_面试题
    * <A HREF="http://blog.csdn.net/jackfrued/article/details/44921941">Java面试题全集（上） - 骆昊的技术专栏 - CSDN博客</A>
    * <A HREF="http://blog.csdn.net/t4i2b10x4c22nf6a/article/details/78707742">Java 面试题：百度前200页都在这里了 - CSDN博客</A>
@@ -40,6 +37,9 @@
    * <A HREF="http://www.maiziedu.com/course/696-10240/">WEB项目测试备战视频教程-web测试项目实战-麦子学院</A>
    * <A HREF="http://www.tingkeshi.com/ruanjianceshi/webceshi/3/530.html">★WEB测试零基础入门教程-听课室</A>
    * <A HREF="http://wenku.baidu.com/view/3a1c392d915f804d2b16c1e1.html">WEB测试教程_百度文库</A>
+   
+* 前端
+   * <A HREF="https://github.com/InterviewMap/CS-Interview-Knowledge-Map">前端、计算机网络、算法、数据结构面试图谱</A>
 
 ## 程序员的发展规划
   * [2014年程序员的工资有多高？你是否该跳槽了！](https://www.runoob.com/w3cnote/2014-programmer-salary.html)
@@ -77,3 +77,5 @@
 * <A HREF="https://www.toutiao.com/a6502184098356789774/?tt_from=android_share&utm_campaign=client_share&timestamp=1514481564&app=news_article&iid=20417448074&utm_medium=toutiao_android">开源软件技术对电信运营商的影响</A>
 * <A HREF="https://www.toutiao.com/a6478468459431723534/?tt_from=android_share&utm_campaign=client_share&timestamp=1514481631&app=news_article&iid=20417448074&utm_medium=toutiao_android">放弃Dubbo，选择最流行的Spring Cloud微服务架构实践与经验总结</A>
     
+
+

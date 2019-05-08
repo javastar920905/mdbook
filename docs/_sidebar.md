@@ -9,11 +9,12 @@
    * [公众平台-小程序等](books/2.front🆚/weixin.md)
 * 3.java💖 
    * [ java学习路线图](books/3.java💖/1.route.md)
+   * [ spring boot 系列](books/3.java💖/2.spring.md)
+   * [ java 常用工具类](books/3.java💖/3.tool.md)
    * [api-手册](books/3.java💖/api_reference.md)
+   * [ java 面试题](books/3.java💖/interview.md)
    * [ 微服务学习](books/3.java💖/microserver.md)
    * [ java 网络爬虫系列](books/3.java💖/spider.md)
-   * [ spring boot 系列](books/3.java💖/spring.md)
-   * [ java 常用工具类](books/3.java💖/tool.md)
 * 4.linux☠ 
    * [ linux 学习资源](books/4.linux☠/1.linux.md)
    * [ linux运维](books/4.linux☠/2.maintain.md)
@@ -32,6 +33,6 @@
 * enjoy😘 
    * [ 闲来无事读读书](books/enjoy😘/1.reading.md)
    * [ 使用easyopen 搭建开放平台](books/enjoy😘/easyopen.md)
+   * [ 开源建站 博客/cms/oa/](books/enjoy😘/site.md)
 * resume 
-   * [ java 面试题](books/resume/interview.md)
    * [ 使用冷熊简历模板写简历](books/resume/resume-template.md)
