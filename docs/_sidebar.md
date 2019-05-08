@@ -28,10 +28,12 @@
    * [ git 教程](books/5.tools🔧/git_init.md)
    * [ gradle 学习资源](books/5.tools🔧/gradle.md)
    * [ idea 等开发工具教程](books/5.tools🔧/idea.md)
+   * [ maven 构建工具](books/5.tools🔧/maven.md)
    * [正则表达式验证工具](books/5.tools🔧/regx.md)
    * [常用搜索工具](books/5.tools🔧/search_tools.md)
 * enjoy😘 
    * [ 闲来无事读读书](books/enjoy😘/1.reading.md)
+   * [ 佛祖保佑banner.txt](books/enjoy😘/banner.md)
    * [ 使用easyopen 搭建开放平台](books/enjoy😘/easyopen.md)
    * [ 开源建站 博客/cms/oa/](books/enjoy😘/site.md)
 * resume 
