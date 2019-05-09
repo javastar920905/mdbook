@@ -45,9 +45,10 @@
   git remote add origin https://git.dev.tencent.com/javastar920905/mdbook.git
   git push -u origin master
     
-  git remote set-url --add origin https://github.com/javastar920905/mdbook.git 
-  git remote set-url --add origin https://git.dev.tencent.com/javastar920905/mdbook.git
+  // 添加多个push地址
+  git remote set-url --add --push origin https://github.com/javastar920905/mdbook.git 
   git remote set-url --add --push origin https://git.dev.tencent.com/javastar920905/mdbook.git
+  
   git remote -v
   可以进入.git/config发现origin下新加入了这个远程仓库的url
   git push origin就可以全部push到所有仓库 但是git pull 会出问题,只会pull第一个url的,
