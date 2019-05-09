@@ -39,4 +39,4 @@
 * resume 
    * [ 使用冷熊简历模板写简历](books/resume/resume-template.md)
 
-* <a href="timeline.html" target="_self">timeline</a>
+* <a href="timeline.html" target="_blank">timeline</a>

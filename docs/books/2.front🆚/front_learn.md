@@ -12,6 +12,8 @@
 
 
 ## 前端学习资源
+- [nodejs](https://www.runoob.com/nodejs/nodejs-install-setup.html)
+- [cnpm](http://npm.taobao.org/) 淘宝 NPM 镜像
 - [JavaScript 资源大全中文版](https://github.com/jobbole/awesome-javascript-cn)包括：包管理器、加载器、测试框架、QA、MVC框架等
 - <A HREF="http://wiki.jikexueyuan.com/list/front-end/">前端开发入门基础教程_前端开发开发学习书籍-极客学院Wiki</A>
 - <A HREF="http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000">JavaScript教程 - 廖雪峰的官方网站</A>
