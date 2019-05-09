@@ -26,14 +26,23 @@
     if (window.location.href.indexOf("localhost")>=0) {
         console.log("本地访问量  不计入到百度统计");
     }else {
+        //统计coding 网页 http://javastar920905.coding.me/mdbook/docs
         var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?a96667099e1d56d65d14a6cf17543b09";
+            hm.src = "https://hm.baidu.com/hm.js?a39f4e8f52fa5936c51bd2880900559e";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
-        console.log("执行生成百度统计代码 ok");
+
+        // var _hmt = _hmt || [];
+        // (function() {
+        //     var hm = document.createElement("script");
+        //     hm.src = "https://hm.baidu.com/hm.js?a96667099e1d56d65d14a6cf17543b09";
+        //     var s = document.getElementsByTagName("script")[0];
+        //     s.parentNode.insertBefore(hm, s);
+        // })();
+        console.log("执行生成百度统计代码 ok  http://javastar920905.coding.me/mdbook/docs");
 
         (function(){
             var bp = document.createElement('script');
