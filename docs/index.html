@@ -127,7 +127,7 @@
         EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","在线编辑")
     ]
       //时光轴页面不显示 在线编辑按钮
-    if (window.location.href.indexOf("timeline.html")>=0) {
+    if ( window.screen.width<768||window.location.href.indexOf("timeline.html")>=0) {
         pluginVar=[];
     }
 
