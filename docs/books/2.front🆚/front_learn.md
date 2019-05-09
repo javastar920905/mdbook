@@ -176,7 +176,6 @@
 <li> <A HREF="http://www.divcss5.com/wenji/w415.shtml">溢出超出DIV边框的内容自动隐藏方法 - DIVCSS5</A></li>
 <li> <A HREF="http://www.wzsky.net/html/Website/CSS/112649.html">CSS3样式：box-shadow,border-radius和transition_CSS教程_设计前沿</A></li>
 <li> <A HREF="http://www.blueidea.com/tech/web/2009/6557.asp">必须知道的10个不常用HTML标签 - 网页制作 - 蓝色理想</A></li>
-<li> <A HREF="http://www.moke8.com/portal.php?mod=view&aid=2568&page=3">html标签特效代码大全 - 第3页 - DIV+CSS教程 - 魔客吧</A></li>
 <li> <A HREF="http://www.360doc.com/content/12/0627/16/59625_220777307.shtml">html网页的代码大全</A></li>
 <li> <A HREF="http://www.360doc.com/content/13/0612/01/1054361_292274342.shtml">html常用代码大全</A></li>
 <li> <A HREF="http://www.cnblogs.com/cziger/archive/2012/06/01/2530381.html">CSS教程:表格不被撑开的解决办法—css教程 - cziger - 博客园</A></li>
@@ -199,6 +198,14 @@
 * [css3实现的一款漂亮时间轴时光轴历史记录发展历程展示插件](http://www.xwcms.net/js/css3sl/57709.html)
 * [CSS- 横向和纵向时间轴](https://blog.csdn.net/inuyasha1121/article/details/78889333)
 * [纯CSS时间轴实现带注释](https://blog.csdn.net/zhang_red/article/details/44562547)
+
+## css 响应式
+* [响应式在线测试](https://c.runoob.com/codedemo/5371)
+* [CSS3 @media 查询](https://www.runoob.com/cssref/css3-pr-mediaquery.html)
+* [css 子选择器](https://www.runoob.com/cssref/css-selectors.html)
+* [响应式 web介绍](https://www.runoob.com/css/css-rwd-intro.html)
+* [CSS响应式：根据分辨率加载不同CSS的几个方法，亲测可用](http://www.cnblogs.com/mibear/p/8033115.html)
+
 <H3>兼容性测试</H3>
 <li> <A HREF="http://dada-fangfang.iteye.com/blog/811749">JS浏览器兼容性问题 - - ITeye技术网站</A></li>
 <li> <A HREF="http://www.jb51.net/article/21483.htm">Javascript 多浏览器兼容性问题及解决方案_javascript技巧_脚本之家</A></li>

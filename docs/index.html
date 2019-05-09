@@ -26,6 +26,16 @@
     if (window.location.href.indexOf("localhost")>=0) {
         console.log("本地访问量  不计入到百度统计");
     }else {
+        //统计coding 网页 http://javastar920905.coding.me/mdbook/docs
+        // var _hmt = _hmt || [];
+        // (function() {
+        //     var hm = document.createElement("script");
+        //     hm.src = "https://hm.baidu.com/hm.js?a39f4e8f52fa5936c51bd2880900559e";
+        //     var s = document.getElementsByTagName("script")[0];
+        //     s.parentNode.insertBefore(hm, s);
+        // })();
+        // console.log("执行生成百度统计代码 ok  http://javastar920905.coding.me/mdbook/docs");
+
         var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
@@ -33,7 +43,7 @@
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
-        console.log("执行生成百度统计代码 ok");
+        console.log("执行生成百度统计代码 ok  ");
 
         (function(){
             var bp = document.createElement('script');
@@ -55,9 +65,32 @@
 <body>
 <style type="text/css">
     body{overflow: hidden}
+    /*头部导航栏*/
+    /*.app-nav{width:768px;background: red;float: right;right: 0px;}*/
     .app-nav h1{display: none}
     .app-name {margin: 0px;padding: 0px}
     .app-name img{height: 150px;}
+
+
+    /*如果文档宽度小于等于 768 像素则修改背景颜色*/
+    @media screen and (max-width: 768px) {
+      .app-nav{display: none}
+      body {
+        background-color:snow;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      /*隐藏头部导航 第8个 以后的元素*/
+      .app-nav>ul>li:nth-child(8){display: none}
+      .app-nav>ul>li:nth-child(9){display: none}
+      .app-nav>ul>li:nth-child(10){display: none}
+      .app-nav>ul>li:nth-child(11){display: none}
+      .app-nav>ul>li:nth-child(12){display: none}
+      .app-nav>ul>li:nth-child(13){display: none}
+      body {
+        background-color:white;
+      }
+    }
 </style>
 <div class="night">
   <div class="shooting_star"></div>
@@ -104,7 +137,7 @@
         EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","在线编辑")
     ]
       //时光轴页面不显示 在线编辑按钮
-    if (window.location.href.indexOf("timeline.html")>=0) {
+    if ( window.screen.width<768||window.location.href.indexOf("timeline.html")>=0) {
         pluginVar=[];
     }
 
@@ -166,8 +199,11 @@
 
 
 <script>
+
     if (window.location.href.indexOf("timeline.html")>=0) {
        console.log("时光轴页面不显示 评论区")
+    }else if( window.screen.width<768){
+        console.log("屏幕小于 768 不再初始化git talk")
     }else {
         var gitalk = new Gitalk({
             clientID: '8f7de33db9ae15e2b269',
