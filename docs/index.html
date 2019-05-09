@@ -55,9 +55,20 @@
 <body>
 <style type="text/css">
     body{overflow: hidden}
+    /*头部导航栏*/
+    .app-nav{width:768px;}
     .app-nav h1{display: none}
     .app-name {margin: 0px;padding: 0px}
     .app-name img{height: 150px;}
+
+
+    /*如果文档宽度小于等于 768 像素则修改背景颜色*/
+    @media screen and (max-width: 768px) {
+      #gittalk,.app-nav{display: none}
+      body {
+        background-color:honeydew;
+      }
+    }
 </style>
 <div class="night">
   <div class="shooting_star"></div>
