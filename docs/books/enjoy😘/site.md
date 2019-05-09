@@ -1,7 +1,7 @@
 ## 开源建站 博客/cms/oa/
 * [个人建站需要哪些准备](http://note.youdao.com/noteshare?id=bd97285d480a32c2f13487109bc36101&sub=3753245B841A47E8B1C6C56BDA739FCF)
     * 网站域名和空间 (个人可以使用github pages)
-    * 域名备案,https 证书配置 (个人可省略)
+    * [域名备案,https 证书配置 (个人可省略)](http://note.youdao.com/noteshare?id=b8f2f42cc9fe9d8fe5dfe12bf2664692&sub=9B2A090066E945C691CC7B37F57190E3)
     * 制作建设
     * 测试发布 DNS托管
     * 维护推广
@@ -20,12 +20,16 @@
    * <A HREF="https://www.wpdaxue.com/tutorials/tips/">基础教程 | WordPress大学</A>
    * <A HREF="http://docs.ghostchina.com/zh/">Ghost使用指南 - Ghost中文文档</A>
    * <A HREF="https://my.ghost.org/account">ghost Account</A>
-   * <A HREF="http://47.93.226.209:8081/">ouzhx-wp – 又一个WordPress站点</A>
+
+## github pages 部署静态网页
+* [docsify_写文档demo_github pages 自定义域名](http://note.youdao.com/noteshare?id=b0ca41d567d3fb5eed648125119b3ad1&sub=DFBFB1BBA9A342FEB3F37F5D3FCCF185)
 * [GitHub加hexo搭建博客教程](http://note.youdao.com/noteshare?id=b47437906e1e2e44c794113c0eca7843&sub=BE762853AFDE458A963FD6D25B4ABB39)
 * [Github Pages如何被百度收录-解析到coding pages](http://note.youdao.com/noteshare?id=3e252ad6a1535939e4d559844c84c77e&sub=8A566630E77242909E30ABA05D090BC1)
+* [阿里云配置域名解析](https://free.aliyun.com/)
 
 ## 使用coding 管理任务
 > 需求构想 计划 开发 测试 发布交付 javabus
+
 * [coding 一站式 DevOps](https://coding.net/)
 * 个人版本
     * [云端开发环境 cloud studio](https://studio.dev.tencent.com/ws/blkpze)
@@ -36,7 +40,7 @@
         * 代码托管  merge request pages 服务
         * 文档管理 wiki 
     * git-push到多个远程仓库,github,coding(针对git的push添加多个源 )
-    * 部署服务地址 http://javastar920905.coding.me/mdbook/docs  http://www.javabus.cn/docs/#/
+    * 部署服务地址 http://javastar920905.coding.me/mdbook/docs (域名解析到了github 不要在解析了,直接拿这个网址给百度收录)
 ```
   git remote add origin https://git.dev.tencent.com/javastar920905/mdbook.git
   git push -u origin master
