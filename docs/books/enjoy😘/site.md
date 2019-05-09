@@ -28,14 +28,19 @@
 > 需求构想 计划 开发 测试 发布交付 javabus
 * [coding 一站式 DevOps](https://coding.net/)
 * 个人版本
+    * [云端开发环境 cloud studio](https://studio.dev.tencent.com/ws/blkpze)
     * [登录地址](https://dev.tencent.com/user)
     * [mdbook 项目主页](https://dev.tencent.com/u/javastar920905/p/mdbook)
         * 里程碑
         * 任务看板
         * 代码托管  merge request pages 服务
         * 文档管理 wiki 
-    * git 添加多个push 地址
+    * git-push到多个远程仓库,github,coding(针对git的push添加多个源 )
+    * 部署服务地址 http://javastar920905.coding.me/mdbook/docs  http://www.javabus.cn/docs/#/
 ```
+  git remote add origin https://git.dev.tencent.com/javastar920905/mdbook.git
+  git push -u origin master
+    
   git remote set-url --add origin https://github.com/javastar920905/mdbook.git 
   git remote set-url --add origin https://git.dev.tencent.com/javastar920905/mdbook.git
   git remote set-url --add --push origin https://git.dev.tencent.com/javastar920905/mdbook.git
@@ -45,7 +50,7 @@
 ```
         
 * 企业版本 javabus 
-    * [登录地址](https://javabus.coding.net)
+    * [demo 登录地址](https://javabus.coding.net)
     * 迭代  需求管理 任务管理  bug 管理  
     * 代码托管  持续集成 
     * 文档管理 wiki  文件 

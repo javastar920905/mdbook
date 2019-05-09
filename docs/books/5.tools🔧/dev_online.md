@@ -5,6 +5,7 @@
 <li> <A HREF="http://www.imooc.com/article/1103">10个最好用的在线编译工具_慕课手记</A></li>
 
 ## 开发试验室
+   * [cloud studio 云端开发环境](https://studio.dev.tencent.com/intro)
    * <A HREF="https://www.qcloud.com/developer/labs?fromSource=gwzcw.235801.235801.235801">开发者实验室 - 腾讯云</A>
    * <A HREF="http://www.runoob.com/w3cnote/runoob-docker.html">菜鸟教程+Docker全线支持在线编译运行 | 菜鸟教程</A>
 
