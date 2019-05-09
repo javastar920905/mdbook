@@ -200,6 +200,7 @@
 ## css 响应式
 * [响应式在线测试](https://c.runoob.com/codedemo/5371)
 * [CSS3 @media 查询](https://www.runoob.com/cssref/css3-pr-mediaquery.html)
+* [css 子选择器](https://www.runoob.com/cssref/css-selectors.html)
 * [响应式 web介绍](https://www.runoob.com/css/css-rwd-intro.html)
 * [CSS响应式：根据分辨率加载不同CSS的几个方法，亲测可用](http://www.cnblogs.com/mibear/p/8033115.html)
 
