@@ -19,6 +19,7 @@ public class SidebarTest {
     static String format = "   * [%s](%s/%s)\r\n";
     static String parent_format = "* %s \r\n";
     static String sidebar_format = "# [java 开发手册](README.md)\r\n%s\r\n* <a href=\"timeline.html\" target=\"_blank\">timeline</a>";
+    static String[] emojis={"🔞","🆚","💖","☠","🔧","😘"};
 
 
     @Test
@@ -60,6 +61,7 @@ public class SidebarTest {
         }
     }
 
+    static int index=0;
     //多级目录,递归创建侧边栏
     public String genSidebarContent(File[] files, StringBuilder output) {
         Arrays.sort(files,Comparator.comparing(f->f.getName()) );
@@ -69,6 +71,11 @@ public class SidebarTest {
                 if (listFiles.length > 0) {
                     String fileName = file.getName();
                     String leftNavName = fileName.contains("_")?fileName.substring(fileName.lastIndexOf("_") + 1):fileName;
+                        
+                    if(index<emojis.length){
+                        leftNavName=leftNavName+emojis[index];
+                        index++;
+                    }
                     output.append(String.format(parent_format, leftNavName));
                     genSidebarContent(listFiles, output);
                 }
