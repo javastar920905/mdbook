@@ -1,3 +1,49 @@
-# Headline
+## [java 开发手册](https://javastar920905.github.io/mdbook)
 
-> An awesome project.
+### 项目说明
+* awesome java,java 开发参考手册 [javabus.cn-粤ICP备17145208号](https://javabus.cn) 
+* 入门教程,开发备忘,一次性东西减少重复劳动 (idea setting,工具,破解,docker和维护...)
+* 常用技能总结 (java git 爬虫 ...)
+* 趣味技术分享 (docsify easyopen ...)
+* 目录内容尽量按照由简入深方式排版,项目持续更新整理中 ...
+> [使用幕布写todo列表](https://mubu.com/doc/1gncEoM4Xo) [该列表实时更新完成进度]
+
+### 本项目基于docsify 搭建
+* [docsify 教程-有道云笔记](http://note.youdao.com/noteshare?id=b0ca41d567d3fb5eed648125119b3ad1&sub=DFBFB1BBA9A342FEB3F37F5D3FCCF185)  [docsify中文文档](https://docsify.js.org/#/zh-cn/quickstart)
+* [docsify-themeable 一个用于docsify的，简单到令人愉悦的主题系统](https://jhildenbiddle.github.io/docsify-themeable).
+* [github pages 部署项目](https://docsify.js.org/#/zh-cn/deploy?id=%E9%83%A8%E7%BD%B2)
+* [Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)[.](http://note.youdao.com/noteshare?id=8905cf85f75f8c54e596d8f491687e67&sub=3585C53EB515431F95AB45BA92B5D5E5)
+* [edit-on-github 插件](https://github.com/njleonzhang/docsify-edit-on-github)
+* [使用百度统计 统计访问量](https://tongji.baidu.com/web/24646268/overview/index?siteId=11315684)
+* [Docsify 深入源码](https://www.imooc.com/article/20256)
+* [tabs 插件](https://jhildenbiddle.github.io/docsify-tabs/#/)
+* [emoji 符号大全](http://www.fhdq.net/emoji.html) [emoji 搜索](https://emojipedia.org/)
+
+### tabs 插件模板
+```
+    <!-- tabs:start -->
+    #### ** tab1 标题 **
+    Hello!
+    
+    #### ** tab2 标题 **
+    Bonjour!
+    
+    #### ** tab3 标题 **
+    Ciao!
+    <!-- tabs:end -->
+
+```
+
+
+### 使用markdown 写文档
+* markdown 语法 中文教程
+   * https://www.appinn.com/markdown/
+* markdown编辑器
+   * http://pandao.github.io/editor.md/  
+   * http://jbt.github.io/markdown-editor/
+   * http://mahua.jser.me/
+   
+ 
+
+### 联系方式
+> QQ群: 630848940 (资源共享技术交流群)

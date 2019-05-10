@@ -18,15 +18,24 @@ public class SidebarTest {
     //支持二级目录,多级目录自动变成二级目录显示
     static String format = "   * [%s](%s/%s)\r\n";
     static String parent_format = "* %s \r\n";
-    static String sidebar_format = "# [java 开发手册](README.md)\r\n%s\r\n* <a href=\"timeline.html\" target=\"_self\">timeline</a>";
+    static String sidebar_format = "# [java 开发手册](README.md)\r\n%s\r\n* <a href=\"timeline.html\" target=\"_blank\">timeline</a>";
 
 
     @Test
     public void generatorNav() {
         String path = SidebarTest.class.getClassLoader().getResource("").getPath();
-//		System.out.println(path);
-        String root = path.substring(0, path.indexOf("mdbook/"));
-        String fileDir = root + "mdbook/docs/books";
+		System.out.println(path);//linux 输出 /home/coding/workspace/target/test-classes/
+       
+        String projectDir;
+        if(System.getProperty("os.name").toLowerCase().contains("linux")&&path.contains("workspace/")){
+            // 解决cloud studio 项目名为workspace/问题
+            projectDir="workspace/";
+        }else {
+            projectDir="mdbook/";
+           
+        }
+       String root = path.substring(0, path.indexOf(projectDir));
+       String fileDir = root +projectDir+ "docs/books";
         System.out.println("fileDir  " + fileDir);
 
 
@@ -38,7 +47,7 @@ public class SidebarTest {
 
         System.out.println(sidebarContent);
 
-        String sidebarFilepath = root + "mdbook/docs/_sidebar.md";
+        String sidebarFilepath =  root +projectDir+"docs/_sidebar.md";
 
         try {
 
