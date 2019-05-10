@@ -33,9 +33,9 @@
    * [常用搜索工具](books/5.tools/search_tools.md)
 * enjoy😘 
    * [ 开源建站 博客/cms/oa/](books/enjoy/1.site.md)
-   * [ 闲来无事读读书](books/enjoy/2.reading.md)
+   * [ 使用coding 管理任务 一站式 DevOps](books/enjoy/2.coding.md)
+   * [ 闲来无事读读书](books/enjoy/3.reading.md)
    * [ 佛祖保佑 banner.txt](books/enjoy/banner.md)
-   * [ 使用coding 管理任务 一站式 DevOps](books/enjoy/coding.md)
    * [ 使用easyopen 搭建开放平台](books/enjoy/easyopen.md)
 * resume 
    * [ 使用冷熊简历模板写简历](books/resume/resume-template.md)

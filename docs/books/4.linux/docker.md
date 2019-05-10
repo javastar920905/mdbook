@@ -10,17 +10,36 @@
 * [docker 参考手册](https://mongoding.github.io/2017/11/16/docker/)
 * [配置https 证书](https://note.youdao.com/ynoteshare1/index.html?id=3c19040eabad596cbb8741a9fe722c5a&type=note#/)
 
+## docker 安装
+* [安装docker](/books/4.linux☠/docker)
+* [ubuntu 16.x 安装docker](https://yeasy.gitbooks.io/docker_practice/content/install/ubuntu.html)
+```
+    * 卸载docker 
+        sudo apt-get remove docker \
+               docker-engine \
+               docker.io
+    * 安装docker,添加用户组
+        curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+        sudo usermod -aG docker  $USER
+    * 启动docker daemon
+        $ sudo systemctl enable docker  
+        $ sudo systemctl start docker
+    * 检查安装结果
+        docker info
+        docker run hello-world
+```
+* [启用国内镜像加速](https://yeasy.gitbooks.io/docker_practice/content/install/mirror.html)
+    * 检查加速器是否生效 docker info 查看Registry Mirrors值 
+
 ## 学习文档
 * [Docker — 从入门到实践](https://github.com/javastar920905/docker_practice)
 * [Docker — 从入门到实践-gitbook](https://docker_practice.gitee.io/)
 * [“Docker入门与实践”课程讲义及参考](https://github.com/javastar920905/docker101)
-
 * docker
    * <A HREF="https://store.docker.com/">Docker Store</A>
    * <A HREF="https://hub.docker.com/u/javastar920905/">https://hub.docker.com/u/javastar920905/</A>
    * <A HREF="https://docs.docker.com/">Docker Documentation - Docker Documentation</A>
    * <A HREF="http://note.youdao.com/share/?id=9fc3d574e708cc8fe258bf8ca58fff55&type=notebook#/">有道云笔记-docker</A>
-
 * 常用image
    * <A HREF="http://www.alauda.cn/2015/09/01/docker-hub-image/">Docker Hub最受欢迎的10大镜像 | Alauda</A>
    * <A HREF="https://store.docker.com/images/3d5f71ad-2cc0-467f-ab6a-351e7adf404e?tab=description">tomcat - Docker Store</A>
@@ -29,13 +48,10 @@
    * <A HREF="https://store.docker.com/images/37b1dde7-a3e7-463a-a0e3-d8be2b136292?tab=description">Nginx - Docker Store</A>
    * <A HREF="https://store.docker.com/images/fa7625b4-fdca-4b48-b078-692f6451965a">rabbitmq - Docker Store</A>
    * <A HREF="https://store.docker.com/images/3f8fc4ce-eb8e-40ad-88ba-69e97299c64f?tab=description">sonarqube - Docker Store</A>
-
 * docker 命令行commands
    * <A HREF="https://docs.docker.com/engine/reference/commandline/docker/">docker - Docker</A>
-
 * docker备份
    * <A HREF="http://www.linuxidc.com/Linux/2015-08/121184.htm">Docker中容器的备份、恢复和迁移_服务器应用_Linux公社-Linux系统门户网站</A>
-
 * docker编排
    * <A HREF="http://geek.csdn.net/news/detail/191293">企业为什么要使用基于Docker的PaaS/CaaS平台 - 极客头条 - CSDN.NET</A>
    * <A HREF="http://www.cnblogs.com/xinsheng/p/3803137.html">Mesos 入门教程 - SangS - 博客园</A>
@@ -45,7 +61,6 @@
    * <A HREF="http://www.tuicool.com/articles/2Ebemei">我们与Docker编排的故事 - 推酷</A>
    * <A HREF="https://www.zhihu.com/question/55391506/answer/144358251">docker 编排工具 2017最佳选择是 swarm/kubernetes/Mesos ？ - 知乎</A>
    * <A HREF="http://www.tuicool.com/articles/RZb6Zbb">Docker编排工具调研：Rancher - 推酷</A>
-
 * dockerfile
    * <A HREF="http://www.ituring.com.cn/book/tupubarticle/6873">docker file 编写mysql redis_nginx容器</A>
    * <A HREF="http://note.youdao.com/share/?id=1a1ede262c9d89a94206ec46797996f9&type=note#/">Dockerfile将配置文件封装到image</A>
