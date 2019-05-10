@@ -25,20 +25,45 @@
 * [安装常用插件](https://dev.tencent.com/help/cloud-studio/plugins) 
     * git-dirty-diff,git-line-history,CloudStudio-Plugin-Diff
 * [ubuntu 系统; 内置git]; 
+    *  cat /etc/os-release 查看系统版本
+    *  mvn -v 查看maven java版本
 
 ### java 开发 切换java环境
   * java 1.8  maven 3.3.9(阿里云仓库)) (mvn -v 查看版本)
   * 先更新下源sudo apt-get update
   * sudo安装软件  (安装可能会失败,多尝试几次即可; 安装的软件下次进来还会存在)
   * [安装nodejs](/books/2.front🆚/front_learn.md)
-    * sudo apt-get install nodejs
+    * sudo apt-get install nodejs (Ubuntu16下，使用apt-get下载的nodejs最新版本为v4.2.6)
     * sudo apt-get install npm
+    * [升级nodejs,升级npm](https://blog.csdn.net/u010277553/article/details/80938829) 
+        * sudo npm cache clean -f
+        * sudo npm install -g n
+        * sudo n stable
+    * 使用淘宝cnpm 替换npm
+        * npm install -g cnpm --registry=https://registry.npm.taobao.org
     * [npm 升级替换淘宝镜像](https://www.cnblogs.com/musings/p/8976074.html)
         * npm get registry  (返回https://registry.npmjs.org/)
         * 设置成淘宝的 npm config set registry http://registry.npm.taobao.org/
-        * sudo cnpm i docsify-cli -g (安装docsify)
-        * 升级npm 为最新版本 sudo npm install npm@latest -g
+    * sudo cnpm i docsify-cli -g (安装docsify)
   * [安装docker](/books/4.linux☠/docker)
+    * [ubuntu 16.x 安装docker](https://yeasy.gitbooks.io/docker_practice/content/install/ubuntu.html)
+    * 卸载docker 
+        * sudo apt-get remove docker \
+               docker-engine \
+               docker.io
+    * 安装docker
+        * curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+        * sudo usermod -aG docker  $USER
+    * 启动docker daemon
+        * $ sudo systemctl enable docker  
+        * sudo /lib/systemd/systemd-sysv-install enable docker
+        * $ sudo systemctl start docker
+    * 检查安装结果
+        * docker info
+        * docker run hello-world
+    * 
+    * [启用国内镜像加速]
+        *检查加速器是否生效 docker info 查看Registry Mirrors值 (https://yeasy.gitbooks.io/docker_practice/content/install/mirror.html)
   * [运行java类 debug](https://dev.tencent.com/help/cloud-studio/java-debug)
     * 点击左上角cloud logo ，进入设置-语言服务器来选择项目类型和源代码目录。
     * mvn dependency:resolve
