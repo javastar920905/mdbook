@@ -1,9 +1,12 @@
 # 使用coding 管理任务 一站式 DevOps
+> 需求构想 计划 开发 测试 发布交付
+
 > 使用coding 管理任务 [coding 一站式 DevOps](https://coding.net/)
-> 需求构想 计划 开发 测试 发布交付 
+
+ 
 
 ### 个人版本
-* [登录地址](https://dev.tencent.com/user)
+* [腾讯云开发者平台](https://dev.tencent.com/user)
 * [mdbook 项目主页](https://dev.tencent.com/u/javastar920905/p/mdbook)
     * 里程碑
     * 任务看板
@@ -20,16 +23,21 @@
 ### [云端开发环境 cloud studio](https://studio.dev.tencent.com/ws/blkpze)
 * [点击帮助菜单 查看文档](https://dev.tencent.com/help/cloud-studio/faq)
 * [安装常用插件](https://dev.tencent.com/help/cloud-studio/plugins) 
-  * git-dirty-diff,git-line-history,CloudStudio-Plugin-Diff
-* ubuntu 系统; 内置git; 
+    * git-dirty-diff,git-line-history,CloudStudio-Plugin-Diff
+* [ubuntu 系统; 内置git]; 
 
- ### java 开发 切换java环境
+### java 开发 切换java环境
   * java 1.8  maven 3.3.9(阿里云仓库)) (mvn -v 查看版本)
   * 先更新下源sudo apt-get update
   * sudo安装软件  (安装可能会失败,多尝试几次即可; 安装的软件下次进来还会存在)
   * [安装nodejs](/books/2.front🆚/front_learn.md)
     * sudo apt-get install nodejs
     * sudo apt-get install npm
+    * [npm 升级替换淘宝镜像](https://www.cnblogs.com/musings/p/8976074.html)
+        * npm get registry  (返回https://registry.npmjs.org/)
+        * 设置成淘宝的 npm config set registry http://registry.npm.taobao.org/
+        * sudo cnpm i docsify-cli -g (安装docsify)
+        * 升级npm 为最新版本 sudo npm install npm@latest -g
   * [安装docker](/books/4.linux☠/docker)
   * [运行java类 debug](https://dev.tencent.com/help/cloud-studio/java-debug)
     * 点击左上角cloud logo ，进入设置-语言服务器来选择项目类型和源代码目录。
@@ -47,7 +55,7 @@
     * sudo cnpm i docsify-cli -g
     * docsify init ./docs  在项目的 ./docs 目录里写文档(已经初始化过的,不要再运行该命令,会覆盖已有内容)
     * docsify serve ./docs  运行一个本地服务器
-  * 添加外部访问链接(1h失效)
+  * 添加cloud外部访问链接(1h失效) 注意发布服务端口对应
 
  
 
