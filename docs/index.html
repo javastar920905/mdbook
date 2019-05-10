@@ -126,7 +126,7 @@
 
 
 <!--允许在github上面编辑-->
-<script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+<!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
   <script>
       <!--docsify参考文档 https://docsify.js.org/#/zh-cn/configuration-->
 
@@ -134,7 +134,7 @@
     document.documentElement.style.overflowX = 'hidden';
 
     var pluginVar= [
-        EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","在线编辑")
+        //使用cloud studio 不需要在线编辑插件了 EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","在线编辑")
     ]
       //时光轴页面不显示 在线编辑按钮
     if ( window.screen.width<768||window.location.href.indexOf("timeline.html")>=0) {
