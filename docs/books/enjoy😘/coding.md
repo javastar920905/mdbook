@@ -31,11 +31,16 @@
     * sudo apt-get install nodejs
     * sudo apt-get install npm
   * [安装docker](/books/4.linux☠/docker)
+  * [运行java类 debug](https://dev.tencent.com/help/cloud-studio/java-debug)
+    * 点击左上角cloud logo ，进入设置-语言服务器来选择项目类型和源代码目录。
+    * mvn dependency:resolve
+    * 将鼠标移动到编辑器要调试的行左侧，会出现红色的断点，点击它则在此行打上断点
+    * 打开右侧的「调试」面板，点击绿色的三角形按钮开始调试
 
 
 ### 前端开发可以切换为node.js 环境
   * 先更新下源sudo apt-get update
-  * sudo安装软件  (安装可能会失败,多尝试几次即可; 安装的软件下次进来还会存在)
+  * sudo安装软件  (安装可能会killed失败,多尝试几次即可; 安装的软件下次进来还会存在)
   * cnpm 安装 
     * sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
   * docsify 安装 
