@@ -16,6 +16,10 @@
 
 
 * sql和表结构设计思路
+   * 多级表设计
+      * [地区多级联动](https://www.jianshu.com/p/52ab52c5dde0) id,name,status展开状态  parent_id 指向上一级id, level int 级别： 省 | 市 | 区（县）
+      * [多级评论表设计](https://quarterlifeforjava.iteye.com/blog/2245921) 
+      * [ 物业公司 社区 楼栋 单元 房屋 的基础表设计](https://blog.csdn.net/qq_37293230/article/details/79459852) 每一个低级持有到所有高级表的主键，从而获得一个查询性能上的提升
    * <A HREF="https://github.com/java-frame/SQL-exercise">java-frame/SQL-exercise: sql 实践</A>
    * <A HREF="https://www.oschina.net/question/12_70252">OSChina 的留言表设计说明 - 开源中国社区</A>
    * <A HREF="https://www.oschina.net/question/12_70587">OSChina 用户动态设计说明 - 开源中国社区</A>
