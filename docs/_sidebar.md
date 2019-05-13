@@ -2,6 +2,7 @@
 * 1.learn🔞 
    * [入门教程 社区 大牛](books/1.learn/1.learn.md)
    * [awesome系列](books/1.learn/awesome.md)
+   * [ python 学习](books/1.learn/python.md)
    * [源码阅读与学习](books/1.learn/sourcecode.md)
 * 2.front🆚 
    * [前端学习资源](books/2.front/front_learn.md)
@@ -37,6 +38,7 @@
    * [ 闲来无事读读书](books/enjoy/3.reading.md)
    * [ 佛祖保佑 banner.txt](books/enjoy/banner.md)
    * [ 使用easyopen 搭建开放平台](books/enjoy/easyopen.md)
+   * [ 使用小白接口进行个人开发](books/enjoy/noob.md)
 * resume 
    * [ 使用冷熊简历模板写简历](books/resume/resume-template.md)
 
