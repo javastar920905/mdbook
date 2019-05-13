@@ -112,5 +112,6 @@
    * <A HREF="https://jimmysong.io/kubernetes-handbook/">序言 · Kubernetes Handbook - jimmysong.io</A>
    * <A HREF="https://www.kubernetes.org.cn/k8s">Kubernetes（k8s）中文文档 Kubernetes概述_Kubernetes中文社区</A>
    * <A HREF="https://my.oschina.net/dxqr/blog/607854">kubernetes(k8s)搭建实践 - whaon</A>
+   * [阿里云Kubernetes服务上搭建GitLab+Jenkins应用发布模型的实践](https://www.toutiao.com/a6688869821565633031/?tt_from=mobile_qq&utm_campaign=client_share&timestamp=1557551368&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_android&req_id=20190511130927010023039038656CA90&group_id=6688869821565633031)
 
 
