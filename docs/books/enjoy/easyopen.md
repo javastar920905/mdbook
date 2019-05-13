@@ -5,6 +5,7 @@
 
 easyopen的功能类似于[淘宝开放平台](https://open.taobao.com/api.htm?docId=4&docType=2)，它的所有接口只提供一个url，通过参数来区分不同业务。这样做的好处是接口url管理方便了，平台管理者只需维护好接口参数即可。
 
+
 ## 参考文档
 * [git 仓库](https://gitee.com/durcframework/easyopen)
 * [参考文档](https://durcframework.gitee.io/easyopen)
