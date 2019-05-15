@@ -1,15 +1,17 @@
 # idea 等开发工具教程
 <li> <A HREF="http://wiki.jikexueyuan.com/list/tool/">开发工具入门基础教程_开发工具开发学习书籍-极客学院Wiki</A></li>
 
+* [idea使用教程_下载安装](http://note.youdao.com/noteshare?id=30a1768a7b72490f184974d4fb17df30&sub=4F0BC5290AED46B8A0A413DB056BB60C)
+* idea 激活破解
+  * <A HREF="https://www.w3h5.com/post/198.html">下载破解补丁文件JetbrainsIdesCrack</A></li>
+  * <A HREF="https://www.52pojie.cn/thread-781394-1-1.html">IDEA2018.2.1最新版本破解 </A>
+  * <A HREF="http://idea.lanyus.com/">IntelliJ IDEA 注册码</A>
 * [从头搭建 IntelliJ IDEA 环境](https://www.toutiao.com/a6689767946207625741/?tt_from=mobile_qq&utm_campaign=client_share&timestamp=1557834136&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_android&req_id=20190514194216010022056046397D56E&group_id=6689767946207625741)
+* [idea 远程调试,java 远程调试](http://note.youdao.com/noteshare?id=0091caae544db2fb18140a1893a0aad2&sub=240666C68F4840F69FC0A05FE3745490)
+* [skill-代码补全和自动import](http://note.youdao.com/noteshare?id=da869f3607d7edc4e0050fb553684b49&sub=046C19C73498471496A16CDE40A98C87)
+* [实时代码模板_自定义注释](http://note.youdao.com/noteshare?id=87b6a6a46e98a456a4b44e55352ba203&sub=24E498E5923A4F97A2D9BDC3032F6CE5)
+* [idea 阿里云 Cloud Toolkit- 实现一键发布](http://note.youdao.com/noteshare?id=d33a8151b30907cef1ca60d762636ab7&sub=AF44B9D0B0AD494EABDC18B5C62AF747)
 
-
-<H3> idea 激活</H3>
-<li> <A HREF="https://blog.csdn.net/jilky123/article/details/80522125">idea 2018注册码（激活码）永久性的 - CSDN博客</A></li>
-<li> <A HREF="https://blog.csdn.net/qq3892997/article/details/80323737">idea 2018.1破解激活方法,有效期至2099年 - CSDN博客</A></li>
-<li> <A HREF="https://blog.csdn.net/superKM/article/details/80416267">idea在线网址（服务器）激活 2018 - CSDN博客</A></li>
-<li> <A HREF="http://idea.lanyus.com/">IntelliJ IDEA 注册码</A></li>
-<li> <A HREF="https://www.52pojie.cn/thread-781394-1-1.html">IDEA2018.2.1最新版本破解 - 『精品软件区』 - 吾爱破解 - LCG - LSG |安卓破解|病毒分析|破解软件|www.52pojie.cn</A></li>
 
 <H3>idea 教程</H3>
 <li> <A HREF="https://youmeek.gitbooks.io/intellij-idea-tutorial/content/keymap-introduce.html">36. IntelliJ IDEA 常用快捷键讲解（Win + Linux）（新用户必看） · IntelliJ-IDEA-Tutorial</A></li>
