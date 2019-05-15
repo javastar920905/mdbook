@@ -4,16 +4,23 @@
 * [bootstrap 有道总结](http://note.youdao.com/noteshare?id=27d9b6ed3ef4b21cb1d4673cbe830e2d)
 * <A HREF="https://github.com/laizimo/zimo-article">前端总结</A>
 
+
+## 前端技术栈
+- [nodejs](https://www.runoob.com/nodejs/nodejs-install-setup.html)
+- [cnpm](http://npm.taobao.org/) 淘宝 NPM 镜像
+- [vue 学习](books/2.front/vue_learn.md)
+* css 预处理器
+  * CSS预处理器的出现大大的提高了前端开发的效率和逼格，它让CSS可编程化。LESS和Sass/SCSS是两种最为常见的预处理器
+  - [为什么使用Stylus](https://www.cnblogs.com/panew/p/4478663.html)
+  - [stylus中文版参考文档之综述](https://www.zhangxinxu.com/jq/stylus/)
+
 <H3>全栈</H3>
 <li> <A HREF="http://growth.ren/">Growth - 带你变成优秀开发者，陪你成为顶尖开发者</A></li>
 <li> <A HREF="https://github.com/phodal/growth-ebook">全栈增长工程师指南</A></li>
 <li> <A HREF="https://github.com/ruanyf/jstraining">ruanyf/jstraining: 全栈工程师培训材料</A></li>
 <li> <A HREF="http://www.21edu8.com/pcnet/programming/3574/">尚学堂-小学-初中-高中-星火视频教程 21edu8.com</A></li>
 
-
 ## 前端学习资源
-- [nodejs](https://www.runoob.com/nodejs/nodejs-install-setup.html)
-- [cnpm](http://npm.taobao.org/) 淘宝 NPM 镜像
 - [JavaScript 资源大全中文版](https://github.com/jobbole/awesome-javascript-cn)包括：包管理器、加载器、测试框架、QA、MVC框架等
 - <A HREF="http://wiki.jikexueyuan.com/list/front-end/">前端开发入门基础教程_前端开发开发学习书籍-极客学院Wiki</A>
 - <A HREF="http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000">JavaScript教程 - 廖雪峰的官方网站</A>
