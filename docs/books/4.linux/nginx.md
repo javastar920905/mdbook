@@ -1,4 +1,5 @@
 # nginx 学习资源
+   * [NGiИX配置在线极速生成“神器](https://nginxconfig.io)
    * <A HREF="http://tengine.taobao.org/book/index.html">Nginx开发从入门到精通 — Nginx开发从入门到精通</A>
    * <A HREF="http://www.linuxde.net/tag/nginx">nginx_Linux Today</A>
    * <A HREF="https://www.cnblogs.com/yun007/p/3739182.html">nginx强制使用https访问(http跳转到https) - yun007 - 博客园</A>

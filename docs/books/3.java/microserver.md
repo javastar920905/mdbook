@@ -2,6 +2,7 @@
 <!-- tabs:start -->
 #### ** 微服务介绍 **
  * <A HREF="https://github.com/DocsHome/microservices">中文版 《微服务：从设计到部署》</A>
+   * [最棒的60个DevOps开源工具](https://www.toutiao.com/a6690725649616732680/?tt_from=mobile_qq&utm_campaign=client_share&timestamp=1557832875&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_android&req_id=2019051419211501002301910053123C2&group_id=6690725649616732680)
    * <A HREF="https://www.cnblogs.com/wintersun/p/6219259.html">微服务架构设计 - PetterLiu - 博客园</A>
    * <A HREF="http://www.infoq.com/cn/articles/micro-service-technology-stack">微服务架构技术栈选型手册</A>
    * <A HREF="http://www.rainbond.com/docs/stable/video/rainbond_design/design_video.html">云帮设计思想 | Rainbond 文档中心</A>
