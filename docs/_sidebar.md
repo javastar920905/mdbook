@@ -7,6 +7,7 @@
 * 2.front🆚 
    * [前端学习资源](books/2.front/front_learn.md)
    * [vue 系列](books/2.front/vue_learn.md)
+   * [ vue seo 相关](books/2.front/vue_seo.md)
    * [公众平台-小程序等](books/2.front/weixin.md)
 * 3.java💖 
    * [ java学习路线图](books/3.java/1.route.md)
@@ -14,7 +15,7 @@
    * [ java 常用工具类](books/3.java/3.tool.md)
    * [api-手册](books/3.java/api_reference.md)
    * [ java 面试题](books/3.java/interview.md)
-   * [ 微服务学习](books/3.java/microserver.md)
+   * [ 微服务相关](books/3.java/micro_server.md)
    * [ java 网络爬虫系列](books/3.java/spider.md)
 * 4.linux☠ 
    * [ linux 学习资源](books/4.linux/1.linux.md)
