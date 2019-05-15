@@ -1,4 +1,6 @@
 <H3>vue 系列</H3>
+<H3>vue seo 手脚架 </H3>
+<li> <A HREF="https://github.com/javastar920905/vue-demo/tree/master/nuxtdemo">vue seo 手脚架 nuxtdemo</A></li>
 
 <H3>vue</H3>
 <li> <A HREF="https://zhuanlan.zhihu.com/p/33642051?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io">从1万篇文章中挑出的40篇最棒的 Vue 学习指南（2018版）</A></li>
@@ -14,13 +16,14 @@
 <li> <A HREF="https://elemefe.github.io/vue-amap/#/">vue-amap | 基于 Vue 2.x 与高德的地图组件</A></li>
 
 
-
 <H3>vue入门</H3>
 <li> <A HREF="https://yq.aliyun.com/articles/668950?spm=a2c4e.11157919.spm-cont-list.61.146c27aemYLE3k">第一篇：VUE的构建-博客-云栖社区-阿里云</A></li>
 <li> <A HREF="https://www.jianshu.com/p/65b42f6215ff">Vue.js教程: 构建一个预渲染SEO友好的应用示例 [译] - 简书</A></li>
 <li> <A HREF="https://segmentfault.com/q/1010000011824706/">公司让我用Vue.js做官网，需要考虑SEO的问题，如何进行开发比较好？ - SegmentFault 思否</A></li>
 <li> <A HREF="https://zh.nuxtjs.org/guide">关于 Nuxt.js - Nuxt.js</A></li>
 <li> <A HREF="https://segmentfault.com/q/1010000012093365">前端 - 自己用vue写了一个小网站,但是seo是个问题(本人后端) - SegmentFault 思否</A></li>
+
+
 
 <H3>webpack </H3>
 <li> <A HREF="http://www.runoob.com/w3cnote/webpack-tutorial.html">Webpack 入门教程 | 菜鸟教程</A></li>
