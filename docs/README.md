@@ -21,13 +21,14 @@ java 开发参考手册, awesome java. 在我心里awesome系列就是值的好�
 页面资源内容,尽量按照由简入深方式排版,项目持续更新整理中 期待ing...
 
 ## 目录结构介绍
-* learn     --->  (入门教程, awesome系列)
-* front     --->  (前端教程, vue, 小程序)
-* java      --->  (学习路线图, api, spring boot, 爬虫)
-* linux     --->  (linux 入门, docker, nginx, db)
-* tools     --->  (开发工具备份和教程, git, idea, maven, gradle, 正则 )
-* enjoy     --->  (个人建站, docsify, jekyll, easyopen, 个人娱乐)
-* resume    --->  简历模板 
+已完成的,代表已经经过初次梳理过,基本可用状态; 未完成的代表布局凌乱,等待后续梳理
+- [x] learn     --->  (入门教程, awesome系列)
+- [x] front     --->  (前端教程, vue, 小程序)
+- [ ] java      --->  (学习路线图, api, spring boot, 爬虫)
+- [ ] linux     --->  (linux 入门, docker, nginx, db)
+- [x] tools     --->  (开发工具备份和教程, git, idea, maven, gradle, 正则 )
+- [x] enjoy     --->  (个人建站, docsify, jekyll, easyopen, 个人娱乐)
+- [ ] resume    --->  简历模板 
 
 > * [入门教程 社区 大牛](https://javabus.cn/#/books/1.learn/1.learn) 一些入门教程和总结,虽然比不上菜鸟教程齐全,但自己总结归纳的会更加适合自己. 
 
