@@ -19,7 +19,7 @@ public class SidebarTest {
     static String format = "   * [%s](%s/%s)\r\n";
     static String parent_format = "* %s \r\n";
     static String sidebar_format = "# [java 开发手册](README.md)\r\n%s\r\n* <a href=\"timeline.html\" target=\"_blank\">timeline</a>";
-    static String[] emojis={"🔞","🆚","💖","☠","🔧","😘"};
+    static String[] emojis={"😘","🔧","💖","☠","🆚","🔞"};
 
 
     @Test
