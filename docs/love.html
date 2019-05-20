@@ -1,0 +1,109 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+    <title>i love u</title>
+	<link rel="shortcut icon" href="..//favicon.ico" type="image/x-icon" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        
+    </style>
+    <link href="lovestory/love.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="lovestory/js/jquery.js"></script>
+    <script type="text/javascript" src="lovestory/js/garden.js"></script>
+    <script type="text/javascript" src="lovestory/js/lovefunctions.js"></script>
+</head>
+
+<body>
+<!-- controls  设置音频控制面板 http://www.runoob.com/tags/tag-audio.html -->
+<audio  autoplay loop>
+    <source src="lovestory/media/loveyou.mp3" type="audio/mp3" />
+    <source src="lovestory/media/loveyou.mp3" type="audio/ogg" />
+    <embed height="100" width="100" src="lovestory/media/loveyou.mp3" />
+</audio>
+
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+                Boy i = <span class="keyword">new</span> Boy(<span class="string">"zyan"</span>);<br />
+                Girl u = <span class="keyword">new</span> Girl(<span class="string">"abby"</span>);<br />
+                i.love(u);<br />
+                i.waitFor(u). <br />
+				i.hope("get alone with you,day and night"); <br />
+				 <span class="comments">// Now, I told you I love you. </span><br />
+				  <span class="comments">// I hope one day you'll marry to me and we'll have children in the future.</span><br />
+                <span class="comments">// 毕业这么久, 什么英文都忘了,写了两句话都憋了好久,还不知道是不是有语法错误,哎,想装B都装不下去了不过我用很用心在写哦.</span><br /><br />
+                <span class="keyword">曾经,</span> 我们也有太多的矛盾,以后也可能会继续矛盾,但是我不怕<br />
+
+                <span class="comments">// 你也说过这太快了,我有点接受不了</span><br />
+                <span class="comments">// 你还说,我对你的照顾不够.</span><br />
+				  那现在我来回答你吧<br />
+                <span class="comments">// 不管你喜欢还是不喜欢,我都不会再放手了,上了贼船,就没有回头路,我也不会给你回头的机会.</span><br />
+                <span class="keyword">思念</span> 开始恋爱 = <span class="keyword">得了相思病</span>;<br />
+                <span class="placeholder"/><span class="comments">//我爱你,你要等着我每天给你做早餐</span><br />
+                <span class="placeholder"/><span class="comments">//你要让我每天醒来第一眼就能看到你 .</span><br />
+				 <span class="placeholder"/><span class="comments">//你要把所有的不开心和开心告诉我,我来陪你伤心和快乐 .</span><br />
+				  <span class="placeholder"/><span class="comments">//你要等着我带你一起去看海...很多很多事情,需要我们一起去完成</span><br />
+                <span class="placeholder"/>两个人只要相爱<br /> 只要心里有着对方,那就会有感动,有温暖
+                }<br />
+                i want to be with u forever !<br />
+				
+
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+<center>
+
+</center>
+                        love u, forever	^w^```
+                        <div id="elapseClock" style="display:none"></div>
+                        <a href='#' id="accept">浪漫计时&nbsp;<sup>
+                    </div>
+                    <div id="loveu">
+                       别嫌弃我幼稚 :)<br/> 因为我对不熟的人才会用脑子<br/>
+                        <div class="signature">- 麦小兴</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            送给我亲爱的笨蛋: <a href="#">欧某某</a> <del><a href="lovestory.html">返回首页</a></del><br />
+        </div>
+    </div>
+    <script type="text/javascript">
+        var offsetX = ($("#loveHeart").width() / 2);
+        var offsetY = ($("#loveHeart").height() / 2 - 55);
+        
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            document.body.appendChild(msg);
+            $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            // 设置延时
+            setTimeout(function () {
+                adjustWordsPosition();
+                startHeartAnimation();
+            }, 1000*10);
+            
+            $("#accept").click(function(){
+                $(this).hide();
+                $("#elapseClock").show();
+                var together = new Date();
+                timeElapse(together);
+                setInterval(function () {
+                    timeElapse(together);
+                }, 500);
+            })
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+    </script>
+</body>
+</html>
