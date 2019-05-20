@@ -45,7 +45,7 @@
 * resume 
    * [ 使用冷熊简历模板写简历](books/resume/resume-template.md)
 
-* lovestory
-   * <a href="lovestory.html" target="_blank">lovestory</a>
-   * <a href="love.html" target="_blank">love</a>
+* lovestory🌹
+   * <a href="lovestory.html" target="_blank">lovestory💜</a>
+   * <a href="love.html" target="_blank">love💛</a>
    * <a href="timeline.html" target="_blank">timeline</a>

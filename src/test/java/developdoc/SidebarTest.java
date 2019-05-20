@@ -15,9 +15,9 @@ import java.util.Comparator;
  */
 public class SidebarTest {
     //自定义追加侧边栏
-    static String custom_sidebar="* lovestory\r\n" +
-            "   * <a href=\"lovestory.html\" target=\"_blank\">lovestory</a>\r\n" +
-            "   * <a href=\"love.html\" target=\"_blank\">love</a>\r\n" +
+    static String custom_sidebar="* lovestory\uD83C\uDF39\r\n" +
+            "   * <a href=\"lovestory.html\" target=\"_blank\">lovestory\uD83D\uDC9C</a>\r\n" +
+            "   * <a href=\"love.html\" target=\"_blank\">love\uD83D\uDC9B</a>\r\n" +
             "   * <a href=\"timeline.html\" target=\"_blank\">timeline</a>";
 
     //支持二级目录,多级目录自动变成二级目录显示
