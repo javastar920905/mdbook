@@ -14,11 +14,16 @@ import java.util.Comparator;
  * @author tanghc
  */
 public class SidebarTest {
+    //自定义追加侧边栏
+    static String custom_sidebar="* lovestory\r\n" +
+            "   * <a href=\"lovestory.html\" target=\"_blank\">lovestory</a>\r\n" +
+            "   * <a href=\"love.html\" target=\"_blank\">love</a>\r\n" +
+            "   * <a href=\"timeline.html\" target=\"_blank\">timeline</a>";
 
     //支持二级目录,多级目录自动变成二级目录显示
     static String format = "   * [%s](%s/%s)\r\n";
     static String parent_format = "* %s \r\n";
-    static String sidebar_format = "# [java 开发手册](README.md)\r\n%s\r\n* <a href=\"timeline.html\" target=\"_blank\">timeline</a>";
+    static String sidebar_format = "# [java 开发手册](README.md)\r\n%s\r\n"+custom_sidebar;
     static String[] emojis={"😘","🔧","💖","☠","🆚","🔞"};
 
 
