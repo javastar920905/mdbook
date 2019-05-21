@@ -6,9 +6,12 @@
 
 
 ## 前端技术栈
-- [nodejs](https://www.runoob.com/nodejs/nodejs-install-setup.html)
-- [cnpm](http://npm.taobao.org/) 淘宝 NPM 镜像
-- [vue 学习](books/2.front/vue_learn.md)
+- nodejs
+  - [nodejs 菜鸟教程](https://www.runoob.com/nodejs/nodejs-install-setup.html)
+  - [nodejs 中文文档 10.x](http://nodejs.cn/api/)
+  - [nodejs 中文文档 v8.x](https://www.nodeapp.cn/)
+  - [cnpm](http://npm.taobao.org/) 淘宝 NPM 镜像
+- [vue 学习](books/5.front/vue_learn.md)
 * css 预处理器
   * CSS预处理器的出现大大的提高了前端开发的效率和逼格，它让CSS可编程化。LESS和Sass/SCSS是两种最为常见的预处理器
   - [为什么使用Stylus](https://www.cnblogs.com/panew/p/4478663.html)
