@@ -23,6 +23,7 @@
    * [api-手册](books/3.java/api_reference.md)
    * [ 佛祖保佑 banner.txt](books/3.java/banner.md)
    * [ java 面试题](books/3.java/interview.md)
+   * [mybatis-gen之java gui 学习](books/3.java/java_gui.md)
    * [ 微服务相关](books/3.java/micro_server.md)
    * [ java 网络爬虫系列](books/3.java/spider.md)
 * 4.linux☠ 
