@@ -1,6 +1,6 @@
 <H3>vue 系列</H3>
 
-## vue 入门
+## vue 入 门
 * [vue 文档 有道云总结 加载有点慢耐心等待](http://note.youdao.com/noteshare?id=44b0bf55c631af5828289d400b6cf8ff)
  * [菜鸟教程](http://www.runoob.com/vue2/vue-tutorial.html)
  * [vue 官方中文文档](https://cn.vuejs.org/v2/guide/syntax.html)
