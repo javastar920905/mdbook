@@ -8,7 +8,8 @@
  * [vue-api 文档](https://vuejs-tips.github.io/cheatsheet/?utm_campaign=read_more&utm_medium=email&utm_source=mybridge)
  * [awesome-vue 资源](https://github.com/opendigg/awesome-github-vue)
  * [尤雨溪 的vue教程](http://www.html-js.com/article/user/1152)
- * [小程序 wepy.js 组件化开发,需要了解vue语法](https://cn.vuejs.org/v2/guide/render-function.html)  
+ * [小程序 wepy.js 组件化开发,需要了解vue语法](https://cn.vuejs.org/v2/guide/render-function.html)
+ * [Axios 中文说明](https://www.kancloud.cn/yunye/axios/234845)
 * 个人开发总结
     * [vue 入门实践](http://note.youdao.com/noteshare?id=81a73f48d7622874aa6ada6446034bc0) 体验 vue vue-route axios
     * [vue 入门实践2 element ui](http://note.youdao.com/noteshare?id=a37532307f403cb7a7bde5b015d6b2a9)
