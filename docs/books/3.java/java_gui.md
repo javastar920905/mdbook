@@ -72,9 +72,11 @@ sshBasedConnection.fxml
 ok,javaFX 入门了. 能读懂项目代码,可以尝试添加生成功能了
 
 ```
-## 添加生成controller和service 代码的功能
-* 针对spring boot 手脚架进行定制 [spring-boot-api-project-seed](https://github.com/java-frame/spring-boot-api-project-seed)
-    * 自定义修改完成 [查看github分支](https://github.com/javastar920905/mybatis-generator-gui/tree/spring-boot-api-project-seed) 
+
+## 针对spring boot 手脚架进行定制 [spring-boot-api-project-seed](https://github.com/java-frame/spring-boot-api-project-seed)
+* [x] 自定义修改完成 [查看github  spring-boot-api-project-seed分支](https://github.com/javastar920905/mybatis-generator-gui/tree/spring-boot-api-project-seed) 
+* [x] 添加生成controller和service 代码的功能  
+* [x] 完善生成代码注释 [目录结构分析](http://localhost:3000/#/books/3.java/java_gui)
 
 ```
 1 找到生成代码入口 MainUIController#generateCode
