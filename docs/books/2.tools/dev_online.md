@@ -41,6 +41,7 @@ flush privileges;
 <li> <A HREF="http://tool.oschina.net/codeformat/json">在线代码格式化</A></li>
 <li> <A HREF="http://www.jq22.com/textDifference">在线文本差异对比</A></li>
 <li> <A HREF="http://tool.chinaz.com/tools/urlencode.aspx">UrlEncode编码/UrlDecode解码 - 站长工具</A></li>
+<li><a href="https://www.iamwawa.cn/">蛙蛙工具</a></li>
 
 <H3>在线图片压缩</H3>
 <li> <A HREF="https://tinypng.com/">图片压缩TinyPNG – Compress PNG images while preserving transparency</A></li>
