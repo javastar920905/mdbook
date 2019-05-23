@@ -312,12 +312,20 @@
 <li> <A HREF="http://www.ruanyifeng.com/blog/2016/01/npm-install.html">npm 模块安装机制简介</A> - 阮一峰的网络日志</li>
 <li> <A HREF="https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143450141843488beddae2a1044cab5acb5125baf0882000">安装Node.js和npm</A> - 廖雪峰的官方网站</li>
 
+<H3>webpack </H3>
+<li> <A HREF="http://www.runoob.com/w3cnote/webpack-tutorial.html">Webpack 入门教程 | 菜鸟教程</A></li>
+<li> <A HREF="https://hulufei.gitbooks.io/react-tutorial/content/environment.html">开发环境配置 | React 入门教程</A></li>
+
 <H3>babel</H3>
 <li> <A HREF="http://www.ruanyifeng.com/blog/2016/01/babel.html">Babel 入门教程</A> - 阮一峰的网络日志</li>
 <li> <A HREF="https://babeljs.io/">Babel · The compiler for writing next generation JavaScript</A></li>
 <li> <A HREF="http://babeljs.cn/">Babel 中文网 · Babel：下一代 JavaScript 语法的编译器</A></li>
 <li> <A HREF="http://babeljs.cn/docs/usage/babelrc/">babelrc · Babel 中文网</A></li>
 <li> <A HREF="https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact&experimental=false&loose=false&spec=false&code=const%20element%20%3D%20%3Ch1%3EHello%2C%20world!%3C%2Fh1%3E%3B%0Aconst%20container%20%3D%20document.getElementById('root')%3B%0AReactDOM.render(element%2C%20container)%3B%0A">Babel · The compiler for writing next generation JavaScript</A></li>
+
+<H3>redux</H3>
+<li> <A HREF="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html">Redux 入门教程（一）：基本用法 - 阮一峰的网络日志</A></li>
+<li> <A HREF="http://www.redux.org.cn/">自述 | Redux 中文文档</A></li>
 
 
 #### ** jquery 和插件_**

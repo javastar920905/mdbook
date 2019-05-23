@@ -1,4 +1,4 @@
-<H3>公众平台-小程序等</H3>
+<H3>小程序</H3>
 <li> <A HREF="https://mp.weixin.qq.com/debug/wxadoc/dev/api/">API · 小程序</A></li>
 <li> <A HREF="http://note.youdao.com/share/?id=02e666e27d11f7ef8a6c067d92ead028&type=notebook#/D76A8693C0784700A96F14C78037F8A4">有道云笔记</A></li>
 <li> <A HREF="http://note.youdao.com/share/?id=02e666e27d11f7ef8a6c067d92ead028&type=notebook#/4C58AF083365419B95DE377A73E8D614">开放平台文档</A></li>
@@ -7,9 +7,9 @@
 <li> <A HREF="http://jqweui.com/">jQuery WEUI</A></li>
 
 <H3>微信公众平台开发</H3>
+<li> <A HREF="http://mp.weixin.qq.com/wiki/8/f9a0b8382e0b77d87b3bcc1ce6fbc104.html">接入指南 - 微信公众平台开发者文档</A></li>
 <li> <A HREF="http://www.cnblogs.com/txw1958/p/wechat-tutorial.html">微信公众平台开发入门教程 - 方倍工作室 - 博客园</A></li>
 <li> <A HREF="http://www.cnblogs.com/txw1958/p/weixin-55-ScratchTicket.html">微信公众平台开发（55）刮刮乐 - 方倍工作室 - 博客园</A></li>
-<li> <A HREF="http://mp.weixin.qq.com/wiki/8/f9a0b8382e0b77d87b3bcc1ce6fbc104.html">接入指南 - 微信公众平台开发者文档</A></li>
 <li> <A HREF="http://mp.weixin.qq.com/s?__biz=MjM5NDAxMDg4MA==&mid=402698430&idx=1&sn=33ba782c6eee414b489a16ac7308cde1&scene=23&srcid=0126Uv1M1H8Uuvsb2sdeBz66#rd">微信网页设计样式库发布</A></li>
 
 
@@ -17,6 +17,8 @@
 <li> <A HREF="https://mp.weixin.qq.com/debug/wxadoc/dev/">简易教程 · 小程序</A></li>
 <li> <A HREF="https://tencent.github.io/wepy/">WePY | 小程序组件化开发框架</A></li>
 <li> <A HREF="https://github.com/aben1188/awesome-wepy">aben1188/awesome-wepy: Awesome for wepy ! 微信小程序组件化开发框架wepy开发资源汇总</A></li>
+<li> <A HREF="https://cn.vuejs.org/v2/guide/render-function.html">小程序 wepy.js 组件化开发,需要了解vue语法</A></li>
+
 
 <H3>小程序</H3>
 <li> <A HREF="https://github.com/EastWorld/wechat-app-mall">EastWorld/wechat-app-mall: 微信小程序商城，微信小程序微店</A></li>
