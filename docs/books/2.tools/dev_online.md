@@ -8,6 +8,23 @@
    * [cloud studio 云端开发环境](https://studio.dev.tencent.com/intro)
    * <A HREF="https://www.qcloud.com/developer/labs?fromSource=gwzcw.235801.235801.235801">开发者实验室 - 腾讯云</A>
    * <A HREF="http://www.runoob.com/w3cnote/runoob-docker.html">菜鸟教程+Docker全线支持在线编译运行 | 菜鸟教程</A>
+   * [三丰云-免费云紫资源技术调研经常需要服务器，数据库](https://www.sanfengyun.com/freeServer/) 、
+    * 需要通过手机实名认证，充值1元 需要绑定微信
+    * 免费云服务器  [听说你在找免费虚拟主机？](https://www.hostmama.cc/p/127/)
+      * 首次开通24小时，开通6小时后可免费申请延期，每次最长延期5天。 （微信上续期还算方便）
+      * 免费云服务器通过免费延期您可以永久免费使用，但如果您未延期，到达使用时间后系统将会自动删除，数据等无法恢复。如果您想继续使用可以重新开通免费产品
+      * 使用宝塔面板操作服务器 http://111.67.194.157:8888/login （用户名javastar920905）密码提示（8位以上，至少包含一个大写字母）
+      * 一键安装 lamp , 软件管理，mysql 设置查看端口和设置密码, 安全，开放mysql端口
+```
+查看mysql 端口号
+show global variables like 'port';  
+添加新用户远程连接 （root 远程被拒绝了）
+create user 'test'@'%' identified by '密码';
+grant all privileges on `testdb`.* to 'test'@'%' identified by '密码';
+flush privileges;
+```
+    
+
 
 
 <H3>在线开发工具</H3>
