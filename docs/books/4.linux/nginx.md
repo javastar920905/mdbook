@@ -33,6 +33,7 @@
    * <A HREF="http://www.cnblogs.com/freeweb/p/5764493.html">nginx实现本地图片生成缩略图 - 自由的web - 博客园</A>
    * <A HREF="http://www.jb51.net/article/77241.htm">讲解Nginx服务器中设置本地浏览器缓存的简单方法_nginx_脚本之家</A>
 
+* [nginx 解决跨域问题](https://www.toutiao.com/a6693442944709427716/?tt_from=mobile_qq&utm_campaign=client_share&timestamp=1558524599&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_android&req_id=20190522192959010025080080041D0A9&group_id=6693442944709427716) 
 
 ## openResty
    * <A HREF="https://www.ttlsa.com/nginx/how-to-install-openresty/">安装OpenResty - 运维生存时间</A>
