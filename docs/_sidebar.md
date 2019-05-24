@@ -22,6 +22,7 @@
    * [ java 常用工具类](books/3.java/3.tool.md)
    * [api-手册](books/3.java/api_reference.md)
    * [ 佛祖保佑 banner.txt](books/3.java/banner.md)
+   * [ 敏捷开发指南](books/3.java/dev_ops.md)
    * [ java 面试题](books/3.java/interview.md)
    * [javaFX  学习](books/3.java/java_gui.md)
    * [ 微服务相关](books/3.java/micro_server.md)
@@ -34,9 +35,9 @@
    * [ nginx 学习资源](books/4.linux/nginx.md)
 * 5.front🆚 
    * [前端学习资源](books/5.front/front_learn.md)
-   * [vue 系列](books/5.front/vue_learn.md)
+   * [<!-- vue 系列 -->](books/5.front/vue_learn.md)
    * [ vue seo 技术调研](books/5.front/vue_seo.md)
-   * [公众平台-小程序等](books/5.front/weixin.md)
+   * [小程序](books/5.front/weixin.md)
 * learn🔞 
    * [入门教程 社区 大牛](books/learn/1.learn.md)
    * [ 闲来无事读读书](books/learn/3.reading.md)

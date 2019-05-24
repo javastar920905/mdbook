@@ -10,7 +10,7 @@ javaFX  学习
 
 本工具发布jar 包和 exe 形式 (大小和方便程度,供用户选择): 
 * [jar包方式 需要命令行启动 java -jar mybatis-generator-gui.jar -13MB](https://javabus.oss-cn-beijing.aliyuncs.com/code-gen-gui-jar.zip)
-* [双击启动exe 文件方式 - 100MB](https://javabus.oss-cn-beijing.aliyuncs.com/code-gen-gui-jar.zip)
+* [双击启动exe 文件方式 - 100MB](https://javabus.oss-cn-beijing.aliyuncs.com/code-gen-gui.zip)
 * [github 地址](https://github.com/javastar920905/mybatis-generator-gui/tree/gen-controller-service-mybatis)  查看 **gen-controller-service-mybatis** 分支
  
 自定义ftl模板说明,请查看解压后的 readme.txt
