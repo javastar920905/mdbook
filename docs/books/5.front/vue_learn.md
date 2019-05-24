@@ -1,4 +1,4 @@
-<!-- <H3>vue 系列</H3> -->
+<H3>vue 系列</H3>
 
 ### vue 入门
 * [vue 文档 有道云总结 加载有点慢耐心等待](http://note.youdao.com/noteshare?id=44b0bf55c631af5828289d400b6cf8ff)
@@ -35,6 +35,10 @@
 <li> <A HREF="https://webpack.js.org/concepts/loaders">Webpack loaders</A></li>
 <li> <A HREF="https://github.com/web-line-learn/webpack">Webpack 学习示例</A></li>
 
+<H3>vue-cli</H3>
+<li> <A HREF="https://cli.vuejs.org/zh/guide/#cli"> vue-cli3 官网文档</A></li>
+<li> <A HREF="https://github.com/vuejs/vue-cli/tree/v2#vue-cli--"> vue-cli2 官网文档</A></li>
+
 <H3>babel</H3>
 <li> <A HREF="http://www.ruanyifeng.com/blog/2016/01/babel.html">Babel 入门教程</A> - 阮一峰的网络日志</li>
 <li> <A HREF="https://babeljs.io/">Babel · The compiler for writing next generation JavaScript</A></li>
@@ -44,8 +48,10 @@
 
 <H3>ESLint</H3>
 <li> <A HREF="http://eslint.cn/"> ESLint中文-js代码检查工具</A></li>
+<li> <A HREF="https://www.cnblogs.com/LO-ME/p/8080348.html"> VUE应用中配置ESLint(代码检查)</A></li>
 
 <H3>vue项目搭建参考</H3>
+<li> <A HREF="https://github.com/linying1223/vuecli3-project"> vue-cli3搭建完整项目</A></li>
 <li><a HREF="https://www.jianshu.com/p/5ba253651c3b">Vue2.0 新手完全填坑攻略——从环境搭建到发布</a></li>
 <li> <A HREF="https://yq.aliyun.com/articles/668950?spm=a2c4e.11157919.spm-cont-list.61.146c27aemYLE3k">第一篇：VUE的构建</A>-博客-云栖社区-阿里云</li>
 <li> <A HREF="http://jiongks.name/blog/just-vue/">Vue + webpack 项目实践</A> - 囧克斯</li>

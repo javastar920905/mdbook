@@ -2,9 +2,6 @@
 <!-- tabs:start -->
 #### ** 前端学习资源 **
 
-
-
-
 ## 前端技术栈
 - [vue 学习](books/5.front/vue_learn.md)
 * [bootstrap 有道总结](http://note.youdao.com/noteshare?id=27d9b6ed3ef4b21cb1d4673cbe830e2d)
