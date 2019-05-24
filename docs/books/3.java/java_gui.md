@@ -5,7 +5,7 @@ javaFX  学习
 博文地址: [mybatis-generator界面工具](http://javastar920905.coding.me/2019/05/mybatis-generator-gui/ ) 点击链接可以到博客查看工具简介,以及下载使用
 
 
-### 下载
+## 基于自定义模板ftl 生成controller, service
 > 通过修改源码,添加了功能: 基于自定义模板ftl 生成controller, service ,mybatis 代码 (只计划维护 mysql数据库)
 
 本工具发布jar 包和 exe 形式 (大小和方便程度,供用户选择): 
@@ -13,7 +13,7 @@ javaFX  学习
 * [双击启动exe 文件方式 - 100MB](https://javabus.oss-cn-beijing.aliyuncs.com/code-gen-gui-jar.zip)
 * [github 地址](https://github.com/javastar920905/mybatis-generator-gui/tree/gen-controller-service-mybatis)  查看 **gen-controller-service-mybatis** 分支
  
-自定义ftl模板说明,请查看readme.txt
+自定义ftl模板说明,请查看解压后的 readme.txt
 
 ## java gui 学习文档
 java中进行界面GUI开发，总共有四种方式 Awt, Swing,  SWT, JavaFx 
