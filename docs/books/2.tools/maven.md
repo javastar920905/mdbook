@@ -10,7 +10,6 @@
    * [创建maven 多项目](http://note.youdao.com/noteshare?id=a6f16e7c3c84aa836271f5d6c0e4f684&sub=6914293C27EB48CBA54F3691083F709F)
    * [使用maven插件将服务打包成docker镜像](http://note.youdao.com/noteshare?id=fe2e5127a04da131a69f10f06baa1cdd&sub=54E033AD8BB94B7BAC9A69D0840D0164)
    * [将现有jar包安装到本地maven](http://note.youdao.com/noteshare?id=2e661facddda46471954c326da22ba48&sub=36B367DF554545DFB0592901B483E347)
-   
  ## maven 使用问题
  * [pom -maven 依赖机制-依赖传递](http://note.youdao.com/noteshare?id=0df6a6d4a192486e85665bbf2aa5e957&sub=416758386C944E2F9982A6407F91163E)
     * [maven 本地库和依赖解决_maven help](http://note.youdao.com/noteshare?id=c39f6b65340aa2318aa8045f90f905fd&sub=909FEF89A88F466CA9B9FF6F4A7B0BC9) 

@@ -55,4 +55,27 @@ git config --global credential.helper store
 ```
 这条命令之后执行一次push操作，这个时候还要输入账号密码，以后就不用了
 
+## git 配置用户名
+* 查看用户名和邮箱地址 git config user.name
+
+* 修改用户名和邮箱地址
+ git config --global user.name "username"
+ 
+ git config --global user.email "email"
+
+* 查看配置文件的位置
+
+位置1:/etc/gitconfig
+
+      系统级别的配置,适用于所有的用户和所有的库,可以使用 $git config --system 来指定和修改,存储在Git安装目录下
+
+位置2:~/.gitconfig
+
+      用户级别的配置,适用于当前登录的用户,可以使用$git config --gloabal来指定和修改,存储在C:\Documents and Settings\$USER下
+
+## 使用git bash shell生成密钥 
+ssh-keygen -t rsa -C “git 用户名“
+
+(/c/Users/Administrator/.ssh/id_rsa): id_rsa和id_rsa.pub (把公钥给git管理员)
+
 
