@@ -18,14 +18,16 @@
    * [常用搜索工具](books/2.tools/search_tools.md)
 * 3.java💖 
    * [ java学习路线图](books/3.java/1.route.md)
+   * [ 敏捷开发指南](books/3.java/2.devops.md)
    * [ spring boot 系列](books/3.java/2.spring.md)
    * [ java 常用工具类](books/3.java/3.tool.md)
-   * [ 敏捷开发指南](books/3.java/4.dev_ops.md)
    * [api-手册](books/3.java/api_reference.md)
    * [ 佛祖保佑 banner.txt](books/3.java/banner.md)
    * [ java 面试题](books/3.java/interview.md)
    * [javaFX  学习](books/3.java/java_gui.md)
    * [ 微服务相关](books/3.java/micro_server.md)
+   * [ python 学习](books/3.java/python.md)
+   * [ 闲来无事读读书](books/3.java/reading.md)
    * [ java 网络爬虫系列](books/3.java/spider.md)
 * 4.linux☠ 
    * [ linux 学习资源](books/4.linux/1.linux.md)
@@ -38,13 +40,7 @@
    * [vue 系列](books/5.front/vue_learn.md)
    * [ vue seo 技术调研](books/5.front/vue_seo.md)
    * [公众平台-小程序等](books/5.front/weixin.md)
-* learn🔞 
-   * [入门教程 社区 大牛](books/learn/1.learn.md)
-   * [ 闲来无事读读书](books/learn/3.reading.md)
-   * [awesome系列](books/learn/awesome.md)
-   * [ python 学习](books/learn/python.md)
-   * [源码阅读与学习](books/learn/sourcecode.md)
-* resume 
+* resume🔞 
    * [ 使用冷熊简历模板写简历](books/resume/resume-template.md)
 
 * lovestory🌹
