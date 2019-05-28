@@ -18,6 +18,16 @@
     * [vue seo 技术调研](books/5.front/vue_seo.md)
     * [http_跨域请求_axios配置](http://note.youdao.com/noteshare?id=14bc9694ba16fd35eab508bacc5ebb38&sub=32C3669190264D37ADFEF9CECE5CE23A)
 
+<H3>axios</H3>
+<li> <A HREF="https://www.kancloud.cn/yunye/axios/234845"> axios 中文说明</A></li>
+
+<H3>vue-cli</H3>
+<li> <A HREF="https://cli.vuejs.org/zh/guide/#cli"> vue-cli3 官网文档</A></li>
+<li> <A HREF="https://github.com/vuejs/vue-cli/tree/v2#vue-cli--"> vue-cli2 官网文档</A></li>
+
+<H3>Vue Router</H3>
+<li> <A HREF="https://router.vuejs.org/zh/guide/advanced/navigation-guards.html"> Vue Router 中文官网文档</A></li>
+<li> <A HREF="https://router.vuejs.org/"> Vue Router 英文官网文档</A></li>
 
 ### ui 框架
 * element ui
@@ -34,10 +44,6 @@
 <li> <A HREF="https://hulufei.gitbooks.io/react-tutorial/content/environment.html">开发环境配置 | React 入门教程</A></li>
 <li> <A HREF="https://webpack.js.org/concepts/loaders">Webpack loaders</A></li>
 <li> <A HREF="https://github.com/web-line-learn/webpack">Webpack 学习示例</A></li>
-
-<H3>vue-cli</H3>
-<li> <A HREF="https://cli.vuejs.org/zh/guide/#cli"> vue-cli3 官网文档</A></li>
-<li> <A HREF="https://github.com/vuejs/vue-cli/tree/v2#vue-cli--"> vue-cli2 官网文档</A></li>
 
 <H3>babel</H3>
 <li> <A HREF="http://www.ruanyifeng.com/blog/2016/01/babel.html">Babel 入门教程</A> - 阮一峰的网络日志</li>
