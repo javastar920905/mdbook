@@ -42,6 +42,7 @@
    * [公众平台-小程序等](books/5.front/weixin.md)
 * resume🔞 
    * [ 使用冷熊简历模板写简历](books/resume/resume-template.md)
+   * [ zyan 个人简历](books/resume/resume.md)
 
 * lovestory🌹
    * <a href="lovestory.html" target="_blank">lovestory💜</a>
