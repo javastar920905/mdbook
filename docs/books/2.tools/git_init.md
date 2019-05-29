@@ -63,7 +63,7 @@ git config --global credential.helper store
  
  git config --global user.email "email"
 
-* 查看配置文件的位置
+## 查看配置文件的位置
 
 位置1:/etc/gitconfig
 
@@ -78,4 +78,9 @@ ssh-keygen -t rsa -C “git 用户名“
 
 (/c/Users/Administrator/.ssh/id_rsa): id_rsa和id_rsa.pub (把公钥给git管理员)
 
+## 分支操作
+* 推送本地分支到远程仓库
+git push --set-upstream origin 分支名
 
+* 远程仓库里拉取一条本地不存在的分支时
+git checkout -b 本地分支名 origin/远程分支名
