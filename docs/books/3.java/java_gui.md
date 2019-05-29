@@ -4,6 +4,7 @@ javaFX  学习
 
 博文地址: [mybatis-generator界面工具](http://javastar920905.coding.me/2019/05/mybatis-generator-gui/ ) 点击链接可以到博客查看工具简介,以及下载使用
 
+如果你用的是idea 进行开发,更加推荐 EasyCode插件 [EasyCode 个人有道云笔记总结 配置备份](http://note.youdao.com/noteshare?id=1602e6bf67f66b7df774a78a0eb61076&sub=07E9AE76FFDE49088BB2A6BEF96304C7)
 
 ## 基于自定义模板ftl 生成controller, service
 > 通过修改源码,添加了功能: 基于自定义模板ftl 生成controller, service ,mybatis 代码 (只计划维护 mysql数据库)
