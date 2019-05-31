@@ -3,9 +3,11 @@ package developdoc;
 import cn.javabus.util.FileUtil;
 import org.junit.Test;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 
 /**
@@ -23,7 +25,7 @@ public class SidebarTest {
     //支持二级目录,多级目录自动变成二级目录显示
     static String format = "   * [%s](%s/%s)\r\n";
     static String parent_format = "* %s \r\n";
-    static String sidebar_format = "# [java 开发手册](README.md)\r\n%s\r\n"+custom_sidebar;
+    static String sidebar_format = "# [java 开发手册 <sup>help\uD83D\uDCA6</sup>](README.md)\r\n%s\r\n"+custom_sidebar;
     static String[] emojis={"😘","🔧","💖","☠","🆚","🔞"};
 
 

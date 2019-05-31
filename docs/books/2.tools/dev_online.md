@@ -60,6 +60,9 @@ flush privileges;
     *  <A HREF="http://tool.chinaz.com/tools/urlencode.aspx">UrlEncode编码/UrlDecode解码 - 站长工具</A>
 * <A HREF="http://tool.114la.com/catalog/">114 工具箱</A> 站长 学习 生活 服务 交通
 * <a href="https://www.iamwawa.cn/">蛙蛙工具</a> 文字处理 便民 站长 开发
+* pdf转换器 [smallpdf在线-偶尔访问不了,耐心等待](https://smallpdf.com/cn) -- [嗨格式PDF转换器 -免费转3页 98终生](http://www.haigeshi.com/) -- [迅捷PDF转换器](https://www2.tianduntech.com/pdfconverter4/?utm_source=baidu-1&utm_medium=cpc&utm_campaign=PDF%E8%BD%AC%E6%8D%A2%E5%99%A8&utm_term=%E5%9C%A8%E7%BA%BFpdf%E8%BD%AC%E6%8D%A2)
+
+
 ## 其他常用工具
 * <A HREF="http://www.css88.com/tool/html2js/">HTML代码转换为JavaScript字符串-前端开发转换工具 | WEB前端开发</A>
 * <A HREF="http://bigtosmall.51240.com/">英文字母大小写转换 - 首字母大写转换 - 在线英文字母大小写转换工具 - 字母转换为小写 - 字母转换为大写</A>
