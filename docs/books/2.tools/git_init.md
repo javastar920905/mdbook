@@ -84,3 +84,22 @@ git push --set-upstream origin 分支名
 
 * 远程仓库里拉取一条本地不存在的分支时
 git checkout -b 本地分支名 origin/远程分支名
+
+
+## [git的内部存储结构](https://www.toutiao.com/a6697183062993666564/?tt_from=mobile_qq&utm_campaign=client_share&timestamp=1559541930&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_android&req_id=2019060314053001002506614044853B9&group_id=6697183062993666564)
+* Git的三个区+一个远程仓库
+    * ①Remote：远程仓库，像github就是一个远程仓库。
+    * ②Repository:本地仓库，通过git clone将远程仓库的代码下载到本地。代码库的元数据信息在根目录下的.git目录下。
+    * ③Workspace：工作空间，就是我们写代码的目录。
+    * ④Index：暂存区，指的是.git目录下的index文件。
+    > * 在平时写完代码后, 执行git add 就是将变更的内容从工作空间提交到暂存区，
+    > * git commit就是将暂存区的内容提交到本地代码库里，
+    > * git push 就是将本地代码库的变更提交到远程仓库，
+    > * 这时其他人就能通过pull 将你的变更下载到工作空间。
+* .git的内部存储结构
+    * hooks:是存储git钩子的目录，钩子是在特定事件发生时触发的脚本。比如：提交之前，提交之后。
+    * info:是存储git信息的目录，比如排除特定后缀的文件.
+    * objects:是存储git各种对象及内容的对象库，包含正常的和压缩后的。
+    * refs:是存储git各种引用的目录，包含分支、远程分支和标签。
+    * config:是代码库级别的配置文件。
+    * HEAD:是代码库当前指向的分支，这里为master。

@@ -6,6 +6,7 @@
    * [ 使用coding 管理任务 一站式 DevOps](books/1.enjoy/2.coding.md)
    * [ 使用easyopen 搭建开放平台](books/1.enjoy/easyopen.md)
    * [ 使用小白接口进行个人开发](books/1.enjoy/noob.md)
+   * [ 闲来无事读读书](books/1.enjoy/reading.md)
 * 2.tools🔧 
    * [ 常用开发工具备份](books/2.tools/1.tools.md)
    * [ 项目管理.需求设计工具](books/2.tools/2.manage.md)
@@ -27,7 +28,6 @@
    * [javaFX  学习](books/3.java/java_gui.md)
    * [ 微服务相关](books/3.java/micro_server.md)
    * [ python 学习](books/3.java/python.md)
-   * [ 闲来无事读读书](books/3.java/reading.md)
    * [ java 网络爬虫系列](books/3.java/spider.md)
 * 4.linux☠ 
    * [ linux 学习资源](books/4.linux/1.linux.md)

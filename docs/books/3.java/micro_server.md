@@ -16,7 +16,8 @@
    * <A HREF="https://jingyan.baidu.com/article/fedf073770f23335ac8977b1.html">Win7怎么用IIS发布网站系统 部署项目_百度经验</A>
    * <A HREF="https://blog.csdn.net/y13156556538/article/details/73889284">Win7用IIS发布网站系统 部署项目 - y13156556538的博客 - CSDN博客</A>
    * <A HREF="https://www.zhihu.com/question/36514327">CDN是什么？使用CDN有什么优势？ - 知乎</A>
-
+   * [为什么需要API网关？](https://www.toutiao.com/a6698150449863721475/?tt_from=mobile_qq&utm_campaign=client_share&timestamp=1559541666&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_android&req_id=201906031401060100230390220494A58&group_id=6698150449863721475)
+   
 * 微服务架构
    * <A HREF="http://v.youku.com/v_show/id_XMTY5OTAwMjA0OA==.html?tpa=dW5pb25faWQ9MTAyMjEzXzEwMDAwMl8wMV8wMQ">微服务架构的DevOps容器云实践—在线播放—优酷网，视频高清在线观看</A>
    * <A HREF="http://v.youku.com/v_show/id_XMTY5OTEzNjQzNg==.html?spm=a2h0j.8191423.module_basic_relation.5~5!2~5~5!6~5~5~A&from=y1.2-1-87.3.4-1.1-1-1-3-0">微服务架构的DevOps容器云实践2—在线播放—优酷网，视频高清在线观看</A>
