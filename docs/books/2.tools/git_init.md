@@ -67,9 +67,10 @@ git config --global credential.helper store
 * 查看用户名和邮箱地址 git config user.name
 
 * 修改用户名和邮箱地址
- git config --global user.name "username"
- 
- git config --global user.email "email"
+```
+ git config  --global user.eamil  "username"
+ git config  --global user.email  "email"
+```
 
 ## 查看配置文件的位置
 
