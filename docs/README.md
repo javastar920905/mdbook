@@ -7,7 +7,7 @@
 
 主页: [javabus.cn](https://javabus.cn)  粤ICP备17145208号
     
-<p>QQ群: 630848940 (javabus.cn/原资源共享技术交流群)</p>
+<p>QQ群: 630848940 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=6516174192ac3555efe1773ce3a584250a0412b82722dec2f8507a9931c5c909"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="javabus.cn" title="javabus.cn"></a></p>
     
 </div>
 
