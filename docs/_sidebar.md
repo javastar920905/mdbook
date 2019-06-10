@@ -1,8 +1,7 @@
 # [java 开发手册 <sup>help💦</sup>](README.md)
+* [博客](http://javastar920905.coding.me) 
 * 1.enjoy😘 
    * [ 开源建站 博客/cms/oa/](books/1.enjoy/1.1site.md)
-   * [ docsify 搭建文档系统](books/1.enjoy/1.2docsify.md)
-   * [ jekyll 搭建静态网站](books/1.enjoy/1.3jekyll.md)
    * [ 使用coding 管理任务 一站式 DevOps](books/1.enjoy/2.coding.md)
    * [ 使用easyopen 搭建开放平台](books/1.enjoy/easyopen.md)
    * [ 使用小白接口进行个人开发](books/1.enjoy/noob.md)
