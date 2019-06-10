@@ -22,6 +22,14 @@
 <li><A HREF="http://www.cnblogs.com/xiaobaihome/archive/2012/03/20/2407610.html" >SVN服务器搭建和使用（一） - xjbest - 博客园</A></li>
 <li><A HREF="http://jingyan.baidu.com/article/93f9803fea9ff4e0e46f55f0.html" >svn安装与其服务器搭建_百度经验</A></li>
 
+## git 进阶
+- [场景式解读 Git 工作流](https://blog.coding.net/blog/git-workflow-2)
+* [深入浅出 Git](https://blog.coding.net/blog/git-from-the-inside-out)
+* [coding 博客-git 自救指南](https://blog.coding.net/blog/githandbuch)
+* [Commit message 和 Change log 编写指南](https://blog.coding.net/blog/commit_message_change_log)
+* [Feature Branch Workflow 实践](https://blog.coding.net/blog/feature-branch-workflow-practice)
+* [Code Review 代码审阅初窥门径](https://blog.coding.net/blog/Code-Review)
+
 ## github 初始化
 <li><A HREF="http://wiki.jikexueyuan.com/project/github-basics/the-introduction.html"    >GitHub 简介 - GitHub 使用手册 - 基础篇 - 极客学院Wiki</A></li>
 <li><A HREF="http://wiki.jikexueyuan.com/project/github-basics/github-for-windows.html"  >GitHub for Windows - GitHub 使用手册 - 基础篇 - 极客学院Wiki</A></li>
