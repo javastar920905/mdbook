@@ -7,8 +7,10 @@
 * [干货集中营 API 文档](http://gank.io/api)
 * [获取随机背景图](https://www.cnblogs.com/zhibu/p/7158807.html)
 * [开放获取Bing每日背景图片接口](https://blog.saintic.com/blog/240.html)
-* [在线免费 小白api](https://www.yesapi.cn/docs/#/v2.0/README) 限量
-  * <a href="/books.html" target="_blank">小白接口,实现一个站长工具箱demo</a>
+
+## [在线免费 小白api](https://www.yesapi.cn/docs/#/v2.0/README) 限量
+* [小白开放平台开放的能力介绍](http://open.yesapi.cn/) 一站式解决方案、 小白开放平台和小白接口，适合做什么？
+* <a href="/books.html" target="_blank">小白接口,实现一个站长工具箱demo</a>  通过阅读下面内容，具备实现该功能的能力
 
 ##  [小白开放平台文档](http://www.yesapi.cn/docs/#/)  
 - 小白接口，是免费，免开发，直接可用的云端API
@@ -20,15 +22,20 @@
 ![小白接口藏宝图](http://cdn7.phalapi.net/20180121010550_0d66e64fe53f9a2df7e50b3477fe2075)
   
 ## [在线免费 小白api](https://www.yesapi.cn/docs/#/v2.0/README) 入门教程
-  - 无需开发可直接使用的[小白接口](http://api.yesapi.cn/docs.php?type=fold)
   - 注册小白开放平台账号,登录小白开放平台,使用邮箱接收 app_key和app_secrect
   - [模型数据管理(实质上是MySQL数据库的表)](http://www.yesapi.cn/docs/#/v2.0/model) 
     - 添加新的模型表links(链接表),点击用户名进入个人中心管理
     - 根据需求添加自定义字段(url,remarks,icon,custome_order)
     - 添加模型,添加修改字段描述都需要开通vip,设计表需谨慎 link_type:[{'type':'java','value':10}] 
     - 使用在线添加数据接口添加,测试数据; 温馨提示：UUID字段不为空时，需要提供uuid和token，才能通过小白接口获取该数据哦~ 
+  - [常用sdk介绍](http://www.yesapi.cn/docs/#/v2.0/README?id=%E9%80%9A%E8%BF%87http%E8%AF%B7%E6%B1%82%E5%B0%8F%E7%99%BD%E6%8E%A5%E5%8F%A3) 通过HTTP请求小白接口
+    - [YesApi Vue-Uniapp SDK](https://github.com/yesapicn/yesapi-vue-uniapp-sdk)
+    - [YesApi 微信小程序 SDK（含商城项目源代码）](https://github.com/yesapicn/yesapi-miniprogram-1)
+![小白接口开发流程](http://cdn7.okayapi.com/yesyesapi_20190407204536_e504ee805b36087810d187b469fa7150.png)
+
 
 ## 模型数据接口,在线调试. 
+- [小白接口大全](http://api.yesapi.cn/docs.php?type=fold)helloworld、会员模块、自定义数据模型[通用接口]....
 - [接口签名设置-总开关：全部小白接口](http://open.yesapi.cn/?r=App/ApisSignConfig)(初次测试时可关闭全部接口签名验证,)
 - [查看我的接口域名 app_key和app_secrect](http://open.yesapi.cn/?r=App/Mine) 
 - 导入postman 调试接口 (https://www.getpostman.com/collections/34e2d04b9ad770e14cfc)
@@ -67,7 +74,7 @@ http://hd215.api.yesapi.cn/?s=App.Table.FreeQuery&model_name=link&where=[["link_
  http://hd215.api.yesapi.cn/?s=App.SuperTable.SqlQuery&model_name=link&sql=select * from link limit 0, 3&app_key=F7427CADEFF47A4368C87B334FC5C34F
 ```
 
-## 实用的Ext接口
+## 实用的Ext接口-无需开发可直接使用
 - 二维码/条形码/ip/全国地址/模拟数据/银行卡/手机归属地/日期api...
 - [翻译整段汉文为拼音接口](http://api.yesapi.cn/docs.php?api=Ext.Pinyin)
 ```$xslt
