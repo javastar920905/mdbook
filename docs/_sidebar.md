@@ -23,6 +23,7 @@
    * [ java 常用工具类](books/3.java/3.tool.md)
    * [api-手册](books/3.java/api_reference.md)
    * [ 佛祖保佑 banner.txt](books/3.java/banner.md)
+   * [ 敏捷开发指南](books/3.java/dev_ops.md)
    * [ java 面试题](books/3.java/interview.md)
    * [javaFX  学习](books/3.java/java_gui.md)
    * [ 微服务相关](books/3.java/micro_server.md)
@@ -46,4 +47,5 @@
 * lovestory🌹
    * <a href="lovestory.html" target="_blank">lovestory💜</a>
    * <a href="love.html" target="_blank">love💛</a>
+   * <a href="books.html" target="_blank">站长工具箱💜</a>
    * <a href="timeline.html" target="_blank">timeline</a>

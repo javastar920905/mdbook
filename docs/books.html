@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>使用小白接口,实现站长工具箱</title>
+    <style>
+        #container {
+            width: 1024px;
+            margin: 0px auto;
+            padding: 0px;
+            background: whitesmoke;
+            min-height: 100px;
+        }
+
+        .content li {
+            list-style: none;
+            float: left;
+            font-size: 12px;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .content .icon {
+            width: 100px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="container">
+    <section class="navX nav"></section>
+    <section class="navY nav"></section>
+    <section class="content">
+
+
+    </section>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    let reqUrl="http://hd215.api.yesapi.cn/?app_key=F7427CADEFF47A4368C87B334FC5C34F"
+
+
+    //todo 面向对象方式编程{User,Dir,Book}, 最好可配置 是否显示横纵导航
+
+    $(function () {
+        loadJson(reqUrl+'&s=App.Table.FreeQuery&model_name=link&where=[["link_type","=",""]]');
+    });
+
+    //加载json
+    function loadJson(jsonFile) {
+        console.log('1 load jsonFile:' + jsonFile);
+
+        $.ajax({
+            type: "GET",
+            url: jsonFile,
+            dataType: "json",
+            success: function (data) {
+                console.log("success function");
+                console.log(data);
+                //var books= $.parseJSON(rs);
+
+                //显示内容
+                appendToDocucment(data.data.list);
+            },
+            error: function (e) {
+                console.log("error function");
+                console.log(e);
+                console.log(e.responseText);
+                //var books= $.parseJSON(e.responseText);
+            }
+        });
+    }
+
+    //显示内容到页面
+    function appendToDocucment(jsonDoc) {
+        console.log("2 显示内容到页面")
+        var divContent = $(".content");
+
+        var ulEle = $("<ul class='row'></ul>");
+        $.each(jsonDoc, function (i, n) {
+            //console.log(n)
+            var itemEle = $("<li><a href='" + n.url + "'> <img class='icon' src='" + n.icon + "' /><br/> " + n.remarks + "</a></li>");
+            itemEle.appendTo(ulEle);
+        });
+        ulEle.appendTo(divContent);
+    }
+</script>
+
+</body>
+</html>
+
