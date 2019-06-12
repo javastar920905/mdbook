@@ -3,6 +3,8 @@
 
 * [idea使用教程_下载安装](http://note.youdao.com/noteshare?id=30a1768a7b72490f184974d4fb17df30&sub=4F0BC5290AED46B8A0A413DB056BB60C)
 * idea 激活破解
+  * [IDEA 2019 IDEA 2018 激活 注册码 三种激活方式- 201905](https://blog.csdn.net/justszh/article/details/81484802)
+  * [Intellij IDEA的激活（使用破解补丁永久激活）-201803](https://blog.csdn.net/shengshengshiwo/article/details/79599761)
   * <A HREF="https://www.w3h5.com/post/198.html">下载破解补丁文件JetbrainsIdesCrack</A></li>
   * <A HREF="https://www.52pojie.cn/thread-781394-1-1.html">IDEA2018.2.1最新版本破解 </A>
   * <A HREF="http://idea.lanyus.com/">IntelliJ IDEA 注册码</A>
