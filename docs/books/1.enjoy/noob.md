@@ -1,4 +1,14 @@
 # 使用小白接口进行个人开发
+## 个人开发技术栈
+* 开发工具 
+  * [ git 教程](books/2.tools/git_init.md)
+  - [ 使用coding 管理任务 一站式 DevOps](books/1.enjoy/2.coding.md) 在线开发,安装一次环境后,在网吧也能开发(适合小项目)
+    - [合理使用公告,使用wiki 编写项目需求](https://dev.tencent.com/u/javastar920905/p/mdbook/wiki/4)
+    - [任务看板](https://dev.tencent.com/u/javastar920905/p/mdbook/tasks/board) 建立一个短期目标里程碑
+* 前端框架
+  - [uni-app](http://note.youdao.com/noteshare?id=a02b58aa60478a447d58105954122931&sub=5453E9D5AA14472F8F84F5F21FF2E944) 看中跨平台特性,小程序,pc
+* 后台接口
+  - 使用小白开放平台 (适合小型项目,快速成型)
 
 ## 一些常用免费api
 * [发布一个对外api](http://api.wangshuwen.com/doc)
