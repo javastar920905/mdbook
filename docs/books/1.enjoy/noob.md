@@ -6,9 +6,18 @@
     - [合理使用公告,使用wiki 编写项目需求](https://dev.tencent.com/u/javastar920905/p/mdbook/wiki/4)
     - [任务看板](https://dev.tencent.com/u/javastar920905/p/mdbook/tasks/board) 建立一个短期目标里程碑
 * 前端框架
+  - [layui ](https://www.layui.com/) 本人java后台一枚,对vue,react 语法不是很了解,熟练jquery
   - [uni-app](http://note.youdao.com/noteshare?id=a02b58aa60478a447d58105954122931&sub=5453E9D5AA14472F8F84F5F21FF2E944) 看中跨平台特性,小程序,pc
-* 后台接口
-  - 使用小白开放平台 (适合小型项目,快速成型)
+* 后台接口 使用小白开放平台 (适合小型项目,快速成型)
+  - [小白接口大全](http://api.yesapi.cn/docs.php?type=fold) helloworld、会员模块、自定义数据模型[通用接口]....
+  - [小白平台提供 接口在线调试工具](http://open.yesapi.cn/?r=Site/Debug) s参数为service的缩写
+  - [集合元数据、计数器-数据选型攻略图 ](http://www.yesapi.cn/docs/#/v2.0/course_6?id=_3%E3%80%81%E7%B2%BE%E5%93%81%EF%BC%9A%E6%95%B0%E6%8D%AE%E9%80%89%E5%9E%8B%E6%94%BB%E7%95%A5%E5%9B%BE) 能不自己创建模型，就不创建了
+    - [应用元数据模块](http://api.yesapi.cn/docs.php?keyword=main&channel=api)
+    - [集合数据模块](http://api.yesapi.cn/docs.php?keyword=_set&channel=api) 应用,会员,游客,他人,用户(区别??)
+  - [小白平台提供客户端管理界面](http://open.yesapi.cn/?r=Member/userManager ) 模型管理、会员与元数据管理、个人中心和接口签名设置、运营管家
+* 成果展示
+  * <a href="/books.html" target="_blank">小白接口,实现一个站长工具箱demo</a>  通过阅读上面内容，具备实现该功能的能力
+
 
 ## 一些常用免费api
 * [发布一个对外api](http://api.wangshuwen.com/doc)
@@ -41,7 +50,6 @@
   * [迷你日记](http://www.yesapi.cn/docs/#/v2.0/demo_note) 学习登录注册
   * [发票助手](http://www.yesapi.cn/docs/#/v2.0/demo_fabiao)学习数据选型
   * [包车预约](http://www.yesapi.cn/docs/#/v2.0/demo_book) 更全面的demo
-  * <a href="/books.html" target="_blank">小白接口,实现一个站长工具箱demo</a>  通过阅读上面内容，具备实现该功能的能力
 ![小白接口开发流程](http://cdn7.okayapi.com/yesyesapi_20190407204536_e504ee805b36087810d187b469fa7150.png)
 
 

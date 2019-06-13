@@ -41,17 +41,75 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
-    let reqUrl="https://hd215.api.yesapi.cn/?app_key=F7427CADEFF47A4368C87B334FC5C34F"
+    let reqUrl = "https://hd215.api.yesapi.cn/?app_key=F7427CADEFF47A4368C87B334FC5C34F";
+    var currentCategory="java";
 
 
     //todo 面向对象方式编程{User,Dir,Book}, 最好可配置 是否显示横纵导航
 
     $(function () {
-        loadJson(reqUrl+'&s=App.Table.FreeQuery&model_name=link&where=[["link_type","=",""]]');
+        loadJsonByCategory(currentCategory);
     });
 
+    //alt +d 快捷键保存
+    document.onkeydown = function (event) {
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+
+        if (e.keyCode == 83 && e.ctrlKey) {
+            // alert("你按下了ctrl+s");
+        }
+        if (e.keyCode == 68 && e.altKey) {
+            // alert("你按下了alt+d");
+            //显示名称 url ,分类
+            let json={
+                "java":
+                [{
+                    icon: "https://javabus.cn/_media/logo.png",
+                    remarks: "java 开发参考手册, awesome java.",
+                    url: "https://javabus.cn"
+               },{
+                    icon: "https://javabus.cn/_media/logo.png",
+                    remarks: "爱折腾的爪哇猿的博客",
+                    url: "http://javastar920905.coding.me/"
+                }]
+            };
+            appendLink(json);
+        }
+    };
+    function appendLink(json){
+        let data=JSON.stringify(json);
+        console.log("添加json内容")
+        console.log(data);
+        $.ajax({
+            type: "post",
+            url: reqUrl+"&s=App.Main_Meta.Update&key=links&data="+data,
+            dataType: "json",
+            success: function (data) {
+                console.log("success function");
+                console.log(data);
+                if(data.data.err_code==0){
+                    //alert("添加新连接成功");
+                    loadJsonByCategory(currentCategory);
+                }else if(data.data.err_code==1){
+                    alert("链接已存在");
+                }else {
+                    alert("保存链接失败");
+                }
+            },
+            error: function (e) {
+                console.log("error function");
+                console.log(e);
+                console.log(e.responseText);
+                //var books= $.parseJSON(e.responseText);
+            }
+        });
+    }
+
+   function loadJsonByCategory(category){
+       loadJson(reqUrl + '&s=App.Main_Meta.Get&key=links&fields='+category,category);
+    }
     //加载json
-    function loadJson(jsonFile) {
+    function loadJson(jsonFile,category) {
         console.log('1 load jsonFile:' + jsonFile);
 
         $.ajax({
@@ -64,7 +122,7 @@
                 //var books= $.parseJSON(rs);
 
                 //显示内容
-                appendToDocucment(data.data.list);
+                appendToDocucment(data.data.data[category]);
             },
             error: function (e) {
                 console.log("error function");
@@ -79,6 +137,7 @@
     function appendToDocucment(jsonDoc) {
         console.log("2 显示内容到页面")
         var divContent = $(".content");
+        divContent.html("");
 
         var ulEle = $("<ul class='row'></ul>");
         $.each(jsonDoc, function (i, n) {
