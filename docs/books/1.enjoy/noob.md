@@ -7,6 +7,8 @@
     - [任务看板](https://dev.tencent.com/u/javastar920905/p/mdbook/tasks/board) 建立一个短期目标里程碑
 * 前端框架
   - [layui ](https://www.layui.com/) 本人java后台一枚,对vue,react 语法不是很了解,熟练jquery
+    - [在线示例-组件效果预览](https://www.layui.com/demo/) 挺好用的工具
+    - [layui 快速上手](https://www.layui.com/doc/) 下载1.5M
   - [uni-app](http://note.youdao.com/noteshare?id=a02b58aa60478a447d58105954122931&sub=5453E9D5AA14472F8F84F5F21FF2E944) 看中跨平台特性,小程序,pc
 * 后台接口 使用小白开放平台 (适合小型项目,快速成型)
   - [小白接口大全](http://api.yesapi.cn/docs.php?type=fold) helloworld、会员模块、自定义数据模型[通用接口]....

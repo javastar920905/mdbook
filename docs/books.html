@@ -40,13 +40,22 @@
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="/plugin/layui/css/layui.css"></script>
+<script src="/plugin/layui/layui.all.js"></script>
 <script>
     let reqUrl = "https://hd215.api.yesapi.cn/?app_key=F7427CADEFF47A4368C87B334FC5C34F";
     var currentCategory="java";
 
+    //一般直接写在一个js文件中
+    layui.use(['layer', 'form'], function(){
+        var layer = layui.layer
+            ,form = layui.form;
+
+        layer.msg('Hello World');
+    });
 
     //todo 面向对象方式编程{User,Dir,Book}, 最好可配置 是否显示横纵导航
-
     $(function () {
         loadJsonByCategory(currentCategory);
     });
