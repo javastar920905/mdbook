@@ -6,31 +6,58 @@
     <title>使用小白接口,实现站长工具箱</title>
     <style>
         #container {
-            width: 1024px;
             margin: 0px auto;
             padding: 0px;
             background: whitesmoke;
-            min-height: 100px;
         }
 
-        .content li {
+        .navX {
+            background: #393D49;
+            height: 30px;
+            line-height: 30px;
+            color: white;
+        }
+
+        .content .item {
             list-style: none;
             float: left;
             font-size: 12px;
             text-align: center;
             margin: 5px;
             padding: 5px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            mso-border-shadow: yes;
+            height: 150px;
+            background: white;
         }
 
         .content .icon {
             width: 100px;
         }
+
+        .item .item-left {
+
+        }
+
+
     </style>
 
 </head>
 <body>
 <div id="container">
-    <section class="navX nav"></section>
+    <section class="navX nav">
+        <div class="layui-row ">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+            </div>
+            <div class="layui-col-xs4 layui-col-sm12 layui-col-md4">
+                <button onclick="openAddWin()" class="layui-btn layui-btn-sm"> 添加工具</button>
+                | 登录
+            </div>
+        </div>
+    </section>
     <section class="navY nav"></section>
     <section class="content">
 
@@ -40,20 +67,49 @@
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="/plugin/layui/css/layui.css"></script>
+<link rel="stylesheet" href="/plugin/layui/css/layui.css">
 <script src="/plugin/layui/layui.all.js"></script>
 <script>
     let reqUrl = "https://hd215.api.yesapi.cn/?app_key=F7427CADEFF47A4368C87B334FC5C34F";
-    var currentCategory="java";
+    var currentCategory = "java";
+    var layer = layui.layer;
+    var linksMeta;
 
-    //一般直接写在一个js文件中
-    layui.use(['layer', 'form'], function(){
-        var layer = layui.layer
-            ,form = layui.form;
+    function openAddWin(){
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-lan', //默认皮肤
+            area: '500px',
+            content: '<div class="layui-form-item"><input type="text" name="url"   placeholder="请输入链接url  如: https://javabus.cn" autocomplete="off" class="layui-input"> </div>' +
+                '  <div class="layui-form-item"><input type="text" name="remarks"  placeholder="请输入名称或描述" autocomplete="off" class="layui-input"> </div>'+
+                '<div class="layui-form-item"><input type="text" name="icon"   placeholder="请输入logo url" autocomplete="off" class="layui-input"> </div>'
+            ,
+            btn: ['保存链接'],
+            yes: function (index, layero) {
+               var iconVal= $("input[name='icon']").val();
+               var remarksVal= $("input[name='remarks']").val();
+               var urlVal= $("input[name='url']").val();
+               if (iconVal==''||remarksVal==''||urlVal==''){
+                   layer.msg("表单不能为空");
+                   return;
+               }
 
-        layer.msg('Hello World');
-    });
+                let item = {
+                            icon: iconVal,
+                            remarks: remarksVal,
+                            url: urlVal
+                        };
+                var addjson=linksMeta;
+               addjson[currentCategory].push(item);
+                appendLink(addjson);
+
+                //按钮【按钮一】的回调
+                //layer.closeAll();
+            }
+        });
+    }
+
+
 
     //todo 面向对象方式编程{User,Dir,Book}, 最好可配置 是否显示横纵导航
     $(function () {
@@ -68,40 +124,28 @@
             // alert("你按下了ctrl+s");
         }
         if (e.keyCode == 68 && e.altKey) {
-            // alert("你按下了alt+d");
-            //显示名称 url ,分类
-            let json={
-                "java":
-                [{
-                    icon: "https://javabus.cn/_media/logo.png",
-                    remarks: "java 开发参考手册, awesome java.",
-                    url: "https://javabus.cn"
-               },{
-                    icon: "https://javabus.cn/_media/logo.png",
-                    remarks: "爱折腾的爪哇猿的博客",
-                    url: "http://javastar920905.coding.me/"
-                }]
-            };
-            appendLink(json);
+
         }
     };
-    function appendLink(json){
-        let data=JSON.stringify(json);
+
+    function appendLink(json) {
+        let data = JSON.stringify(json);
         console.log("添加json内容")
         console.log(data);
         $.ajax({
             type: "post",
-            url: reqUrl+"&s=App.Main_Meta.Update&key=links&data="+data,
+            url: reqUrl + "&s=App.Main_Meta.Update&key=links&data=" + data,
             dataType: "json",
             success: function (data) {
                 console.log("success function");
                 console.log(data);
-                if(data.data.err_code==0){
+                if (data.data.err_code == 0) {
+                    layer.closeAll();
                     //alert("添加新连接成功");
                     loadJsonByCategory(currentCategory);
-                }else if(data.data.err_code==1){
+                } else if (data.data.err_code == 1) {
                     alert("链接已存在");
-                }else {
+                } else {
                     alert("保存链接失败");
                 }
             },
@@ -114,11 +158,12 @@
         });
     }
 
-   function loadJsonByCategory(category){
-       loadJson(reqUrl + '&s=App.Main_Meta.Get&key=links&fields='+category,category);
+    function loadJsonByCategory(category) {
+        loadJson(reqUrl + '&s=App.Main_Meta.Get&key=links&fields=' + category, category);
     }
+
     //加载json
-    function loadJson(jsonFile,category) {
+    function loadJson(jsonFile, category) {
         console.log('1 load jsonFile:' + jsonFile);
 
         $.ajax({
@@ -129,6 +174,7 @@
                 console.log("success function");
                 console.log(data);
                 //var books= $.parseJSON(rs);
+                linksMeta=data.data.data;
 
                 //显示内容
                 appendToDocucment(data.data.data[category]);
@@ -148,14 +194,17 @@
         var divContent = $(".content");
         divContent.html("");
 
-        var ulEle = $("<ul class='row'></ul>");
+        var ulEle = $("<ul class='row layui-row'></ul>");
         $.each(jsonDoc, function (i, n) {
             //console.log(n)
-            var itemEle = $("<li><a href='" + n.url + "'> <img class='icon' src='" + n.icon + "' /><br/> " + n.remarks + "</a></li>");
+            var itemEle = $("<div class='item layui-col-xs6 layui-col-sm6 layui-col-md1'><a href='" + n.url + "'><div class='item-left'><img class='icon' src='" + n.icon + "' /></div> <div class='item-right'> " + n.remarks + "</div></a></div>");
             itemEle.appendTo(ulEle);
         });
         ulEle.appendTo(divContent);
     }
+
+
+
 </script>
 
 </body>
