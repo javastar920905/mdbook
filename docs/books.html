@@ -130,18 +130,19 @@
 
     </section>
     <footer style="position: absolute;bottom: 0">
-        <h2>Todo list</h2>
+        <h2>Todo list-v2</h2>
         <ul>
-            <li>添加修改功能</li>
-            <li>添加确认删除功能</li>
             <li>添加分类管理功能</li>
             <li>添加拖动排序功能</li>
+            <li>添加发布我的工具箱功能</li>
+            <li>添加推荐到首页功能,添加管理员审核列表</li>
+            <li>添加收藏功能</li>
         </ul>
     </footer>
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="/plugin/jquery-3.4.1.min.js"></script>
 <script src="/plugin/jq-md5.js"></script>
 <link rel="stylesheet" href="/plugin/layui/css/layui.css">
 <script src="/plugin/layui/layui.all.js"></script>
@@ -149,7 +150,6 @@
     let reqUrl = "https://hd215.api.yesapi.cn/?app_key=F7427CADEFF47A4368C87B334FC5C34F";
     var currentCategory = "default";
     var layer = layui.layer;
-    var isLogin = false;
     var dataType='index'//user 加载个人数据还是首页数据
 
     //alt +d 快捷键保存
@@ -173,61 +173,101 @@
                 token: token
             }
 
+            //加载登录用户数据
             doGetUserInfo(userInfo);
+        }else {
+            //游客加载数据
+            loadJsonByCategory(currentCategory);
         }
-
-        loadJsonByCategory(currentCategory);
 
     });
 
     /*弹窗窗口管理*/
-    function showBookmarkMenu(obj) {
 
-        var bookmarkMenu=$(obj).parent(".item").children(".bookmarkMenu");
-      /*  var display= bookmarkMenu.css("display");
-        console.log(display)
-        if (display=='none'){
-            bookmarkMenu.css("display","block");
-        }else {
-            bookmarkMenu.css("display","none");
-        }*/
-        //5秒后又收起
-        bookmarkMenu.fadeIn().delay("3000").fadeOut();
-    }
-    function openAddWin() {
-        layer.open({
-            type: 1,
-            title: '添加新链接',
-            skin: 'layui-layer-lan', //默认皮肤
-            area: '500px',
-            content: '<div class="layui-form-item"><input type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
-                '  <div class="layui-form-item"><input type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
-                '<div class="layui-form-item"><input type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>'
-            ,
-            btn: ['保存链接'],
-            yes: function (index, layero) {
-                var iconVal = $("input[name='icon']").val();
-                var remarksVal = $("input[name='remarks']").val();
-                var urlVal = $("input[name='url']").val();
-                if (remarksVal == '' || urlVal == '') {
-                    layer.msg("链接和名称不能为空");
-                    return;
-                }
-                if (iconVal==''){
-                    iconVal="http://javastar920905.coding.me/mdbook/_media/logo.png";
-                }
+    function openAddWin(id) {
+        var title =id != undefined ? '修改链接信息' : '添加新链接';
 
-                let item = {
-                    icon: iconVal,
-                    remarks: remarksVal,
-                    url: urlVal
-                };
-                appendLink(item);
-
-                //按钮【按钮一】的回调
-                //layer.closeAll();
+        var selectItem=null;
+        if (id!=undefined){
+            var role=getUserRole();
+            if (role == 'user') {
+                //普通用户 ,会员元数据
+                url = reqUrl + "&s=App.User_Set.GetItem&id="+id+ getUuidStr();
+            }else if(role=='admin'){
+                url = reqUrl + "&s=App.Main_Set.GetItem&id="+id;
             }
-        });
+
+            //修改时查询已有数据
+            $.post(url,function (data) {
+                selectItem=data.data;
+                layer.open({
+                    type: 1,
+                    title: title,
+                    skin: 'layui-layer-lan', //默认皮肤
+                    area: '500px',
+                    content: '<div class="layui-form-item"><input value="'+selectItem.data.url+'"  type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
+                        '  <div class="layui-form-item"><input value="'+selectItem.data.remarks+'" type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
+                        '<div class="layui-form-item"><input value="'+selectItem.data.icon+'" type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>'
+                    ,
+                    btn: ['修改链接'],
+                    yes: function (index, layero) {
+                        var iconVal = $("input[name='icon']").val();
+                        var remarksVal = $("input[name='remarks']").val();
+                        var urlVal = $("input[name='url']").val();
+                        if (remarksVal == '' || urlVal == '') {
+                            layer.msg("链接和名称不能为空");
+                            return;
+                        }
+                        if (iconVal==''){
+                            iconVal="http://javastar920905.coding.me/mdbook/_media/logo.png";
+                        }
+
+                        let item = {
+                            icon: iconVal,
+                            remarks: remarksVal,
+                            url: urlVal,
+                            id:id
+                        };
+                        appendLink(item);
+                    }
+                });
+            });
+        }else {
+            layer.open({
+                type: 1,
+                title: title,
+                skin: 'layui-layer-lan', //默认皮肤
+                area: '500px',
+                content: '<div class="layui-form-item"><input   type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
+                    '  <div class="layui-form-item"><input  type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
+                    '<div class="layui-form-item"><input type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>'
+                ,
+                btn: ['保存链接'],
+                yes: function (index, layero) {
+                    var iconVal = $("input[name='icon']").val();
+                    var remarksVal = $("input[name='remarks']").val();
+                    var urlVal = $("input[name='url']").val();
+                    if (remarksVal == '' || urlVal == '') {
+                        layer.msg("链接和名称不能为空");
+                        return;
+                    }
+                    if (iconVal==''){
+                        iconVal="http://javastar920905.coding.me/mdbook/_media/logo.png";
+                    }
+
+                    let item = {
+                        icon: iconVal,
+                        remarks: remarksVal,
+                        url: urlVal
+                    };
+                    appendLink(item);
+
+                }
+            });
+        }
+
+
+
     }
 
     function openLoginWin(flag) {
@@ -266,16 +306,19 @@
     function doLogout() {
         layer.confirm('确定退出登录吗?', {icon: 3, title: '提示'}, function (index) {
             //do something
-            isLogin = false;
             changeDataType('index');
             $(".logind").hide();
             $(".guest").show();
             localStorage.removeItem("uuid");
             localStorage.removeItem("token");
+            loadJsonByCategory(currentCategory);
 
             layer.close(index);
         });
 
+    }
+    function isLogin() {
+        return (localStorage.getItem("token")!=undefined?true:false)
     }
 
     function doLogin(user) {
@@ -335,54 +378,70 @@
     }
 
     function doGetUserInfo(user) {
-        console.log('获取用户信息')
-        console.log(user);
+      //  console.log('获取用户信息') console.log(user);
         $.ajax({
             type: "post",
             url: reqUrl + "&s=App.User.Profile&uuid=" + user.uuid + "&token=" + user.token,
             dataType: "json",
             success: function (data) {
-                console.log("success function");
-                console.log(data);
+               // console.log("success function"); console.log(data);
                 if (data.data.err_code == 0) {
-                    localStorage.setItem('role', data.data.info.role)
+                    let role=data.data.info.role;
+                    localStorage.setItem('role', role);
                     isLogin = true;
                     $(".logind").show();
                     $(".guest").css("display","none");
                     $("#user-name-label").text(data.data.info.username);
-                    changeDataType('user');
+                    if (role=='admin'){
+                        changeDataType('index');
+                    } else {
+                        changeDataType('user');
+                    }
                     layer.closeAll();
                 } else {
                     layer.msg(data.data.err_msg)
                 }
             },
             error: function (e) {
-                console.log("error function");
-                console.log(e);
-                console.log(e.responseText);
+               // console.log("error function"); console.log(e);console.log(e.responseText);
                 layer.msg('连接不到服务器,请联系开发人员')
             }
         });
     }
 
+    function getUserRole() {
+        return localStorage.getItem("role");
+    }
     function getUuidStr() {
         return "&uuid=" + localStorage.getItem("uuid") + "&token=" + localStorage.getItem("token");
     }
 
 
     /* 链接管理*/
-
     function appendLink(json) {
         let data = JSON.stringify(json);
-        console.log("添加json内容")
-        console.log(data);
-        let role = localStorage.getItem("role");
+        //console.log("添加json内容")console.log(data);
+        let role = getUserRole();
         //默认为系统元数据
-        var url = reqUrl + "&s=App.Main_Set.Add&key="+currentCategory+"&data=" + data;
-        if (role == 'user') {
-            //普通用户 ,会员元数据
-            url = reqUrl + "&s=App.User_Set.Add&key="+currentCategory+"&data=" + data + getUuidStr();
+        var url;
+        if (json.id!=undefined){
+            //执行修改
+            if (role == 'user') {
+                //普通用户 ,会员元数据
+                url = reqUrl + "&s=App.User_Set.Update&id="+json.id+"&data=" + data + getUuidStr();
+            }else if(role=='admin'){
+                url = reqUrl + "&s=App.Main_Set.Update&id="+json.id+"&data=" + data
+            }
+        } else {
+            //新增链接
+            if (role == 'user') {
+                //普通用户 ,会员元数据
+                url = reqUrl + "&s=App.User_Set.Add&key="+currentCategory+"&data=" + data + getUuidStr();
+            }else if(role=='admin'){
+                url = reqUrl + "&s=App.Main_Set.Add&key="+currentCategory+"&data=" + data
+            }
         }
+
 
         $.ajax({
             type: "post",
@@ -393,50 +452,44 @@
                 console.log(data);
                 if (data.data.err_code == 0) {
                     layer.closeAll();
-                    //alert("添加新连接成功");
                     loadJsonByCategory(currentCategory);
                 } else if (data.data.err_code == 1) {
-                    alert("链接已存在");
+                    layer.msg("链接已存在");
                 } else {
-                    alert("保存链接失败");
+                    layer.msg("保存链接失败");
                 }
             },
             error: function (e) {
-                console.log("error function");
-                console.log(e);
-                console.log(e.responseText);
+               // console.log("error function");console.log(e);  console.log(e.responseText);
                 layer.msg('连接不到服务器,请联系开发人员')
             }
         });
     }
 
     function loadJsonByCategory(category) {
-        var url=reqUrl + '&s=App.Main_Set.GetList&perpage=1000&key='+category
+
+        var url;
         if ( dataType=='user'){
             url=reqUrl + '&s=App.User_Set.GetList&perpage=1000&key='+category+getUuidStr()
+        }else if (dataType=='index'){
+            url=reqUrl + '&s=App.Main_Set.GetList&perpage=1000&key='+category;
         }
-        loadJson(url);
+        loadItems(url);
     }
 
-    //加载json
-    function loadJson(jsonFile) {
-        console.log('1 load jsonFile:' + jsonFile);
-
+    //加载json列表
+    function loadItems(jsonFile) {
+        //console.log('1 load jsonFile:' + jsonFile);
         $.ajax({
             type: "GET",
             url: jsonFile,
             dataType: "json",
             success: function (data) {
-                console.log("success function");
-                console.log(data);
-                //var books= $.parseJSON(rs);
                 //显示内容
                 appendToDocucment(data.data.items);
             },
             error: function (e) {
-                console.log("error function");
-                console.log(e);
-                console.log(e.responseText);
+                // console.log("error function");console.log(e);  console.log(e.responseText);
                 //var books= $.parseJSON(e.responseText);
             }
         });
@@ -454,12 +507,36 @@
         loadJsonByCategory(currentCategory);
     }
 
+    //显示操作按钮面板
+    function showBookmarkMenu(obj) {
+        var bookmarkMenu=$(obj).parent(".item").children(".bookmarkMenu");
+        //5秒后又收起
+        bookmarkMenu.fadeIn().delay("3000").fadeOut();
+    }
 
+    function deleteItem(obj){
+        layer.confirm('删除该链接吗?删除后无法找回', {icon: 3, title: '请确认'}, function (index) {
+            var item=$(obj).parent().parent(".item");
+            var id=$(item).children("input").val();
+            var role=getUserRole();
+            if (role == 'user') {
+                //普通用户 ,会员元数据
+                url = reqUrl + "&s=App.User_Set.Delete&id="+id+ getUuidStr();
+            }else if(role=='admin'){
+                url = reqUrl + "&s=App.Main_Set.Delete&id="+id;
+            }
+            $.post(url);
+            $(item).remove();
+            layer.close(index);
+        });
+
+
+    }
 
 
     //循环显示内容到页面
     function appendToDocucment(jsonDoc) {
-        console.log("2 显示内容到页面")
+        //console.log("2 显示内容到页面")
         var divContent = $(".content");
         divContent.html("");
 
@@ -467,15 +544,21 @@
         $.each(jsonDoc, function (i, item) {
             n=item.data;
             //console.log(n)
+            //<img title='珍藏' class='collect' src='http://shouqu.me/app/images/collect@3x.png' alt=''/>
+            //<img title='分享' class='share' src='http://shouqu.me/app/images/share@3x.png' alt=''/>
             var itemEle = $(
                 "<div class='item layui-col-xs5 layui-col-sm5 layui-col-md1'>"
-
-                +  "<div class='bookmarkMenu' style='display: none'><img title='珍藏' class='collect' src='http://shouqu.me/app/images/collect@3x.png' alt=''/><img title='删除' class='delete' src='http://shouqu.me/app/images/delete@3x.png' alt=''/><img title='分享' class='share' src='http://shouqu.me/app/images/share@3x.png' alt=''/> <img  title='编辑' class='share' src='https://bpic.588ku.com/element_pic/19/03/15/ad7c6386a553f6affaf57cfaa2b637db.jpg!/fw/224/quality/90/unsharp/true/compress/true'></div>"
+                +  "<div class='bookmarkMenu logind' style='display: none'><img title='删除' onclick='deleteItem(this)' class='delete' src='http://shouqu.me/app/images/delete@3x.png' alt=''/><img  title='编辑' onclick='openAddWin("+item.id+")' class='share' src='https://bpic.588ku.com/element_pic/19/03/15/ad7c6386a553f6affaf57cfaa2b637db.jpg!/fw/224/quality/90/unsharp/true/compress/true'></div>"
                 +   "<input type='hidden' value='"+item.id+"'><a href='" + n.url + "' target='_blank'><div class='item-left'><img class='icon' src='" + n.icon + "' /></div> <div class='item-right'> " + n.remarks + "</div></a>"
-                + "<div class='more' onmouseover='showBookmarkMenu(this)'>...<div></div>");
+                + "<div class='more logind' onmouseover='showBookmarkMenu(this)'>...<div></div>");
             itemEle.appendTo(ulEle);
         });
         ulEle.appendTo(divContent);
+
+        if (localStorage.getItem("token")==undefined){
+            $(".logind").hide();
+            $(".guest").show();
+        }
     }
 
 
