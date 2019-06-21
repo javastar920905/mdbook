@@ -14,29 +14,38 @@
             margin: 0px auto;
             padding: 0px;
         }
-
+        /*顶部导航*/
         .navX {
             background: #393D49;
             height: 30px;
             line-height: 30px;
             color: white;
             text-align: right;
+            padding: 10px;
         }
         .navX a{
             color: white;
             float: left;
             margin-right: 10px;
+            padding: 0px 5px;
         }
+        .navX a.selected{
+           border-bottom: 3px solid orangered;
+            font-weight: bold;
+        }
+
         .header{
             height: 80px;
             line-height: 80px;
             display: none;
         }
 
+        /*内容区域*/
         .content {
-            padding: 10px 100px;
+            padding: 10px 20px;
         }
 
+        /*盒子*/
         .content .item {
             list-style: none;
             float: left;
@@ -44,20 +53,40 @@
             text-align: center;
             margin: 5px;
             padding: 5px;
-            border: 1px solid grey;
             border-radius: 5px;
-            mso-border-shadow: yes;
-            height: 150px;
+            height: 200px;
             background: white;
             overflow: hidden;
+            position: relative;
         }
 
         .content .icon {
-            width: 100px;
+            width: 80px;
         }
 
         .item .item-left {
-
+            width: 100%;
+            height: 100px;
+            border-bottom: 1px dashed ;
+            vertical-align: middle;
+            display: table-cell;
+        }
+        .item .item-right {
+            width: 100%;
+            height: 30px;
+            padding: 5px;
+            font-size: 12px;
+            color: #4E5465;
+        }
+        .item .more{
+            position: absolute;
+            top: 0;
+            right: 10px;
+        }
+        .item .bookmarkMenu img{
+            width: 20px;
+            height: 20px;
+            margin: 2px;
         }
 
 
@@ -69,16 +98,18 @@
     <section class="navX nav">
         <div class="layui-row ">
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
-                <span class="logind" style="display: none"> <a onclick="changeDataType('main')"> 首页</a>  &nbsp;   <a onclick="changeDataType('user')"> 个人页</a></span>
+                <span class="logind" style="display: none"> <a class="index" onclick="changeDataType('index')" > 首页</a>  &nbsp;   <a class="userPage" onclick="changeDataType('user')"> 我的工具箱</a>
+                 <button onclick="openAddWin()" style="float: left" class="layui-btn layui-btn-sm"> + 添加新链接 </button>&nbsp;&nbsp;&nbsp;
+                </span>
                 &nbsp;
+
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
                 &nbsp;
             </div>
             <div class="layui-col-xs4 layui-col-sm12 layui-col-md4">
-                <div class="logind" style="display: none">
-                    欢迎您: <label id="user-name-label">用户名</label>, <label onclick="doLogout()">退出</label>
-                    <button onclick="openAddWin()" class="layui-btn layui-btn-sm"> 添加新链接</button>
+                <div class="logind" style="display: none" onclick="doLogout()">
+                    欢迎您: <label id="user-name-label">用户名</label>, <label >退出</label>
                 </div>
                 <div class="guest">
                     <button onclick="openLoginWin('login')" class="layui-btn layui-btn-sm"> 登录,添加自己的工具箱</button>
@@ -91,11 +122,22 @@
         </div>
     </section>
     <section class="navY nav"></section>
-    <header class="header"> </header>
+    <header class="header">
+
+    </header>
     <section class="content">
 
 
     </section>
+    <footer style="position: absolute;bottom: 0">
+        <h2>Todo list</h2>
+        <ul>
+            <li>添加修改功能</li>
+            <li>添加确认删除功能</li>
+            <li>添加分类管理功能</li>
+            <li>添加拖动排序功能</li>
+        </ul>
+    </footer>
 </div>
 
 
@@ -108,7 +150,7 @@
     var currentCategory = "default";
     var layer = layui.layer;
     var isLogin = false;
-    var dataType='main'//user 加载个人数据还是首页数据
+    var dataType='index'//user 加载个人数据还是首页数据
 
     //alt +d 快捷键保存
     document.onkeydown = function (event) {
@@ -135,27 +177,44 @@
         }
 
         loadJsonByCategory(currentCategory);
+
     });
 
     /*弹窗窗口管理*/
+    function showBookmarkMenu(obj) {
+
+        var bookmarkMenu=$(obj).parent(".item").children(".bookmarkMenu");
+      /*  var display= bookmarkMenu.css("display");
+        console.log(display)
+        if (display=='none'){
+            bookmarkMenu.css("display","block");
+        }else {
+            bookmarkMenu.css("display","none");
+        }*/
+        //5秒后又收起
+        bookmarkMenu.fadeIn().delay("3000").fadeOut();
+    }
     function openAddWin() {
         layer.open({
             type: 1,
             title: '添加新链接',
             skin: 'layui-layer-lan', //默认皮肤
             area: '500px',
-            content: '<div class="layui-form-item"><input type="text" name="url"   placeholder="请输入链接url  如: https://javabus.cn" autocomplete="off" class="layui-input"> </div>' +
-                '  <div class="layui-form-item"><input type="text" name="remarks"  placeholder="请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
-                '<div class="layui-form-item"><input type="text" name="icon"   placeholder="请输入logo url" autocomplete="off" class="layui-input"> </div>'
+            content: '<div class="layui-form-item"><input type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
+                '  <div class="layui-form-item"><input type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
+                '<div class="layui-form-item"><input type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>'
             ,
             btn: ['保存链接'],
             yes: function (index, layero) {
                 var iconVal = $("input[name='icon']").val();
                 var remarksVal = $("input[name='remarks']").val();
                 var urlVal = $("input[name='url']").val();
-                if (iconVal == '' || remarksVal == '' || urlVal == '') {
-                    layer.msg("表单不能为空");
+                if (remarksVal == '' || urlVal == '') {
+                    layer.msg("链接和名称不能为空");
                     return;
+                }
+                if (iconVal==''){
+                    iconVal="http://javastar920905.coding.me/mdbook/_media/logo.png";
                 }
 
                 let item = {
@@ -172,14 +231,14 @@
     }
 
     function openLoginWin(flag) {
-        var title = flag == 'login' ? '登录' : '注册. 亲,请你善良,不要恶意注册'
+        var title = flag == 'login' ? '登录,提供测试账号test/test' : '注册. 亲,请你善良,不要恶意注册'
         layer.open({
             type: 1,
             title: title,
             skin: 'layui-layer-lan', //默认皮肤
             area: '500px',
             content: '<div class="layui-form-item"><input type="text" name="username"   placeholder="请输入登录用户名 如:javabus" autocomplete="off" class="layui-input"> </div>' +
-                '  <div class="layui-form-item"><input type="password" name="pwd"  placeholder="请输入密码" autocomplete="off" class="layui-input"> </div>'
+                '  <div class="layui-form-item"><input type="password" name="pwd" title="密码已经md5加密不会明文传输" placeholder="请输入密码" autocomplete="off" class="layui-input"> </div>'
             ,
             btn: ['确定'],
             yes: function (index, layero) {
@@ -208,7 +267,7 @@
         layer.confirm('确定退出登录吗?', {icon: 3, title: '提示'}, function (index) {
             //do something
             isLogin = false;
-            dataType='main';
+            changeDataType('index');
             $(".logind").hide();
             $(".guest").show();
             localStorage.removeItem("uuid");
@@ -291,7 +350,7 @@
                     $(".logind").show();
                     $(".guest").css("display","none");
                     $("#user-name-label").text(data.data.info.username);
-                    dataType='user';
+                    changeDataType('user');
                     layer.closeAll();
                 } else {
                     layer.msg(data.data.err_msg)
@@ -352,9 +411,9 @@
     }
 
     function loadJsonByCategory(category) {
-        var url=reqUrl + '&s=App.Main_Set.GetList&key='+category
+        var url=reqUrl + '&s=App.Main_Set.GetList&perpage=1000&key='+category
         if ( dataType=='user'){
-            url=reqUrl + '&s=App.User_Set.GetList&key='+category+getUuidStr()
+            url=reqUrl + '&s=App.User_Set.GetList&perpage=1000&key='+category+getUuidStr()
         }
         loadJson(url);
     }
@@ -385,7 +444,13 @@
 
     function changeDataType(type) {
         dataType=type;
-        console.log(dataType)
+        if (dataType=='index'){
+            $(".index").addClass("selected");
+            $(".userPage").removeClass("selected");
+        }else {
+            $(".userPage").addClass("selected");
+            $(".index").removeClass("selected");
+        }
         loadJsonByCategory(currentCategory);
     }
 
@@ -402,7 +467,12 @@
         $.each(jsonDoc, function (i, item) {
             n=item.data;
             //console.log(n)
-            var itemEle = $("<div class='item layui-col-xs6 layui-col-sm6 layui-col-md1'><input type='hidden' value='"+item.id+"'><a href='" + n.url + "'><div class='item-left'><img class='icon' src='" + n.icon + "' /></div> <div class='item-right'> " + n.remarks + "</div></a></div>");
+            var itemEle = $(
+                "<div class='item layui-col-xs5 layui-col-sm5 layui-col-md1'>"
+
+                +  "<div class='bookmarkMenu' style='display: none'><img title='珍藏' class='collect' src='http://shouqu.me/app/images/collect@3x.png' alt=''/><img title='删除' class='delete' src='http://shouqu.me/app/images/delete@3x.png' alt=''/><img title='分享' class='share' src='http://shouqu.me/app/images/share@3x.png' alt=''/> <img  title='编辑' class='share' src='https://bpic.588ku.com/element_pic/19/03/15/ad7c6386a553f6affaf57cfaa2b637db.jpg!/fw/224/quality/90/unsharp/true/compress/true'></div>"
+                +   "<input type='hidden' value='"+item.id+"'><a href='" + n.url + "' target='_blank'><div class='item-left'><img class='icon' src='" + n.icon + "' /></div> <div class='item-right'> " + n.remarks + "</div></a>"
+                + "<div class='more' onmouseover='showBookmarkMenu(this)'>...<div></div>");
             itemEle.appendTo(ulEle);
         });
         ulEle.appendTo(divContent);
