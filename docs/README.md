@@ -20,6 +20,8 @@ java 开发参考手册, awesome java. 在我心里awesome系列就是值的好�
 
 好记性不如烂笔头,几年开发下来,愈加发现记忆力不行.还好有这些笔记类工具可以代替大脑记忆,减轻负担.
 
+有点迷茫,搭建博客,却没有更新的动力,目前已经转战到[javabus的头条号](https://www.toutiao.com/i6704531775550390797/) 喜欢的话,右上角关注和转发一下
+
 ## What can I do for u?
 本站点能给你提供什么帮助?  <a href="https://share.weiyun.com/5okzvLf" style="display:none">20+张高清技能图谱 区块链、AI、微服务、前端、H5、运维</a>
 - [蚂蚁免费vpn](http://t.cn/AiCnXajx) 分享10个用户送永久无限,邀请码 ```g87X```

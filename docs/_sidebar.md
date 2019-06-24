@@ -1,5 +1,5 @@
 # [java 开发手册 <sup>help💦</sup>](README.md)
-* [博客](http://javastar920905.coding.me) 
+* [头条号](https://www.toutiao.com/i6704531775550390797/) 
 * 1.enjoy😘 
    * [ 开源建站 博客/cms/oa/](books/1.enjoy/1.1site.md)
    * [ 使用coding 管理任务 一站式 DevOps](books/1.enjoy/2.coding.md)
