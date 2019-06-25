@@ -147,6 +147,7 @@
 <link rel="stylesheet" href="/plugin/layui/css/layui.css">
 <script src="/plugin/layui/layui.all.js"></script>
 <script>
+    let defaultIcon="/images/default.png";
     let reqUrl = "https://hd215.api.yesapi.cn/?app_key=F7427CADEFF47A4368C87B334FC5C34F";
     var currentCategory = "default";
     var layer = layui.layer;
@@ -214,12 +215,17 @@
                         var iconVal = $("input[name='icon']").val();
                         var remarksVal = $("input[name='remarks']").val();
                         var urlVal = $("input[name='url']").val();
-                        if (remarksVal == '' || urlVal == '') {
-                            layer.msg("链接和名称不能为空");
+                        if ( urlVal == '') {
+                            layer.msg("链接不能为空");
                             return;
                         }
+                        var domain=getDomain(urlVal);
+                        console.log(domain)
+                        if (remarksVal==''){
+                            remarksVal=domain;
+                        }
                         if (iconVal==''){
-                            iconVal="http://javastar920905.coding.me/mdbook/_media/logo.png";
+                            iconVal=defaultIcon;
                         }
 
                         let item = {
@@ -244,15 +250,19 @@
                 ,
                 btn: ['保存链接'],
                 yes: function (index, layero) {
-                    var iconVal = $("input[name='icon']").val();
-                    var remarksVal = $("input[name='remarks']").val();
-                    var urlVal = $("input[name='url']").val();
-                    if (remarksVal == '' || urlVal == '') {
-                        layer.msg("链接和名称不能为空");
+                    var iconVal = $("input[name='icon']").val().trim();
+                    var remarksVal = $("input[name='remarks']").val().trim();
+                    var urlVal = $("input[name='url']").val().trim();
+                    if ( urlVal == '') {
+                        layer.msg("链接不能为空");
                         return;
                     }
+                    var domain=getDomain(urlVal);
+                    if (remarksVal==''){
+                        remarksVal=domain;
+                    }
                     if (iconVal==''){
-                        iconVal="http://javastar920905.coding.me/mdbook/_media/logo.png";
+                        iconVal=defaultIcon;
                     }
 
                     let item = {
@@ -268,6 +278,21 @@
 
 
 
+    }
+    
+    //从url 上截取域名
+    function getDomain(url) {
+        if(url.indexOf("https")>=0){
+            //console.log('url.indexOf("https://")')
+            url=url.substring(9);
+        }else if(url.indexOf("http://")>=0){
+            //console.log('url.indexOf("http://")')
+            url=url.substring(7);
+        }
+        url=url.substring(0,url.indexOf("/"));
+        // console.log("url==")
+        // console.log(url)
+        return url;
     }
 
     function openLoginWin(flag) {
