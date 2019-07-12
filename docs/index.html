@@ -18,49 +18,47 @@
   <!-- docsify-themeable 一个用于docsify的，简单到令人愉悦的主题系统. -->
     <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-    <!--流星雨样式-->
-<link rel="stylesheet" href="css/style.css">
+
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
+<script>
+  if (window.location.href.indexOf("localhost")>=0) {
+      console.log("本地访问量  不计入到百度统计");
+  }else {
+      //统计coding 网页 http://javastar920905.coding.me/mdbook/docs
+      // var _hmt = _hmt || [];
+      // (function() {
+      //     var hm = document.createElement("script");
+      //     hm.src = "https://hm.baidu.com/hm.js?a39f4e8f52fa5936c51bd2880900559e";
+      //     var s = document.getElementsByTagName("script")[0];
+      //     s.parentNode.insertBefore(hm, s);
+      // })();
+      // console.log("执行生成百度统计代码 ok  http://javastar920905.coding.me/mdbook/docs");
 
-  <script>
-    if (window.location.href.indexOf("localhost")>=0) {
-        console.log("本地访问量  不计入到百度统计");
-    }else {
-        //统计coding 网页 http://javastar920905.coding.me/mdbook/docs
-        // var _hmt = _hmt || [];
-        // (function() {
-        //     var hm = document.createElement("script");
-        //     hm.src = "https://hm.baidu.com/hm.js?a39f4e8f52fa5936c51bd2880900559e";
-        //     var s = document.getElementsByTagName("script")[0];
-        //     s.parentNode.insertBefore(hm, s);
-        // })();
-        // console.log("执行生成百度统计代码 ok  http://javastar920905.coding.me/mdbook/docs");
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?a96667099e1d56d65d14a6cf17543b09";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+      console.log("执行生成百度统计代码 ok  ");
 
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?a96667099e1d56d65d14a6cf17543b09";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-        console.log("执行生成百度统计代码 ok  ");
+      (function(){
+          var bp = document.createElement('script');
+          var curProtocol = window.location.protocol.split(':')[0];
+          if (curProtocol === 'https') {
+              bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+          }
+          else {
+              bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+          }
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(bp, s);
+      })();
+      console.log("执行页面自动推送 ok");
 
-        (function(){
-            var bp = document.createElement('script');
-            var curProtocol = window.location.protocol.split(':')[0];
-            if (curProtocol === 'https') {
-                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-            }
-            else {
-                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-            }
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(bp, s);
-        })();
-        console.log("执行页面自动推送 ok");
-
-  }
-  </script>
+}
+</script>
 </head>
 <body>
 <style type="text/css">
@@ -91,31 +89,22 @@
         background-color:white;
       }
     }
+
+    /*背景particles.js 跟随滚动条,全屏*/
+    .particles-js-canvas-el{
+      z-index: -1;
+      position: fixed;
+      bottom: 0px;
+      top: 0px;
+      right: 0px;
+
+      width: 100%;
+      height: 100%;
+
+    }
 </style>
-<div class="night">
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-  <div class="shooting_star"></div>
-</div>
 
-
+<div id="particles-js"></div>
 <div id="app">加载中...</div>
 
 
@@ -127,80 +116,78 @@
 
 <!--允许在github上面编辑-->
 <!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
-  <script>
-      <!--docsify参考文档 https://docsify.js.org/#/zh-cn/configuration-->
+<script>
+  //禁用底部滚动条 document.documentElement.style.overflowY = 'hidden';
+  document.documentElement.style.overflowX = 'hidden';
 
-    //禁用底部滚动条 document.documentElement.style.overflowY = 'hidden';
-    document.documentElement.style.overflowX = 'hidden';
+  var pluginVar= [
+      //使用cloud studio 不需要在线编辑插件了 EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","在线编辑")
+  ]
+    //时光轴页面不显示 在线编辑按钮
+  if ( window.screen.width<768||window.location.href.indexOf("timeline.html")>=0) {
+      pluginVar=[];
+  }
 
-    var pluginVar= [
-        //使用cloud studio 不需要在线编辑插件了 EditOnGithubPlugin.create("https://github.com/javastar920905/mdbook/tree/master/docs/","","在线编辑")
-    ]
-      //时光轴页面不显示 在线编辑按钮
-    if ( window.screen.width<768||window.location.href.indexOf("timeline.html")>=0) {
-        pluginVar=[];
+  window.$docsify = {
+    //autoHeader: true,
+      onlyCover: false,
+      externalLinkTarget: '_blank', // default: '_blank'
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+    search: 'auto', // 默认值
+    name: 'markdown 文档系统',
+    notFoundPage: true,
+    el: '#app',
+    coverpage: {'/':'_coverpage.md'},
+    loadNavbar: '_sidebar.md',
+    loadSidebar: '_sidebar.md',
+     // subMaxLevel: 1,
+    alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+    },
+    auto2top: true,
+    logo: '/_media/logo.png',
+    repo: 'https://github.com/javastar920905/mdbook',
+    themeable: {
+        readyTransition : true, // default
+        responsiveTables: true,  // default
+    },
+    plugins: pluginVar,
+    copyCode: {
+        buttonText : '点击复制',
+        errorText  : '错误',
+        successText: '复制成功'
+    },
+    tabs: {
+        persist    : true,      // default
+        sync       : true,      // default
+        theme      : 'classic', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
     }
+  }
+</script>
 
-    window.$docsify = {
-      //autoHeader: true,
-        onlyCover: false,
-        externalLinkTarget: '_blank', // default: '_blank'
-        formatUpdated: '{MM}/{DD} {HH}:{mm}',
-      search: 'auto', // 默认值
-      name: 'markdown 文档系统',
-      notFoundPage: true,
-      el: '#app',
-      coverpage: {'/':'_coverpage.md'},
-      loadNavbar: '_sidebar.md',
-      loadSidebar: '_sidebar.md',
-       // subMaxLevel: 1,
-      alias: {
-          '/.*/_sidebar.md': '/_sidebar.md'
-      },
-      auto2top: true,
-      logo: '/_media/logo.png',
-      repo: 'https://github.com/javastar920905/mdbook',
-      themeable: {
-          readyTransition : true, // default
-          responsiveTables: true,  // default
-      },
-      plugins: pluginVar,
-      copyCode: {
-          buttonText : '点击复制',
-          errorText  : '错误',
-          successText: '复制成功'
-      },
-      tabs: {
-          persist    : true,      // default
-          sync       : true,      // default
-          theme      : 'classic', // default
-          tabComments: true,      // default
-          tabHeadings: true       // default
-      }
-    }
-
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 <!--导航表情插件-->
 <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
-  <!--提供本地搜索插件  基于localstorage-->
-  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-  <!-- docsify-themeable (latest v0.x.x) -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
-  <!--代码块添加复制按钮-->
-  <script src="//unpkg.com/docsify-copy-code"></script>
-  <!--如果文档里的 script 是内联脚本，可以直接执行；而如果是外链脚本（即 js 文件内容由 src 属性引入），则需要使用此插件。-->
-  <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
+<!--提供本地搜索插件  基于localstorage-->
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+<!-- docsify-themeable (latest v0.x.x) -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+<!--代码块添加复制按钮-->
+<script src="//unpkg.com/docsify-copy-code"></script>
+<!--如果文档里的 script 是内联脚本，可以直接执行；而如果是外链脚本（即 js 文件内容由 src 属性引入），则需要使用此插件。-->
+<script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
 
-  <!--Gitalk 评论插件 https://github.com/gitalk/gitalk/blob/master/readme-cn.md-->
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<!--Gitalk 评论插件 https://github.com/gitalk/gitalk/blob/master/readme-cn.md-->
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <!--tabs 插件 https://jhildenbiddle.github.io/docsify-tabs/#/-->
 <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
-
-
+<!-- gitter 聊天室 -->
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 <script>
 
-    if (window.location.href.indexOf("timeline.html")>=0) {
+    if (window.location.href.indexOf("localhost")>=0||window.location.href.indexOf("timeline.html")>=0) {
        console.log("时光轴页面不显示 评论区")
     }else if( window.screen.width<768){
         console.log("屏幕小于 768 不再初始化git talk")
@@ -216,7 +203,12 @@
         })
 
         gitalk.render('gitalk-container');
+
+        ((window.gitter = {}).chat = {}).options = {
+            room: 'javabus-cn/community'
+        };
     }
+
 
 
     // //留言区跟随滚动条
@@ -228,14 +220,12 @@
     // }
     
 </script>
-<!-- gitter 聊天室 -->
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<!--粒子效果-->
+<script src="/js/particles.min.js"></script>
 <script>
-  ((window.gitter = {}).chat = {}).options = {
-    room: 'javabus-cn/community'
-  };
+    particlesJS.load('particles-js', '/js/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 </script>
-
-
 </body>
 </html>
