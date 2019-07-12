@@ -24,7 +24,6 @@ java 开发参考手册, awesome java. 在我心里awesome系列就是值的好�
 
 ## What can I do for u?
 本站点能给你提供什么帮助?  <a href="https://share.weiyun.com/5okzvLf" style="display:none">20+张高清技能图谱 区块链、AI、微服务、前端、H5、运维</a>
-- [蚂蚁免费vpn](http://t.cn/AiCnXajx) 分享10个用户送永久无限,邀请码 ```g87X```
 - 如果你是java开发,推荐一些好的教程资源给你
    > * [ java学习路线图](books/3.java/1.route.md) 整理一下java学习复习路线,大纲 为以后巩固基础做准备
    > * [ spring boot 系列](books/3.java/2.spring.md) spring boot+mybatis 每天开发要用到的,需要摸清,弄透彻

@@ -24,7 +24,6 @@
    * [api-手册](books/3.java/api_reference.md)
    * [ 佛祖保佑 banner.txt](books/3.java/banner.md)
    * [ 敏捷开发指南](books/3.java/dev_ops.md)
-   * [ java 面试题](books/3.java/interview.md)
    * [javaFX  学习](books/3.java/java_gui.md)
    * [ 微服务相关](books/3.java/micro_server.md)
    * [ python 学习](books/3.java/python.md)
@@ -41,6 +40,7 @@
    * [ vue seo 技术调研](books/5.front/vue_seo.md)
    * [公众平台-小程序等](books/5.front/weixin.md)
 * resume🔞 
+   * [ java 面试题](books/resume/interview.md)
    * [ 使用冷熊简历模板写简历](books/resume/resume-template.md)
    * [ zyan 个人简历](books/resume/resume.md)
 

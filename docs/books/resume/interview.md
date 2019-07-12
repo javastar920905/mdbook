@@ -1,8 +1,22 @@
 # java 面试题
-## 招聘网站
-   * <A HREF="http://www.cjol.com/">找工作_招聘_人才网_中国人才热线</A>
-   * <A HREF="http://51job.com/">招聘网_人才网_找工作_求职_上前程无忧</A>
+## 面试复习计划
+### 简单级别的面试
+* <A HREF="https://www.cnblogs.com/java1024/p/7654715.html">2年Java开发工作经验面试总结 - Java团长 - 博客园</A>
+* <A HREF="http://blog.csdn.net/zouhuu/article/details/54351046">几张图让你彻底了解JAVASE、JAVAEE、JAVAWEB整个的知识体系 - CSDN博客</A>
+* <A HREF="https://www.nowcoder.com/discuss/3043?type=2&order=0&pos=5&page=2">面试心得与总结---BAT、网易、蘑菇街_笔经面经_牛客网</A>
+ 
+
+### 中高级面试
+* [关于Java面试，你应该准备这些知识点](https://www.jianshu.com/p/1b2f63a45476)面试场景模拟,项目经验,知识点(线程池,锁,ConcurrentHashMap)
+- [谈谈“野生”Java程序员的漫漫学习之路](http://tech.it168.com/a2018/0710/3213/000003213805.shtml) 介绍了面试官的提问方式,按照这个方式指定自己的复习计划应该不错
+    - [**我的面试总结-面试前突击备用**](http://note.youdao.com/noteshare?id=90db144f70bfad83c32a35473a469859&sub=1A7CA74239E549018D3778DAC47064B9) 根据上面文章思路,总结一些常见问题和答案
+* <A HREF="https://github.com/InterviewMap/CS-Interview-Knowledge-Map">前端、计算机网络、算法、数据结构面试图谱</A> 
+  - [前端面试之道](https://yuchengkai.cn/docs/frontend/) 平时深入钻研,和重点难点复习
+
+### 招聘网站
+   * <A HREF="http://51job.com/">招聘网_人才网_找工作_求职_上前程无忧</A> 喜欢前程无忧和boss直聘,因为可以筛选地区,我比较喜欢近点的工作
    * <A HREF="http://i.51job.com/resume/standard_resume.php?lang=c&resumeid=357477413&ckry57t2u2#Career">人才招聘求职网-前程无忧 | 51job 简历分析</A>
+   * <A HREF="http://www.cjol.com/">找工作_招聘_人才网_中国人才热线</A>
 
 ## 面试题集
 * java基础_集合_面试题
@@ -38,18 +52,13 @@
    * <A HREF="http://www.tingkeshi.com/ruanjianceshi/webceshi/3/530.html">★WEB测试零基础入门教程-听课室</A>
    * <A HREF="http://wenku.baidu.com/view/3a1c392d915f804d2b16c1e1.html">WEB测试教程_百度文库</A>
    
-* 前端
-   * <A HREF="https://github.com/InterviewMap/CS-Interview-Knowledge-Map">前端、计算机网络、算法、数据结构面试图谱</A>
+   
 
 ## 程序员的发展规划
   * [2014年程序员的工资有多高？你是否该跳槽了！](https://www.runoob.com/w3cnote/2014-programmer-salary.html)
-  * <A HREF="http://blog.csdn.net/zouhuu/article/details/54351046">几张图让你彻底了解JAVASE、JAVAEE、JAVAWEB整个的知识体系 - CSDN博客</A>
-  * [Java后端工程师学习大纲](https://blog.csdn.net/james570/article/details/78394418)
-  * <A HREF="http://blog.csdn.net/imbrl71u7pt5x29rleu7/article/details/78131008">2万月薪的开发想拿3万，怎么办？ - CSDN博客</A> (深入某个领域)
   * <A HREF="http://www.java800.com/peixun-45090236.html" ADD_DATE="1508757737">中国最适合java程序员发展的城市</A>
+  * <A HREF="http://blog.csdn.net/imbrl71u7pt5x29rleu7/article/details/78131008">2万月薪的开发想拿3万，怎么办？ - CSDN博客</A> (深入某个领域)
   * <A HREF="http://www.java800.com/peixun-50070358.html" ADD_DATE="1508757737">一个程序员13家企业的悲催面试历程</A>
-  * <A HREF="https://www.cnblogs.com/java1024/p/7654715.html">2年Java开发工作经验面试总结 - Java团长 - 博客园</A>
-  * <A HREF="https://www.nowcoder.com/discuss/3043?type=2&order=0&pos=5&page=2">面试心得与总结---BAT、网易、蘑菇街_笔经面经_牛客网</A>
   * <A HREF="http://www.jianshu.com/p/1b2f63a45476">关于Java面试，你应该准备这些知识点 - 简书</A>
   * <A HREF="http://blog.csdn.net/wenzhi20102321/article/details/72671190">程序员你伤不起（三） - wenzhi的博客 - 博客频道 - CSDN.NET</A>
 
