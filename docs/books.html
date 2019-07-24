@@ -35,9 +35,18 @@
         }
 
         .header{
-            height: 80px;
-            line-height: 80px;
-            display: none;
+            height: 20px;
+            line-height: 20px;
+            display: block;
+            text-align: center;
+        }
+        #category{
+            position: absolute;
+            top: 0px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0px auto;
+            padding: 0px;
         }
 
         /*内容区域*/
@@ -95,17 +104,29 @@
 </head>
 <body>
 <div id="container">
+    <!--头部导航栏-->
     <section class="navX nav">
         <div class="layui-row ">
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
-                <span class="logind" style="display: none"> <a class="index" onclick="changeDataType('index')" > 首页</a>  &nbsp;   <a class="userPage" onclick="changeDataType('user')"> 我的工具箱</a>
+
+                <span class="logind" style="display: none">
+                    <a class="index" onclick="changeDataType('index')" > 首页</a>  &nbsp;   <a class="userPage" onclick="changeDataType('user')"> 我的工具箱</a>
                  <button onclick="openAddWin()" style="float: left" class="layui-btn layui-btn-sm"> + 添加新链接 </button>&nbsp;&nbsp;&nbsp;
                 </span>
                 &nbsp;
-
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
                 &nbsp;
+                <ul id="category" class="layui-nav  ">
+                    <li class="layui-nav-item" style="line-height: 30px;">
+                        <a href="javascript:;">选择分类</a>
+                        <dl class="layui-nav-child">
+
+                        </dl>
+                    </li>
+                </ul>
+                <select id="category2" style="display: none">
+                </select>
             </div>
             <div class="layui-col-xs4 layui-col-sm12 layui-col-md4">
                 <div class="logind" style="display: none" onclick="doLogout()">
@@ -122,9 +143,11 @@
         </div>
     </section>
     <section class="navY nav"></section>
+
     <header class="header">
 
     </header>
+    <!-- 内容中文-->
     <section class="content">
 
 
@@ -181,6 +204,7 @@
             loadJsonByCategory(currentCategory);
         }
 
+        getCategoryList();
     });
 
     /*弹窗窗口管理*/
@@ -189,6 +213,10 @@
         var title =id != undefined ? '修改链接信息' : '添加新链接';
 
         var selectItem=null;
+
+        //加载分类列表
+        let categorys=" &nbsp;&nbsp;&nbsp;请选择分类: <select id=\"category3\">" +$("#category2").html()+"</select>";
+
         if (id!=undefined){
             var role=getUserRole();
             if (role == 'user') {
@@ -201,15 +229,20 @@
             //修改时查询已有数据
             $.post(url,function (data) {
                 selectItem=data.data;
+
+                let content='<div class="layui-form-item"><input value="'+selectItem.data.url+'"  type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
+                    '  <div class="layui-form-item"><input value="'+selectItem.data.remarks+'" type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
+                    '<div class="layui-form-item"><input value="'+selectItem.data.icon+'" type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>';
+
+                content=categorys+content;
+
+
                 layer.open({
                     type: 1,
                     title: title,
                     skin: 'layui-layer-lan', //默认皮肤
                     area: '500px',
-                    content: '<div class="layui-form-item"><input value="'+selectItem.data.url+'"  type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
-                        '  <div class="layui-form-item"><input value="'+selectItem.data.remarks+'" type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
-                        '<div class="layui-form-item"><input value="'+selectItem.data.icon+'" type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>'
-                    ,
+                    content: content,
                     btn: ['修改链接'],
                     yes: function (index, layero) {
                         var iconVal = $("input[name='icon']").val();
@@ -244,7 +277,7 @@
                 title: title,
                 skin: 'layui-layer-lan', //默认皮肤
                 area: '500px',
-                content: '<div class="layui-form-item"><input   type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
+                content: categorys+'<div class="layui-form-item"><input   type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
                     '  <div class="layui-form-item"><input  type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
                     '<div class="layui-form-item"><input type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>'
                 ,
@@ -268,7 +301,8 @@
                     let item = {
                         icon: iconVal,
                         remarks: remarksVal,
-                        url: urlVal
+                        url: urlVal,
+                        category:$("#category3").val()
                     };
                     appendLink(item);
 
@@ -327,7 +361,9 @@
         });
     }
 
-    /*会员管理*/
+    /**
+    * 会员管理
+    */
     function doLogout() {
         layer.confirm('确定退出登录吗?', {icon: 3, title: '提示'}, function (index) {
             //do something
@@ -442,7 +478,9 @@
     }
 
 
-    /* 链接管理*/
+    /**
+     * 链接管理
+     */
     function appendLink(json) {
         let data = JSON.stringify(json);
         //console.log("添加json内容")console.log(data);
@@ -461,9 +499,9 @@
             //新增链接
             if (role == 'user') {
                 //普通用户 ,会员元数据
-                url = reqUrl + "&s=App.User_Set.Add&key="+currentCategory+"&data=" + data + getUuidStr();
+                url = reqUrl + "&s=App.User_Set.Add&key="+json.category+"&data=" + data + getUuidStr();
             }else if(role=='admin'){
-                url = reqUrl + "&s=App.Main_Set.Add&key="+currentCategory+"&data=" + data
+                url = reqUrl + "&s=App.Main_Set.Add&key="+json.category+"&data=" + data
             }
         }
 
@@ -587,7 +625,38 @@
     }
 
 
+    /**
+     * 分类管理
+     */
+    function getCategoryList() {
+        $('.layui-nav-child').html("");
+        var url;
+        if ( dataType=='user'){
+            url=reqUrl + '&s=App.User_Set.GetList&perpage=1000&key=category'+getUuidStr()
+        }else if (dataType=='index'){
+            url=reqUrl + '&s=App.Main_Set.GetList&key=category'
+        }
+        $.get(url, function (data) {
+            $.each(data.data.items, function (i, item) {
+                let ele='<dd><a href="javascript:loadJsonByCategory(\''+item.data.key+'\')">'+item.data.name+'</a></dd>';
+                $('.layui-nav-child').append(ele);
+
+                let ele2;
+                if (i==0){
+                    ele2='<option selected value="'+item.data.key+'">'+item.data.name+'</option>'
+                }else {
+                    ele2='<option value="'+item.data.key+'">'+item.data.name+'</option>'
+                }
+                $("#category2").append(ele2);
+
+            })//end each
+        });
+
+
+
+    }
 </script>
+
 
 </body>
 </html>
