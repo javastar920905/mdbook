@@ -1,5 +1,6 @@
 # [java 开发手册 <sup>help💦</sup>](README.md)
 * [博客](http://javastar920905.coding.me) 
+* <a href="books.html" target="_blank">站长工具箱💜</a>
 * 1.enjoy😘 
    * [ 开源建站 博客/cms/oa/](books/1.enjoy/1.1site.md)
    * [ 使用coding 管理任务 一站式 DevOps](books/1.enjoy/2.coding.md)
@@ -47,5 +48,4 @@
 * lovestory🌹
    * <a href="lovestory.html" target="_blank">lovestory💜</a>
    * <a href="love.html" target="_blank">love💛</a>
-   * <a href="books.html" target="_blank">站长工具箱💜</a>
    * <a href="timeline.html" target="_blank">timeline</a>

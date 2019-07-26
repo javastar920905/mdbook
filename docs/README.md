@@ -40,7 +40,7 @@ java 开发参考手册, awesome java. 在我心里awesome系列就是值的好�
    > * [ docsify 搭建文档系统](books/1.enjoy/1.2docsify.md) 当前站点javabus.cn就是用 docsify 搭建的
    > * [ jekyll 搭建静态网站](books/1.enjoy/1.3jekyll.md) 爱折腾的爪哇猿的博客 [查看demo](http://javastar920905.coding.me/) 
    > * [ 使用coding 管理任务 一站式 DevOps](books/1.enjoy/2.coding.md) 体验一下云开发环境,在网吧也能写代码了. 哈哈
-
+- <a href="books.html" target="_blank">站长工具箱💜</a>,提供实用工具和文档. 你也可以自己登录后,添加属于自己的工具箱
 
 
 ## 目录结构介绍

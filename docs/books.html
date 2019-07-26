@@ -132,7 +132,7 @@
 
                         </dl>
                     </li>
-                    <span onclick="openCategoryWin('add')" class="layui-badge layui-bg-blue">+</span>
+                    <span onclick="openCategoryWin('add')" class="logind layui-badge layui-bg-blue">+</span>
                 </ul>
 
                 <select id="category2" style="display: none">
@@ -183,6 +183,7 @@
     let defaultIcon = "/images/default.png";
     let reqUrl = "https://hd215.api.yesapi.cn/?app_key=F7427CADEFF47A4368C87B334FC5C34F";
     var currentCategory = "default";
+    var defaultCategoryName = "默认分类";
     var layer = layui.layer;
     var dataType = 'index'//user 加载个人数据还是首页数据
 
@@ -211,6 +212,7 @@
             doGetUserInfo(userInfo);
         } else {
             //游客加载数据
+            getCategoryList()
             loadJsonByCategory(currentCategory);
         }
     });
@@ -686,7 +688,7 @@
      * 分类管理
      */
     function getCategoryList() {
-        $("#selectCategoryName").text("默认分类");
+        $("#selectCategoryName").text(defaultCategoryName);
         $('.layui-nav-child').html("");
         var url;
         let role = getUserRole();
