@@ -14,6 +14,7 @@
             margin: 0px auto;
             padding: 0px;
         }
+
         /*顶部导航*/
         .navX {
             background: #393D49;
@@ -23,24 +24,27 @@
             text-align: right;
             padding: 10px;
         }
-        .navX a{
+
+        .navX a {
             color: white;
             float: left;
             margin-right: 10px;
             padding: 0px 5px;
         }
-        .navX a.selected{
-           border-bottom: 3px solid orangered;
+
+        .navX a.selected {
+            border-bottom: 3px solid orangered;
             font-weight: bold;
         }
 
-        .header{
+        .header {
             height: 20px;
             line-height: 20px;
             display: block;
             text-align: center;
         }
-        #category{
+
+        #category {
             position: absolute;
             top: 0px;
             height: 30px;
@@ -76,10 +80,11 @@
         .item .item-left {
             width: 100%;
             height: 100px;
-            border-bottom: 1px dashed ;
+            border-bottom: 1px dashed;
             vertical-align: middle;
             display: table-cell;
         }
+
         .item .item-right {
             width: 100%;
             height: 30px;
@@ -87,12 +92,14 @@
             font-size: 12px;
             color: #4E5465;
         }
-        .item .more{
+
+        .item .more {
             position: absolute;
             top: 0;
             right: 10px;
         }
-        .item .bookmarkMenu img{
+
+        .item .bookmarkMenu img {
             width: 20px;
             height: 20px;
             margin: 2px;
@@ -110,7 +117,8 @@
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
 
                 <span class="logind" style="display: none">
-                    <a class="index" onclick="changeDataType('index')" > 首页</a>  &nbsp;   <a class="userPage" onclick="changeDataType('user')"> 我的工具箱</a>
+                    <a class="index" onclick="changeDataType('index')"> 首页</a>  &nbsp;   <a class="userPage"
+                                                                                            onclick="changeDataType('user')"> 我的工具箱</a>
                  <button onclick="openAddWin()" style="float: left" class="layui-btn layui-btn-sm"> + 添加新链接 </button>&nbsp;&nbsp;&nbsp;
                 </span>
                 &nbsp;
@@ -119,18 +127,20 @@
                 &nbsp;
                 <ul id="category" class="layui-nav  ">
                     <li class="layui-nav-item" style="line-height: 30px;">
-                        <a href="javascript:;">选择分类</a>
+                        <a id="selectCategoryName" href="javascript:selectedCategory('default','默认分类');">默认分类</a>
                         <dl class="layui-nav-child">
 
                         </dl>
                     </li>
+                    <span onclick="openCategoryWin('add')" class="layui-badge layui-bg-blue">+</span>
                 </ul>
+
                 <select id="category2" style="display: none">
                 </select>
             </div>
             <div class="layui-col-xs4 layui-col-sm12 layui-col-md4">
                 <div class="logind" style="display: none" onclick="doLogout()">
-                    欢迎您: <label id="user-name-label">用户名</label>, <label >退出</label>
+                    欢迎您: <label id="user-name-label">用户名</label>, <label>退出</label>
                 </div>
                 <div class="guest">
                     <button onclick="openLoginWin('login')" class="layui-btn layui-btn-sm"> 登录,添加自己的工具箱</button>
@@ -155,7 +165,7 @@
     <footer style="position: absolute;bottom: 0">
         <h2>Todo list-v2</h2>
         <ul>
-            <li>添加分类管理功能</li>
+            <li>添加分类管理功能-(完成分类查询和添加, 未完成:修改,删除)</li>
             <li>添加拖动排序功能</li>
             <li>添加发布我的工具箱功能</li>
             <li>添加推荐到首页功能,添加管理员审核列表</li>
@@ -170,11 +180,11 @@
 <link rel="stylesheet" href="/plugin/layui/css/layui.css">
 <script src="/plugin/layui/layui.all.js"></script>
 <script>
-    let defaultIcon="/images/default.png";
+    let defaultIcon = "/images/default.png";
     let reqUrl = "https://hd215.api.yesapi.cn/?app_key=F7427CADEFF47A4368C87B334FC5C34F";
     var currentCategory = "default";
     var layer = layui.layer;
-    var dataType='index'//user 加载个人数据还是首页数据
+    var dataType = 'index'//user 加载个人数据还是首页数据
 
     //alt +d 快捷键保存
     document.onkeydown = function (event) {
@@ -199,136 +209,116 @@
 
             //加载登录用户数据
             doGetUserInfo(userInfo);
-        }else {
+        } else {
             //游客加载数据
             loadJsonByCategory(currentCategory);
         }
-
-        getCategoryList();
     });
 
-    /*弹窗窗口管理*/
-
+    /**弹窗窗口管理*/
+    //添加修改链接窗口
     function openAddWin(id) {
-        var title =id != undefined ? '修改链接信息' : '添加新链接';
+        var title = id != undefined ? '修改链接信息' : '添加新链接';
 
-        var selectItem=null;
+        var selectItem = null;
 
         //加载分类列表
-        let categorys=" &nbsp;&nbsp;&nbsp;请选择分类: <select id=\"category3\">" +$("#category2").html()+"</select>";
+        let categorys = " &nbsp;&nbsp;&nbsp;请选择分类: <select id=\"category3\">" + $("#category2").html() + "</select>";
 
-        if (id!=undefined){
-            var role=getUserRole();
+        var content = "";
+        if (id != undefined) {
+            //存在id 修改链接
+            var role = getUserRole();
             if (role == 'user') {
                 //普通用户 ,会员元数据
-                url = reqUrl + "&s=App.User_Set.GetItem&id="+id+ getUuidStr();
-            }else if(role=='admin'){
-                url = reqUrl + "&s=App.Main_Set.GetItem&id="+id;
+                url = reqUrl + "&s=App.User_Set.GetItem&id=" + id + getUuidStr();
+            } else if (role == 'admin') {
+                url = reqUrl + "&s=App.Main_Set.GetItem&id=" + id;
             }
 
             //修改时查询已有数据
-            $.post(url,function (data) {
-                selectItem=data.data;
+            $.ajax({
+                url: url,
+                async: false,//同步请求
+                success: function (data) {
+                    selectItem = data.data;
 
-                let content='<div class="layui-form-item"><input value="'+selectItem.data.url+'"  type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
-                    '  <div class="layui-form-item"><input value="'+selectItem.data.remarks+'" type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
-                    '<div class="layui-form-item"><input value="'+selectItem.data.icon+'" type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>';
-
-                content=categorys+content;
-
-
-                layer.open({
-                    type: 1,
-                    title: title,
-                    skin: 'layui-layer-lan', //默认皮肤
-                    area: '500px',
-                    content: content,
-                    btn: ['修改链接'],
-                    yes: function (index, layero) {
-                        var iconVal = $("input[name='icon']").val();
-                        var remarksVal = $("input[name='remarks']").val();
-                        var urlVal = $("input[name='url']").val();
-                        if ( urlVal == '') {
-                            layer.msg("链接不能为空");
-                            return;
-                        }
-                        var domain=getDomain(urlVal);
-                        console.log(domain)
-                        if (remarksVal==''){
-                            remarksVal=domain;
-                        }
-                        if (iconVal==''){
-                            iconVal=defaultIcon;
-                        }
-
-                        let item = {
-                            icon: iconVal,
-                            remarks: remarksVal,
-                            url: urlVal,
-                            id:id
-                        };
-                        appendLink(item);
-                    }
-                });
-            });
-        }else {
-            layer.open({
-                type: 1,
-                title: title,
-                skin: 'layui-layer-lan', //默认皮肤
-                area: '500px',
-                content: categorys+'<div class="layui-form-item"><input   type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
-                    '  <div class="layui-form-item"><input  type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
-                    '<div class="layui-form-item"><input type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>'
-                ,
-                btn: ['保存链接'],
-                yes: function (index, layero) {
-                    var iconVal = $("input[name='icon']").val().trim();
-                    var remarksVal = $("input[name='remarks']").val().trim();
-                    var urlVal = $("input[name='url']").val().trim();
-                    if ( urlVal == '') {
-                        layer.msg("链接不能为空");
-                        return;
-                    }
-                    var domain=getDomain(urlVal);
-                    if (remarksVal==''){
-                        remarksVal=domain;
-                    }
-                    if (iconVal==''){
-                        iconVal=defaultIcon;
-                    }
-
-                    let item = {
-                        icon: iconVal,
-                        remarks: remarksVal,
-                        url: urlVal,
-                        category:$("#category3").val()
-                    };
-                    appendLink(item);
-
+                    content = categorys + '<div class="layui-form-item"><input value="' + selectItem.data.url + '"  type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
+                        '  <div class="layui-form-item"><input value="' + selectItem.data.remarks + '" type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
+                        '<div class="layui-form-item"><input value="' + selectItem.data.icon + '" type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>';
                 }
             });
+
+        } else {
+            //新增链接
+            content = categorys + '<div class="layui-form-item"><input   type="text" name="url"   placeholder="(必须) 请输入链接url  如: https://javabus.cn,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>' +
+                '  <div class="layui-form-item"><input  type="text" name="remarks"  placeholder="(必须) 请输入名称或描述" autocomplete="off" class="layui-input"> </div>' +
+                '<div class="layui-form-item"><input type="text" name="icon"   placeholder="请输入logo url ,不能有#&等特殊字符" autocomplete="off" class="layui-input"> </div>';
         }
 
+        layer.open({
+            type: 1,
+            title: title,
+            skin: 'layui-layer-lan', //默认皮肤
+            area: '500px',
+            content: content,
+            btn: ['修改链接'],
+            yes: function (index, layero) {
+                let iconVal = $("input[name='icon']").val();
+                let remarksVal = $("input[name='remarks']").val();
+                let urlVal = $("input[name='url']").val();
+                if (urlVal == '') {
+                    layer.msg("链接不能为空");
+                    return;
+                }
+                var domain = getDomain(urlVal);
+                //console.log(domain)
+                if (remarksVal == '') {
+                    remarksVal = domain;
+                }
+                if (iconVal == '') {
+                    iconVal = defaultIcon;
+                }
+                let cate=$("#category3").val();
+                if(cate==''||cate==null){
+                    cate='default';
+                }
+
+                let item = {
+                    icon: iconVal,
+                    remarks: remarksVal,
+                    url: urlVal,
+                    id: id,
+                    category: cate
+                };
+                appendLink(item);
+            }
+        });
+
+        var dom = $("#category3");
+        if (dom != undefined) {
+            dom.val(currentCategory);
+        }
 
 
     }
-    
+
     //从url 上截取域名
     function getDomain(url) {
-        if(url.indexOf("https")>=0){
+        if (url.indexOf("https") >= 0) {
             //console.log('url.indexOf("https://")')
-            url=url.substring(9);
-        }else if(url.indexOf("http://")>=0){
+            url = url.substring(9);
+        } else if (url.indexOf("http://") >= 0) {
             //console.log('url.indexOf("http://")')
-            url=url.substring(7);
+            url = url.substring(7);
         }
-        url=url.substring(0,url.indexOf("/"));
+        url = url.substring(0, url.indexOf("/"));
         // console.log("url==")
         // console.log(url)
         return url;
     }
 
+    //登录注册窗口
     function openLoginWin(flag) {
         var title = flag == 'login' ? '登录,提供测试账号test/test' : '注册. 亲,请你善良,不要恶意注册'
         layer.open({
@@ -361,9 +351,40 @@
         });
     }
 
+    //分类管理窗口
+    function openCategoryWin(flag) {
+        var title = flag == 'add' ? '添加分类' : '分类管理';
+        layer.open({
+            type: 1,
+            title: title,
+            skin: 'layui-layer-lan', //默认皮肤
+            area: '500px',
+            content: '<div class="layui-form-item"><input type="text" name="category"   placeholder="请输入分类名称"  class="layui-input"> </div>'
+            ,
+            btn: ['确定'],
+            yes: function (index, layero) {
+                var category = $("input[name='category']").val();
+                if (category == '') {
+                    layer.msg("分类名称不能为空");
+                    return;
+                }
+                var category = {
+                    name: category,
+                    id: category
+                }
+
+                if (flag == 'add') {
+                    addCategory(category);
+                } else {
+
+                }
+            }
+        });
+    }
+
     /**
-    * 会员管理
-    */
+     * 会员管理
+     */
     function doLogout() {
         layer.confirm('确定退出登录吗?', {icon: 3, title: '提示'}, function (index) {
             //do something
@@ -378,8 +399,9 @@
         });
 
     }
+
     function isLogin() {
-        return (localStorage.getItem("token")!=undefined?true:false)
+        return (localStorage.getItem("token") != undefined ? true : false)
     }
 
     function doLogin(user) {
@@ -439,21 +461,21 @@
     }
 
     function doGetUserInfo(user) {
-      //  console.log('获取用户信息') console.log(user);
+        //  console.log('获取用户信息') console.log(user);
         $.ajax({
             type: "post",
             url: reqUrl + "&s=App.User.Profile&uuid=" + user.uuid + "&token=" + user.token,
             dataType: "json",
             success: function (data) {
-               // console.log("success function"); console.log(data);
+                // console.log("success function"); console.log(data);
                 if (data.data.err_code == 0) {
-                    let role=data.data.info.role;
+                    let role = data.data.info.role;
                     localStorage.setItem('role', role);
                     isLogin = true;
                     $(".logind").show();
-                    $(".guest").css("display","none");
+                    $(".guest").css("display", "none");
                     $("#user-name-label").text(data.data.info.username);
-                    if (role=='admin'){
+                    if (role == 'admin') {
                         changeDataType('index');
                     } else {
                         changeDataType('user');
@@ -464,7 +486,7 @@
                 }
             },
             error: function (e) {
-               // console.log("error function"); console.log(e);console.log(e.responseText);
+                // console.log("error function"); console.log(e);console.log(e.responseText);
                 layer.msg('连接不到服务器,请联系开发人员')
             }
         });
@@ -473,6 +495,7 @@
     function getUserRole() {
         return localStorage.getItem("role");
     }
+
     function getUuidStr() {
         return "&uuid=" + localStorage.getItem("uuid") + "&token=" + localStorage.getItem("token");
     }
@@ -487,21 +510,35 @@
         let role = getUserRole();
         //默认为系统元数据
         var url;
-        if (json.id!=undefined){
+
+        let updateCategory=false;//是否是更新分类操作,是的话新增后需要删除原集合数据
+        if (json.id != undefined&&json.category!=currentCategory ){
+            //修改了分类
+            updateCategory=true;
+            //新增链接
+            if (role == 'user') {
+                //普通用户 ,会员元数据
+                url = reqUrl + "&s=App.User_Set.Add&key=" + json.category + "&data=" + data + getUuidStr();
+            } else if (role == 'admin') {
+                url = reqUrl + "&s=App.Main_Set.Add&key=" + json.category + "&data=" + data
+            }
+            //删除当前分类下的链接
+
+        } else if (json.id != undefined) {
             //执行修改
             if (role == 'user') {
                 //普通用户 ,会员元数据
-                url = reqUrl + "&s=App.User_Set.Update&id="+json.id+"&data=" + data + getUuidStr();
-            }else if(role=='admin'){
-                url = reqUrl + "&s=App.Main_Set.Update&id="+json.id+"&data=" + data
+                url = reqUrl + "&s=App.User_Set.Update&id=" + json.id + "&data=" + data + getUuidStr();
+            } else if (role == 'admin') {
+                url = reqUrl + "&s=App.Main_Set.Update&id=" + json.id + "&data=" + data
             }
         } else {
             //新增链接
             if (role == 'user') {
                 //普通用户 ,会员元数据
-                url = reqUrl + "&s=App.User_Set.Add&key="+json.category+"&data=" + data + getUuidStr();
-            }else if(role=='admin'){
-                url = reqUrl + "&s=App.Main_Set.Add&key="+json.category+"&data=" + data
+                url = reqUrl + "&s=App.User_Set.Add&key=" + json.category + "&data=" + data + getUuidStr();
+            } else if (role == 'admin') {
+                url = reqUrl + "&s=App.Main_Set.Add&key=" + json.category + "&data=" + data
             }
         }
 
@@ -511,8 +548,13 @@
             url: url,
             dataType: "json",
             success: function (data) {
-                console.log("success function");
-                console.log(data);
+                // console.log("success function");
+                // console.log(data);
+                if (updateCategory){
+                    //新增后.删除原集合数据
+                    deleteFromSetApi(json.id );
+                }
+
                 if (data.data.err_code == 0) {
                     layer.closeAll();
                     loadJsonByCategory(currentCategory);
@@ -521,23 +563,32 @@
                 } else {
                     layer.msg("保存链接失败");
                 }
+
             },
             error: function (e) {
-               // console.log("error function");console.log(e);  console.log(e.responseText);
+                // console.log("error function");console.log(e);  console.log(e.responseText);
                 layer.msg('连接不到服务器,请联系开发人员')
             }
         });
     }
 
+
     function loadJsonByCategory(category) {
 
         var url;
-        if ( dataType=='user'){
-            url=reqUrl + '&s=App.User_Set.GetList&perpage=1000&key='+category+getUuidStr()
-        }else if (dataType=='index'){
-            url=reqUrl + '&s=App.Main_Set.GetList&perpage=1000&key='+category;
+        if (dataType == 'user') {
+            url = reqUrl + '&s=App.User_Set.GetList&perpage=1000&key=' + category + getUuidStr()
+        } else if (dataType == 'index') {
+            url = reqUrl + '&s=App.Main_Set.GetList&perpage=1000&key=' + category;
         }
         loadItems(url);
+    }
+
+    function selectedCategory(category, name) {
+        currentCategory = category;
+        $("#category2").val(currentCategory);
+        $("#selectCategoryName").text(name);
+        loadJsonByCategory(category);
     }
 
     //加载json列表
@@ -559,41 +610,47 @@
     }
 
     function changeDataType(type) {
-        dataType=type;
-        if (dataType=='index'){
+        dataType = type;
+        if (dataType == 'index') {
             $(".index").addClass("selected");
             $(".userPage").removeClass("selected");
-        }else {
+        } else {
             $(".userPage").addClass("selected");
             $(".index").removeClass("selected");
         }
-        loadJsonByCategory(currentCategory);
+        getCategoryList();
+        loadJsonByCategory("default");
     }
 
     //显示操作按钮面板
     function showBookmarkMenu(obj) {
-        var bookmarkMenu=$(obj).parent(".item").children(".bookmarkMenu");
+        var bookmarkMenu = $(obj).parent(".item").children(".bookmarkMenu");
         //5秒后又收起
         bookmarkMenu.fadeIn().delay("3000").fadeOut();
     }
 
-    function deleteItem(obj){
+    function deleteItem(obj) {
         layer.confirm('删除该链接吗?删除后无法找回', {icon: 3, title: '请确认'}, function (index) {
-            var item=$(obj).parent().parent(".item");
-            var id=$(item).children("input").val();
-            var role=getUserRole();
-            if (role == 'user') {
-                //普通用户 ,会员元数据
-                url = reqUrl + "&s=App.User_Set.Delete&id="+id+ getUuidStr();
-            }else if(role=='admin'){
-                url = reqUrl + "&s=App.Main_Set.Delete&id="+id;
-            }
-            $.post(url);
+            var item = $(obj).parent().parent(".item");
+            var id = $(item).children("input").val();
+
+            deleteFromSetApi(id);
             $(item).remove();
             layer.close(index);
         });
 
 
+    }
+    //通过api接口删除 集合元素
+    function deleteFromSetApi(id) {
+        var role = getUserRole();
+        if (role == 'user') {
+            //普通用户 ,会员元数据
+            url = reqUrl + "&s=App.User_Set.Delete&id=" + id + getUuidStr();
+        } else if (role == 'admin') {
+            url = reqUrl + "&s=App.Main_Set.Delete&id=" + id;
+        }
+        $.post(url);
     }
 
 
@@ -605,20 +662,20 @@
 
         var ulEle = $("<ul class='row layui-row'></ul>");
         $.each(jsonDoc, function (i, item) {
-            n=item.data;
+            n = item.data;
             //console.log(n)
             //<img title='珍藏' class='collect' src='http://shouqu.me/app/images/collect@3x.png' alt=''/>
             //<img title='分享' class='share' src='http://shouqu.me/app/images/share@3x.png' alt=''/>
             var itemEle = $(
                 "<div class='item layui-col-xs5 layui-col-sm5 layui-col-md1'>"
-                +  "<div class='bookmarkMenu logind' style='display: none'><img title='删除' onclick='deleteItem(this)' class='delete' src='http://shouqu.me/app/images/delete@3x.png' alt=''/><img  title='编辑' onclick='openAddWin("+item.id+")' class='share' src='https://bpic.588ku.com/element_pic/19/03/15/ad7c6386a553f6affaf57cfaa2b637db.jpg!/fw/224/quality/90/unsharp/true/compress/true'></div>"
-                +   "<input type='hidden' value='"+item.id+"'><a href='" + n.url + "' target='_blank'><div class='item-left'><img class='icon' src='" + n.icon + "' /></div> <div class='item-right'> " + n.remarks + "</div></a>"
+                + "<div class='bookmarkMenu logind' style='display: none'><img title='删除' onclick='deleteItem(this)' class='delete' src='http://shouqu.me/app/images/delete@3x.png' alt=''/><img  title='编辑' onclick='openAddWin(" + item.id + ")' class='share' src='https://bpic.588ku.com/element_pic/19/03/15/ad7c6386a553f6affaf57cfaa2b637db.jpg!/fw/224/quality/90/unsharp/true/compress/true'></div>"
+                + "<input type='hidden' value='" + item.id + "'><a href='" + n.url + "' target='_blank'><div class='item-left'><img class='icon' src='" + n.icon + "' /></div> <div class='item-right'> " + n.remarks + "</div></a>"
                 + "<div class='more logind' onmouseover='showBookmarkMenu(this)'>...<div></div>");
             itemEle.appendTo(ulEle);
         });
         ulEle.appendTo(divContent);
 
-        if (localStorage.getItem("token")==undefined){
+        if (localStorage.getItem("token") == undefined) {
             $(".logind").hide();
             $(".guest").show();
         }
@@ -629,30 +686,56 @@
      * 分类管理
      */
     function getCategoryList() {
+        $("#selectCategoryName").text("默认分类");
         $('.layui-nav-child').html("");
         var url;
-        if ( dataType=='user'){
-            url=reqUrl + '&s=App.User_Set.GetList&perpage=1000&key=category'+getUuidStr()
-        }else if (dataType=='index'){
-            url=reqUrl + '&s=App.Main_Set.GetList&key=category'
+        let role = getUserRole();
+        if (dataType == 'index') {
+            url = reqUrl + '&s=App.Main_Set.GetList&key=category'
+        }else{
+            if (role == 'user') {
+                //普通用户 ,会员元数据
+                url = reqUrl + '&s=App.User_Set.GetList&perpage=1000&key=category' + getUuidStr()
+            } else if (role == 'admin') {
+                url = reqUrl + '&s=App.Main_Set.GetList&key=category'
+            }
         }
         $.get(url, function (data) {
             $.each(data.data.items, function (i, item) {
-                let ele='<dd><a href="javascript:loadJsonByCategory(\''+item.data.key+'\')">'+item.data.name+'</a></dd>';
+                //显示分类页面
+                let ele = '<dd><a href="javascript:selectedCategory(\'' + item.data.id + '\',\'' + item.data.name + '\')">' + item.data.name + '</a></dd>';
                 $('.layui-nav-child').append(ele);
 
+                //添加隐藏分类dom内容
                 let ele2;
-                if (i==0){
-                    ele2='<option selected value="'+item.data.key+'">'+item.data.name+'</option>'
-                }else {
-                    ele2='<option value="'+item.data.key+'">'+item.data.name+'</option>'
+                if (i == 0) {
+                    ele2 = '<option  value="' + item.data.id + '">' + item.data.name + '</option>'
+                } else {
+                    ele2 = '<option value="' + item.data.id + '">' + item.data.name + '</option>'
                 }
                 $("#category2").append(ele2);
 
             })//end each
+
         });
+    }
 
-
+    //添加分类
+    function addCategory(category) {
+        let data = JSON.stringify(category)
+        let url;
+        let role = getUserRole();
+        if (role == 'user') {
+            //普通用户 ,会员元数据
+            url = reqUrl + "&s=App.User_Set.Add&key=category&data=" + data + getUuidStr();
+        } else if (role == 'admin') {
+            url = reqUrl + "&s=App.Main_Set.Add&key=category&data=" + data;
+        }
+        $.post(url, category, function () {
+            getCategoryList();
+            layer.closeAll();
+            layer.msg("操作成功");
+        });
 
     }
 </script>
