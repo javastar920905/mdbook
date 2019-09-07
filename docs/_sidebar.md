@@ -1,6 +1,6 @@
 # [java 开发手册 <sup>help💦</sup>](README.md)
 * [博客](http://javastar920905.coding.me) 
-* <a href="books/1.enjoy/growth-guild.md" target="_blank">增长学习指南💜</a>
+* [ 增长学习指南💜](books/1.enjoy/growth-guild.md)
 * 1.enjoy😘 
    * [ 开源建站 博客/cms/oa/](books/1.enjoy/1.1site.md)
    * [ 使用coding 管理任务 一站式 DevOps](books/1.enjoy/2.coding.md)
