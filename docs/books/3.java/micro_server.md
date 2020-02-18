@@ -119,7 +119,6 @@
    * <A HREF="https://spring.io/projects">Projects</A>
    * <A HREF="https://docs.spring.io/spring-boot/docs/1.5.8.RELEASE/reference/htmlsingle/#using-boot-starter">Spring Boot Starters</A>
    * <A HREF="https://docs.spring.io/spring-boot/docs/1.5.2.RELEASE/reference/htmlsingle/#boot-features-external-config">Spring Boot -外部配置优先级</A>
-   * <A HREF="https://www.west.cn/services/paimai/show.asp?pid=51982531">52013.app 域名正在拍卖中-西部数码</A>
 
 
 #### ** rpc 服务注册发现**
