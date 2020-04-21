@@ -25,7 +25,7 @@ public class SidebarTest {
     //支持二级目录,多级目录自动变成二级目录显示 [博客](http://javastar920905.coding.me) [头条号](https://www.toutiao.com/i6704531775550390797/)
     static String format = "   * [%s](%s/%s)\r\n";
     static String parent_format = "* %s \r\n";
-    static String sidebar_format = "# [java 开发手册 <sup>help\uD83D\uDCA6</sup>](README.md)\r\n* [博客](http://javastar920905.coding.me) \r\n* <a href=\"books.html\" target=\"_blank\">站长工具箱\uD83D\uDC9C</a>\n%s\r\n" + custom_sidebar;
+    static String sidebar_format = "# [java 开发手册 <sup>help\uD83D\uDCA6</sup>](README.md)\r\n* [博客](http://javastar920905.coding.me) \r\n%s\r\n" + custom_sidebar;
     static String[] emojis = {"😘", "🔧", "💖", "☠", "🆚", "🔞"};
 
 

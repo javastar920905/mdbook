@@ -1,6 +1,6 @@
 <!-- ![logo](_media/icon.png) -->
 
-# awesome java
+# javabus.cn
 
 > 灯火阑珊处，看繁华似锦🌸
 

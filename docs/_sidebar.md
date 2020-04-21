@@ -1,12 +1,10 @@
 # [java 开发手册 <sup>help💦</sup>](README.md)
-* [博客](https://hva8sh.coding-pages.com/) 
-* [ 增长学习指南💜](books/1.enjoy/growth-guild.md)
+* [博客](http://javastar920905.coding.me) 
 * 1.enjoy😘 
    * [ 开源建站 博客/cms/oa/](books/1.enjoy/1.1site.md)
    * [ 使用coding 管理任务 一站式 DevOps](books/1.enjoy/2.coding.md)
    * [ 使用easyopen 搭建开放平台](books/1.enjoy/easyopen.md)
    * [ 使用小白接口进行个人开发](books/1.enjoy/noob.md)
-   * [ 闲来无事读读书](books/1.enjoy/reading.md)
 * 2.tools🔧 
    * [ 常用开发工具备份](books/2.tools/1.tools.md)
    * [ 项目管理.需求设计工具](books/2.tools/2.manage.md)
